@@ -1,0 +1,137 @@
+body{
+    padding: null;
+    margin: 0;
+    background-color:#FFFFFF;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    a,p,button{
+        text-decoration: none;
+    }
+    
+    h1,h2,h3,h4{
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul ,li{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    
+    input,textarea {
+        outline: none;
+    }
+    
+    button{
+       white-space: nowrap;
+    }
+
+}
+
+
+.wraper{
+
+    header{
+
+        #additional_information{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .col-md-10{
+
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    margin: 8px 0;
+
+                    li:not(:last-child){
+                        margin-right: 70px;
+
+                        a{
+                            font-size: 14px;
+                        }
+
+                    }
+                    
+                }
+
+            }
+
+        }
+
+        .nav{
+
+            .col-md-3:nth-child(1){
+
+                a{
+                    img{
+                        width: 170px;
+                        height: 60px;
+                    }
+
+                }
+
+            }
+
+            .col-md-6{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                ul{
+                    display: flex;
+                    justify-content: center;
+
+                    li:not(:last-child){
+                        margin-right: 20px;
+                    }
+
+                }
+
+            }
+
+            .col-md-3:nth-child(3){
+                display:flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                a{  
+                    button{
+                        width: 36px;
+                        height: 36px;
+                        border: none;
+                        border-radius: 36px;
+                        background: #FBFBFB;
+                        box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #CECECE;
+                    }
+
+                }
+
+                a:not(:last-child){
+                    button{
+                        margin-right: 15px;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+    // section{
+
+    // }
+
+
+    // footer{
+
+    // }
+
+}
