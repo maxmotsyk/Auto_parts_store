@@ -239,6 +239,11 @@ body{
 
         #main_row{
 
+            .col-md-6{
+                
+                height: 560px;
+            }
+
             .col-md-6:nth-child(1){
                 display: flex;
                 justify-content:center;

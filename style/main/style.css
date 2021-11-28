@@ -223,6 +223,10 @@ body button {
   transition: 0.3s;
 }
 
+.wraper section #main_row .col-md-6 {
+  height: 560px;
+}
+
 .wraper section #main_row .col-md-6:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
