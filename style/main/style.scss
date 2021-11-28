@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
 body{
     padding: null;
     margin: 0;
@@ -7,21 +10,31 @@ body{
     -webkit-appearance: none;
 
     a,p,button{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
         text-decoration: none;
     }
     
+    a,p{
+        margin: 0;
+        padding: 0;
+    }
+    
     h1,h2,h3,h4{
+        font-family: 'Quicksand', sans-serif;
         padding: 0;
         margin: 0;
     }
     
-    ul ,li{
+    ul,li{
         padding: 0;
         margin: 0;
         list-style-type: none;
     }
     
     input,textarea {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
         outline: none;
     }
     
@@ -40,6 +53,8 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 0px solid #EAEAEA;
+            border-bottom-width: 1.5px;
 
             .col-md-10{
 
@@ -51,8 +66,32 @@ body{
                     li:not(:last-child){
                         margin-right: 70px;
 
+                    }
+
+                    li{
+                        display: flex;
+                        align-items: center;
+
                         a{
-                            font-size: 14px;
+                            font-size: 12px;
+                            color: #848383;
+                            transition: 0.3s;
+
+                            img{
+                                transition: 0.3s;
+
+                            }
+
+                        }
+
+                        a:hover,a:active{
+                            color: #848383af;
+
+                            img{
+                                opacity: 0.8;
+
+                            }
+
                         }
 
                     }
@@ -71,6 +110,7 @@ body{
                     img{
                         width: 170px;
                         height: 60px;
+
                     }
 
                 }
@@ -88,6 +128,33 @@ body{
 
                     li:not(:last-child){
                         margin-right: 20px;
+
+                    }
+
+                    a{
+                        position: relative;
+                        font-size: 16px;
+                        color: #333333;
+                        transition: 0.3s;
+
+                    }
+
+                    a:after {
+                        display: block;
+                        position: absolute;
+                        left: 0; 
+                        width: 0;
+                        height: 2px; 
+                        background-color: #F5C331;
+                        content: "";
+                        transition: 0.3s ; 
+
+                    }
+                    
+                    a:hover:after,
+                    a:focus:after {
+                        width: 100%;
+
                     }
 
                 }
@@ -100,13 +167,31 @@ body{
                 align-items: center;
 
                 a{  
+
                     button{
                         width: 36px;
                         height: 36px;
                         border: none;
                         border-radius: 36px;
-                        background: #FBFBFB;
-                        box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #CECECE;
+                        background: #ffffff;
+                        box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #E7E7E7;
+                        transition: 0.3s;
+
+                        img{
+                            transition: 0.3s;
+
+                        }
+
+                    }
+
+                    button:hover,button:active{
+                        box-shadow: -3px -3px 7px #FFFFFF, 1.5px 1.5px 5px #d1d1d1;
+
+                        img,p{
+                            opacity: 0.8;
+
+                        }
+
                     }
 
                 }
@@ -118,6 +203,31 @@ body{
 
                 }
 
+                a:nth-child(2){
+                    
+                    button{
+                        width: 70px;
+                        height: 35px;
+                        display: flex;
+                        justify-content:space-between;
+                        align-items: center;
+
+                        .line{
+                            width: 1px;
+                            height: 18px;
+                            background-color:#A0A0A0;
+                        }
+
+                        p{
+                            font-size: 16px;
+                            color: #A0A0A0;
+                            transition: 0.3s;
+                        }
+
+                    }
+
+                }
+
             }
 
         }
@@ -125,13 +235,74 @@ body{
     }
 
 
-    // section{
+    section{
 
-    // }
+        #main_row{
 
+            .col-md-6:nth-child(1){
+                display: flex;
+                justify-content:center;
+                align-items: center;
+
+                .text_content{
+                    width: 480px;
+                    height:300px;
+                    display: flex;
+                    flex-direction: column;
+
+                    h1{
+                        font-weight: bold;
+                        line-height: 177.19%;
+                        
+                    }
+
+                    p{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #848383;
+
+                        b{
+                            color: #FFC009;
+                        }
+
+                    }
+
+                    .button_area{
+                        margin-top: 40px;
+                        display: flex;
+
+                        button{
+                            width: 164px;
+                            height: 46px;
+                        }
+    
+                        button:nth-child(1){
+                            margin-right: 35px;
+                            background: #F5C331;
+                            box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+                            border:none;
+                            border-radius: 15px;
+                        }
+
+                        button:nth-child(2){
+                            background: #FFFFFF;
+                            border: 3px solid #F5C331;
+                            border-radius: 15px;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    
+    }
 
     // footer{
 
     // }
-
+    
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 body {
   padding: null;
   margin: 0;
@@ -8,10 +10,18 @@ body {
 }
 
 body a, body p, body button {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
   text-decoration: none;
 }
 
+body a, body p {
+  margin: 0;
+  padding: 0;
+}
+
 body h1, body h2, body h3, body h4 {
+  font-family: 'Quicksand', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -23,6 +33,8 @@ body ul, body li {
 }
 
 body input, body textarea {
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
   outline: none;
 }
 
@@ -40,6 +52,8 @@ body button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 0px solid #EAEAEA;
+  border-bottom-width: 1.5px;
 }
 
 .wraper header #additional_information .col-md-10 ul {
@@ -56,8 +70,33 @@ body button {
   margin-right: 70px;
 }
 
-.wraper header #additional_information .col-md-10 ul li:not(:last-child) a {
-  font-size: 14px;
+.wraper header #additional_information .col-md-10 ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper header #additional_information .col-md-10 ul li a {
+  font-size: 12px;
+  color: #848383;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header #additional_information .col-md-10 ul li a img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header #additional_information .col-md-10 ul li a:hover, .wraper header #additional_information .col-md-10 ul li a:active {
+  color: #848383af;
+}
+
+.wraper header #additional_information .col-md-10 ul li a:hover img, .wraper header #additional_information .col-md-10 ul li a:active img {
+  opacity: 0.8;
 }
 
 .wraper header .nav .col-md-3:nth-child(1) a img {
@@ -90,6 +129,31 @@ body button {
   margin-right: 20px;
 }
 
+.wraper header .nav .col-md-6 ul a {
+  position: relative;
+  font-size: 16px;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header .nav .col-md-6 ul a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F5C331;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header .nav .col-md-6 ul a:hover:after,
+.wraper header .nav .col-md-6 ul a:focus:after {
+  width: 100%;
+}
+
 .wraper header .nav .col-md-3:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,12 +171,121 @@ body button {
   height: 36px;
   border: none;
   border-radius: 36px;
-  background: #FBFBFB;
-  -webkit-box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #CECECE;
-          box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #CECECE;
+  background: #ffffff;
+  -webkit-box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #E7E7E7;
+          box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #E7E7E7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header .nav .col-md-3:nth-child(3) a button img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header .nav .col-md-3:nth-child(3) a button:hover, .wraper header .nav .col-md-3:nth-child(3) a button:active {
+  -webkit-box-shadow: -3px -3px 7px #FFFFFF, 1.5px 1.5px 5px #d1d1d1;
+          box-shadow: -3px -3px 7px #FFFFFF, 1.5px 1.5px 5px #d1d1d1;
+}
+
+.wraper header .nav .col-md-3:nth-child(3) a button:hover img, .wraper header .nav .col-md-3:nth-child(3) a button:hover p, .wraper header .nav .col-md-3:nth-child(3) a button:active img, .wraper header .nav .col-md-3:nth-child(3) a button:active p {
+  opacity: 0.8;
 }
 
 .wraper header .nav .col-md-3:nth-child(3) a:not(:last-child) button {
   margin-right: 15px;
+}
+
+.wraper header .nav .col-md-3:nth-child(3) a:nth-child(2) button {
+  width: 70px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper header .nav .col-md-3:nth-child(3) a:nth-child(2) button .line {
+  width: 1px;
+  height: 18px;
+  background-color: #A0A0A0;
+}
+
+.wraper header .nav .col-md-3:nth-child(3) a:nth-child(2) button p {
+  font-size: 16px;
+  color: #A0A0A0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content {
+  width: 480px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content h1 {
+  font-weight: bold;
+  line-height: 177.19%;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #848383;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content p b {
+  color: #FFC009;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button {
+  width: 164px;
+  height: 46px;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(1) {
+  margin-right: 35px;
+  background: #F5C331;
+  -webkit-box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+          box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+  border: none;
+  border-radius: 15px;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(2) {
+  background: #FFFFFF;
+  border: 3px solid #F5C331;
+  border-radius: 15px;
 }
 /*# sourceMappingURL=style.css.map */
