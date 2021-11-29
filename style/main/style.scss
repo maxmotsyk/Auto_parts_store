@@ -238,16 +238,18 @@ body{
     section{
 
         #main_row{
+            margin-top:100px;
 
             .col-md-6{
-                
                 height: 560px;
             }
 
             .col-md-6:nth-child(1){
+                z-index: 999;
                 display: flex;
                 justify-content:center;
                 align-items: center;
+                background-color:#ffffff;
 
                 .text_content{
                     width: 480px;
@@ -279,6 +281,9 @@ body{
                         button{
                             width: 164px;
                             height: 46px;
+                            font-weight: bold;
+                            color: #333333;
+                            transition: 0.3s;
                         }
     
                         button:nth-child(1){
@@ -296,10 +301,78 @@ body{
 
                         }
 
+                        button:nth-child(1):hover,button:nth-child(1):active{
+                            background: #f5c431e7;
+                            box-shadow: 6px 10px 12px rgba(255, 222, 121, 0.596);
+                        }
+
+                        button:nth-child(2):hover,button:nth-child(2):active{
+                            border: 3px solid #f5c431e7;
+                        }
+
                     }
 
                 }
 
+            }
+
+            .col-md-6:nth-child(2){
+
+                .warehouse{
+                    width: 575px;
+                    height: 550px;
+                    position: relative;
+
+                    .front_warehouse_img{
+                        z-index: 999;
+                    }
+
+                    .beck_warehouse_img{
+                        position: absolute;
+                        top: 100px;
+                        left: 100px;
+                        z-index: -6;
+                    }
+
+                    .tap1,.tap2{
+                        z-index: -4;
+                        position: absolute;
+                    }
+    
+                    .tap1{
+                        bottom: 50px;
+                        left: 5px;
+                        animation: tap1_go  7s linear infinite alternate;
+                    }
+    
+                    .tap2{
+                        right: 0px;
+                        bottom: 50px;
+                        animation: tap2_go  7s linear infinite alternate;
+                    }
+
+                    @keyframes tap1_go {
+                        0%{
+                            left: 50px;
+                        }
+
+                        100%{
+                            left:-300px;
+                        }
+                    }
+
+                    @keyframes tap2_go {
+                        0%{
+                            right: 0px;
+                        }
+
+                        100%{
+                            right:-200px;
+                        }
+                    }
+
+                }
+                
             }
 
         }

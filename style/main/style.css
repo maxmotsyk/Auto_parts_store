@@ -223,11 +223,16 @@ body button {
   transition: 0.3s;
 }
 
+.wraper section #main_row {
+  margin-top: 100px;
+}
+
 .wraper section #main_row .col-md-6 {
   height: 560px;
 }
 
 .wraper section #main_row .col-md-6:nth-child(1) {
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,6 +242,7 @@ body button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ffffff;
 }
 
 .wraper section #main_row .col-md-6:nth-child(1) .text_content {
@@ -276,6 +282,10 @@ body button {
 .wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button {
   width: 164px;
   height: 46px;
+  font-weight: bold;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(1) {
@@ -291,5 +301,87 @@ body button {
   background: #FFFFFF;
   border: 3px solid #F5C331;
   border-radius: 15px;
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(1):hover, .wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(1):active {
+  background: #f5c431e7;
+  -webkit-box-shadow: 6px 10px 12px rgba(255, 222, 121, 0.596);
+          box-shadow: 6px 10px 12px rgba(255, 222, 121, 0.596);
+}
+
+.wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(2):hover, .wraper section #main_row .col-md-6:nth-child(1) .text_content .button_area button:nth-child(2):active {
+  border: 3px solid #f5c431e7;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse {
+  width: 575px;
+  height: 550px;
+  position: relative;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .front_warehouse_img {
+  z-index: 999;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .beck_warehouse_img {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -6;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap1, .wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap2 {
+  z-index: -4;
+  position: absolute;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap1 {
+  bottom: 50px;
+  left: 5px;
+  -webkit-animation: tap1_go  7s linear infinite alternate;
+          animation: tap1_go  7s linear infinite alternate;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap2 {
+  right: 0px;
+  bottom: 50px;
+  -webkit-animation: tap2_go  7s linear infinite alternate;
+          animation: tap2_go  7s linear infinite alternate;
+}
+
+@-webkit-keyframes tap1_go {
+  0% {
+    left: 50px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes tap1_go {
+  0% {
+    left: 50px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@-webkit-keyframes tap2_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -200px;
+  }
+}
+
+@keyframes tap2_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
