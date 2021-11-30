@@ -324,7 +324,7 @@ body{
                     position: relative;
 
                     .front_warehouse_img{
-                        z-index: 999;
+                        z-index: 500;
                     }
 
                     .beck_warehouse_img{
@@ -334,7 +334,7 @@ body{
                         z-index: -6;
                     }
 
-                    .tap1,.tap2{
+                    .tap1,.tap2,.tap3{
                         z-index: -4;
                         position: absolute;
                     }
@@ -349,6 +349,13 @@ body{
                         right: 0px;
                         bottom: 50px;
                         animation: tap2_go  7s linear infinite alternate;
+                    }
+
+                    .tap3{
+                        z-index: 505;
+                        right: 100px;
+                        top: 39px;
+                        animation: tap3_go  10s linear infinite alternate;
                     }
 
                     @keyframes tap1_go {
@@ -371,8 +378,99 @@ body{
                         }
                     }
 
+                    @keyframes tap3_go {
+                        0%{
+                            right: 0px;
+                        }
+
+                        100%{
+                            right: 200px;
+                        }
+                    }
+
                 }
                 
+            }
+
+        }
+
+        #assortment_container{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color:#FAFAFA;
+
+            .row{
+                width: 1320px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .col-md-12:nth-child(1){
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 36px;
+                color: #333333;
+            }
+
+            #search_by_brand_col{
+                display: flex;
+                justify-content: center;
+
+                .body_serch{
+                    margin: 70px 0;
+                    width: 370px;
+                    height: 55px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #FFFFFF;
+                    border: 3px solid #F5C536;
+                    border-radius: 50px;
+
+                    input{
+                        margin-left: 25px;
+                        border:none;
+                        color: #848383;
+                    }
+
+                    a{
+                        margin-right: 25px;
+
+                        img{
+                            width:28;
+                            height:28;
+                            transition: 0.3s;
+                        }
+
+                        img:hover,img:after{
+                            opacity: 0.8;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            #choise_brends_row{
+
+                .col-md-12{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .brend{
+                        width: 200px;
+                        height: 70px;
+                        background-color: #F5C331;
+                    }
+
+                }
+
             }
 
         }

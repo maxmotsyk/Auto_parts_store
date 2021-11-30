@@ -320,7 +320,7 @@ body button {
 }
 
 .wraper section #main_row .col-md-6:nth-child(2) .warehouse .front_warehouse_img {
-  z-index: 999;
+  z-index: 500;
 }
 
 .wraper section #main_row .col-md-6:nth-child(2) .warehouse .beck_warehouse_img {
@@ -330,7 +330,7 @@ body button {
   z-index: -6;
 }
 
-.wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap1, .wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap2 {
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap1, .wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap2, .wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap3 {
   z-index: -4;
   position: absolute;
 }
@@ -347,6 +347,14 @@ body button {
   bottom: 50px;
   -webkit-animation: tap2_go  7s linear infinite alternate;
           animation: tap2_go  7s linear infinite alternate;
+}
+
+.wraper section #main_row .col-md-6:nth-child(2) .warehouse .tap3 {
+  z-index: 505;
+  right: 100px;
+  top: 39px;
+  -webkit-animation: tap3_go  10s linear infinite alternate;
+          animation: tap3_go  10s linear infinite alternate;
 }
 
 @-webkit-keyframes tap1_go {
@@ -383,5 +391,127 @@ body button {
   100% {
     right: -200px;
   }
+}
+
+@-webkit-keyframes tap3_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
+@keyframes tap3_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
+.wraper section #assortment_container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FAFAFA;
+}
+
+.wraper section #assortment_container .row {
+  width: 1320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #assortment_container .col-md-12:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 36px;
+  color: #333333;
+}
+
+.wraper section #assortment_container #search_by_brand_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #assortment_container #search_by_brand_col .body_serch {
+  margin: 70px 0;
+  width: 370px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 3px solid #F5C536;
+  border-radius: 50px;
+}
+
+.wraper section #assortment_container #search_by_brand_col .body_serch input {
+  margin-left: 25px;
+  border: none;
+  color: #848383;
+}
+
+.wraper section #assortment_container #search_by_brand_col .body_serch a {
+  margin-right: 25px;
+}
+
+.wraper section #assortment_container #search_by_brand_col .body_serch a img {
+  width: 28;
+  height: 28;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #assortment_container #search_by_brand_col .body_serch a img:hover, .wraper section #assortment_container #search_by_brand_col .body_serch a img:after {
+  opacity: 0.8;
+}
+
+.wraper section #assortment_container #choise_brends_row .col-md-12 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wraper section #assortment_container #choise_brends_row .col-md-12 .brend {
+  width: 200px;
+  height: 70px;
+  background-color: #F5C331;
 }
 /*# sourceMappingURL=style.css.map */
