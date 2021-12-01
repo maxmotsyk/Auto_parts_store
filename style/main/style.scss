@@ -358,35 +358,35 @@ body{
                         animation: tap3_go  10s linear infinite alternate;
                     }
 
-                    @keyframes tap1_go {
-                        0%{
-                            left: 50px;
-                        }
+                    // @keyframes tap1_go {
+                    //     0%{
+                    //         left: 50px;
+                    //     }
 
-                        100%{
-                            left:-300px;
-                        }
-                    }
+                    //     100%{
+                    //         left:-300px;
+                    //     }
+                    // }
 
-                    @keyframes tap2_go {
-                        0%{
-                            right: 0px;
-                        }
+                    // @keyframes tap2_go {
+                    //     0%{
+                    //         right: 0px;
+                    //     }
 
-                        100%{
-                            right:-200px;
-                        }
-                    }
+                    //     100%{
+                    //         right:-200px;
+                    //     }
+                    // }
 
-                    @keyframes tap3_go {
-                        0%{
-                            right: 0px;
-                        }
+                    // @keyframes tap3_go {
+                    //     0%{
+                    //         right: 0px;
+                    //     }
 
-                        100%{
-                            right: 200px;
-                        }
-                    }
+                    //     100%{
+                    //         right: 200px;
+                    //     }
+                    // }
 
                 }
                 
@@ -396,16 +396,11 @@ body{
 
         #assortment_container{
             margin-top: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             background-color:#FAFAFA;
 
             .row{
-                width: 1320px;
-                display: flex;
-                justify-content: center;
+                max-width: 1320px;
+                margin: 0 auto;
             }
 
             .col-md-12:nth-child(1){
@@ -459,14 +454,41 @@ body{
             #choise_brends_row{
 
                 .col-md-12{
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, 200px);
+                    grid-gap:70px;
+                    
 
-                    .brend{
-                        width: 200px;
-                        height: 70px;
-                        background-color: #F5C331;
+                    .brend_body{
+    
+                        .brend_card{
+                            width: 200px;
+                            height: 80px;
+                            display: flex;
+                            background: #ffffff;
+                            box-shadow: 6px 8px 18px #E9E9E9;
+                            border-radius: 20px;
+                        }
+
+                        .brend_group{
+                            margin-top: 70px;
+                            width: 1080px;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            div{
+                                
+                                margin-right: 30px;
+                                min-width: 200px;
+                                height: 100px;
+                                align-self: flex-end;
+                                background-color:red;
+                                grid-row-start:2;
+                            }
+
+    
+                        }
+                        
                     }
 
                 }
