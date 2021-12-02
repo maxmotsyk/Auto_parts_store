@@ -357,6 +357,60 @@ body button {
           animation: tap3_go  10s linear infinite alternate;
 }
 
+@-webkit-keyframes tap1_go {
+  0% {
+    left: 50px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@keyframes tap1_go {
+  0% {
+    left: 50px;
+  }
+  100% {
+    left: -300px;
+  }
+}
+
+@-webkit-keyframes tap2_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -200px;
+  }
+}
+
+@keyframes tap2_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: -200px;
+  }
+}
+
+@-webkit-keyframes tap3_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
+@keyframes tap3_go {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+
 .wraper section #assortment_container {
   margin-top: 100px;
   background-color: #FAFAFA;
@@ -427,44 +481,72 @@ body button {
   opacity: 0.8;
 }
 
-.wraper section #assortment_container #choise_brends_row .col-md-12 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (200px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 200px);
-  grid-gap: 70px;
-}
-
-.wraper section #assortment_container #choise_brends_row .col-md-12 .brend_body .brend_card {
-  width: 200px;
-  height: 80px;
+.wraper section #assortment_container #slick_row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper section #assortment_container #slick_row .slider-for {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .brend {
+  width: 80px;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 40px 0 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .brend img {
+  width: 77px;
+  height: 77px;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .brend p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.wraper section #assortment_container #slick_row .slider-nav .models {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (280px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 280px);
+  grid-gap: 50px;
+}
+
+.wraper section #assortment_container #slick_row .slider-nav .models .car {
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
   -webkit-box-shadow: 6px 8px 18px #E9E9E9;
           box-shadow: 6px 8px 18px #E9E9E9;
   border-radius: 20px;
-}
-
-.wraper section #assortment_container #choise_brends_row .col-md-12 .brend_body .brend_group {
-  margin-top: 70px;
-  width: 1080px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.wraper section #assortment_container #choise_brends_row .col-md-12 .brend_body .brend_group div {
-  margin-right: 30px;
-  min-width: 200px;
-  height: 100px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  background-color: red;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
 }
 /*# sourceMappingURL=style.css.map */

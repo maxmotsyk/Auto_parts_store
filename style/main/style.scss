@@ -358,35 +358,35 @@ body{
                         animation: tap3_go  10s linear infinite alternate;
                     }
 
-                    // @keyframes tap1_go {
-                    //     0%{
-                    //         left: 50px;
-                    //     }
+                    @keyframes tap1_go {
+                        0%{
+                            left: 50px;
+                        }
 
-                    //     100%{
-                    //         left:-300px;
-                    //     }
-                    // }
+                        100%{
+                            left:-300px;
+                        }
+                    }
 
-                    // @keyframes tap2_go {
-                    //     0%{
-                    //         right: 0px;
-                    //     }
+                    @keyframes tap2_go {
+                        0%{
+                            right: 0px;
+                        }
 
-                    //     100%{
-                    //         right:-200px;
-                    //     }
-                    // }
+                        100%{
+                            right:-200px;
+                        }
+                    }
 
-                    // @keyframes tap3_go {
-                    //     0%{
-                    //         right: 0px;
-                    //     }
+                    @keyframes tap3_go {
+                        0%{
+                            right: 0px;
+                        }
 
-                    //     100%{
-                    //         right: 200px;
-                    //     }
-                    // }
+                        100%{
+                            right: 200px;
+                        }
+                    }
 
                 }
                 
@@ -451,48 +451,59 @@ body{
 
             }
 
-            #choise_brends_row{
+            #slick_row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                .col-md-12{
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, 200px);
-                    grid-gap:70px;
-                    
+                .slider-for{
+                    display: flex;
 
-                    .brend_body{
+                    .brend{
+                        width: 80px;
+                        height: 115px;
+                        display: flex;
+                        margin: 0 40px 0 40px;
+                        flex-direction: column;
+                        text-align: center;
     
-                        .brend_card{
-                            width: 200px;
-                            height: 80px;
-                            display: flex;
-                            background: #ffffff;
-                            box-shadow: 6px 8px 18px #E9E9E9;
-                            border-radius: 20px;
+                        img{
+                            width: 77px;
+                            height: 77px;
                         }
-
-                        .brend_group{
-                            margin-top: 70px;
-                            width: 1080px;
-                            display: flex;
-                            flex-wrap: wrap;
-
-                            div{
-                                
-                                margin-right: 30px;
-                                min-width: 200px;
-                                height: 100px;
-                                align-self: flex-end;
-                                background-color:red;
-                                grid-row-start:2;
-                            }
-
     
+                        p{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #333333;
                         }
-                        
+    
                     }
 
                 }
 
+                .slider-nav{
+    
+                    .models{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill,280px);
+                        grid-gap:50px;
+                        
+                        .car{
+                            height: 115px;
+                            display:flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            background: #FFFFFF;
+                            box-shadow: 6px 8px 18px #E9E9E9;
+                            border-radius: 20px;
+                        }
+    
+
+                    }
+                
+                }
+                
             }
 
         }
