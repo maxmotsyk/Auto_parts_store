@@ -413,7 +413,7 @@ body button {
 
 .wraper section #assortment_container {
   margin-top: 100px;
-  background-color: #FAFAFA;
+  padding: 60px 0 60px;
 }
 
 .wraper section #assortment_container .row {
@@ -429,6 +429,9 @@ body button {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+}
+
+.wraper section #assortment_container .col-md-12:nth-child(1) h1 {
   font-size: 36px;
   color: #333333;
 }
@@ -443,9 +446,9 @@ body button {
 }
 
 .wraper section #assortment_container #search_by_brand_col .body_serch {
-  margin: 70px 0;
-  width: 370px;
-  height: 55px;
+  margin: 70px 0 100px;
+  width: 360px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,8 +474,8 @@ body button {
 }
 
 .wraper section #assortment_container #search_by_brand_col .body_serch a img {
-  width: 28;
-  height: 28;
+  width: 22px;
+  height: 22px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -493,13 +496,15 @@ body button {
           align-items: center;
 }
 
-.wraper section #assortment_container #slick_row .slider-for {
+.wraper section #assortment_container #slick_row .slider-nav {
+  height: 120px;
+  width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wraper section #assortment_container #slick_row .slider-for .brend {
+.wraper section #assortment_container #slick_row .slider-nav .brend {
   width: 80px;
   height: 115px;
   display: -webkit-box;
@@ -510,29 +515,37 @@ body button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
-.wraper section #assortment_container #slick_row .slider-for .brend img {
+.wraper section #assortment_container #slick_row .slider-nav .brend img {
   width: 77px;
   height: 77px;
 }
 
-.wraper section #assortment_container #slick_row .slider-for .brend p {
+.wraper section #assortment_container #slick_row .slider-nav .brend p {
   font-size: 16px;
   font-weight: 600;
   color: #333333;
 }
 
-.wraper section #assortment_container #slick_row .slider-nav .models {
+.wraper section #assortment_container #slick_row .slider-for {
+  margin-top: 80px;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .models {
   display: -ms-grid;
   display: grid;
+  padding: 10px;
   -ms-grid-columns: (280px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 280px);
   grid-gap: 50px;
 }
 
-.wraper section #assortment_container #slick_row .slider-nav .models .car {
+.wraper section #assortment_container #slick_row .slider-for .models .car {
   height: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,9 +557,201 @@ body button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #FFFFFF;
   -webkit-box-shadow: 6px 8px 18px #E9E9E9;
           box-shadow: 6px 8px 18px #E9E9E9;
   border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .models .car .modal_img {
+  width: 110px;
+  margin-bottom: 12px;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .models .car .modal_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .models .car .modal_name p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.wraper section #assortment_container #slick_row .slider-for .models .car:hover, .wraper section #assortment_container #slick_row .slider-for .models .car:active {
+  -webkit-box-shadow: 5px 5px 14px #e0e0e0;
+          box-shadow: 5px 5px 14px #e0e0e0;
+}
+
+.wraper section #assortment_container #slider_oil_row {
+  margin-top: 100px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(1) {
+  margin-bottom: 70px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(1) h1 {
+  font-size: 30px;
+  color: #333333;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 640px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .prev, .wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .next {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .prev {
+  right: 50px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .next {
+  left: 50px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .oil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .oil .rhombus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 136.74px;
+  height: 136.74px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F9D356), to(rgba(249, 211, 86, 0.31)));
+  background: linear-gradient(180deg, #F9D356 0%, rgba(249, 211, 86, 0.31) 100%);
+  border-radius: 20px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(2) .slider_oil .oil .rhombus img {
+  width: 95px;
+  height: auto;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wraper section #article_search_row {
+  margin-top: 160px;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(1) {
+  text-align: center;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(1) h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) .body_serch {
+  margin: 70px 0 45px;
+  width: 510px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 3px solid #F5C536;
+  border-radius: 50px;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) .body_serch input {
+  width: 245px;
+  margin-left: 25px;
+  border: none;
+  color: #848383;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) .body_serch a {
+  margin-right: 25px;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) .body_serch a img {
+  width: 22px;
+  height: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) .body_serch a img:hover, .wraper section #article_search_row .col-md-12:nth-child(2) .body_serch a img:after {
+  opacity: 0.8;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) p {
+  max-width: 750px;
+  color: #848383;
+}
+
+.wraper section #article_search_row .col-md-12:nth-child(2) p img {
+  width: 70px;
 }
 /*# sourceMappingURL=style.css.map */
