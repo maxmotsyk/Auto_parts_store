@@ -449,7 +449,7 @@ body button {
 .wraper section #assortment_container #search_by_brand_col .body_serch {
   margin: 70px 0 100px;
   width: 360px;
-  height: 45px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,7 +710,7 @@ body button {
 .wraper section #article_search_row .col-md-12:nth-child(2) .body_serch {
   margin: 70px 0 45px;
   width: 510px;
-  height: 50px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
