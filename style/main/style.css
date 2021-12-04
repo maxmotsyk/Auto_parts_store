@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Quicksand:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 body {
@@ -753,5 +754,219 @@ body button {
 
 .wraper section #article_search_row .col-md-12:nth-child(2) p img {
   width: 70px;
+}
+
+.wraper section #auto_pro_row {
+  margin: 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #auto_pro_row .col-md-12 {
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #auto_pro_row .col-md-12 h1 {
+  font-size: 36px;
+  color: #333333;
+}
+
+.wraper section #auto_pro_row .col-md-10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog, .wraper section #auto_pro_row .col-md-10 .card_area_brend {
+  width: 300px;
+  height: 320px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front, .wraper section #auto_pro_row .col-md-10 .card_area_catalog .back, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front, .wraper section #auto_pro_row .col-md-10 .card_area_brend .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: #FBFBFB;
+  -webkit-box-shadow: 9px 17px 27px 2px rgba(0, 0, 0, 0.09);
+          box-shadow: 9px 17px 27px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 15px;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .img_area, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .img_area {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 160px;
+  height: auto;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .img_area img, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .img_area img {
+  width: 100%;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .img_area .circle, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .img_area .circle {
+  position: absolute;
+  bottom: -30px;
+  left: 120px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  background-color: #FBFBFB;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .img_area .circle p, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .img_area .circle p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .text_area, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .text_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .text_area h3, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .text_area h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .front .text_area a, .wraper section #auto_pro_row .col-md-10 .card_area_brend .front .text_area a {
+  font-size: 14px;
+  color: #F5C331;
+  margin-bottom: 20px;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .back, .wraper section #auto_pro_row .col-md-10 .card_area_brend .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .back ul, .wraper section #auto_pro_row .col-md-10 .card_area_brend .back ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .back ul li::before, .wraper section #auto_pro_row .col-md-10 .card_area_brend .back ul li::before {
+  font-size: 20px;
+  content: "●";
+  color: #F5C331;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .back ul li:not(:last-child), .wraper section #auto_pro_row .col-md-10 .card_area_brend .back ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .back ul li a, .wraper section #auto_pro_row .col-md-10 .card_area_brend .back ul li a {
+  font-size: 14px;
+  color: #333333;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog .back .more, .wraper section #auto_pro_row .col-md-10 .card_area_brend .back .more {
+  margin-top: 50px;
+  margin-left: 130px;
+  color: #848383;
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog:hover .front {
+  -webkit-transform: rotateY(190deg);
+          transform: rotateY(190deg);
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog:hover .back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_brend:hover .front {
+  -webkit-transform: rotateY(190deg);
+          transform: rotateY(190deg);
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_brend:hover .back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.wraper section #auto_pro_row .col-md-10 .card_area_catalog {
+  margin-right: 250px;
 }
 /*# sourceMappingURL=style.css.map */
