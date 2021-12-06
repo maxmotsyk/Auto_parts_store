@@ -491,6 +491,7 @@ body button {
 
 .wraper section #assortment_container .col-md-12:nth-child(1) h1 {
   font-size: 36px;
+  font-weight: bold;
   color: #333333;
 }
 
@@ -678,6 +679,8 @@ body button {
 }
 
 .wraper section #assortment_container #slider_oil_row .col-md-12:nth-child(1) h1 {
+  font-size: 36px;
+  font-weight: bold;
   color: #333333;
 }
 
@@ -767,6 +770,7 @@ body button {
 
 .wraper section #article_search_row .col-md-12:nth-child(1) h1 {
   font-size: 36px;
+  font-weight: bold;
   color: #333333;
 }
 
@@ -854,6 +858,7 @@ body button {
 }
 
 .wraper section #auto_pro_row .col-md-12 h1 {
+  font-weight: bold;
   font-size: 36px;
   color: #333333;
 }

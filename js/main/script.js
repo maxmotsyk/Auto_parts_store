@@ -46,8 +46,8 @@ $(document).ready(function () {
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        prevArrow: "<img src='../img/main/section/prevArrow.png'  class='prev' alt='1'>",
-        nextArrow: "<img src='../img/main/section/nextArrow.png'  class='next' alt='2'>",
+        prevArrow: "<img src='../img/main/section/prevArrow.svg'  class='prev' alt='1'>",
+        nextArrow: "<img src='../img/main/section/nextArrow.svg'  class='next' alt='2'>",
       
       });
 
@@ -56,8 +56,8 @@ $(document).ready(function () {
         centerPadding: '0px',
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: "<img src='../img/main/section/prevArrow.png'  class='prev' alt='1'>",
-        nextArrow: "<img src='../img/main/section/nextArrow.png'  class='next' alt='2'>",
+        prevArrow: "<img src='../img/main/section/prevArrow.svg'  class='prev' alt='1'>",
+        nextArrow: "<img src='../img/main/section/nextArrow.svg'  class='next' alt='2'>",
         responsive: [
           {
             breakpoint: 768,
