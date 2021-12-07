@@ -1,4 +1,17 @@
 $(document).ready(function () {
+
+    $(".tail").click(function(){
+      
+        if($(this).hasClass('active')){
+          $(this).toggleClass('active');
+          $('.information').slideUp(300);
+        }
+        else{
+          $(this).toggleClass('active');
+          $('.information').slideDown(300);
+        }
+
+    });
   
     $(".undermenu").click(function(){
       $(this.childNodes[1].childNodes[1]).toggleClass('active');
@@ -36,8 +49,9 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: true,
         fade: true,
+        arrows : false,
         asNavFor: '.slider-nav'
-      });
+    });
 
       $('.slider-nav').slick({
         slidesToShow: 5,
@@ -48,7 +62,27 @@ $(document).ready(function () {
         focusOnSelect: true,
         prevArrow: "<img src='../img/main/section/prevArrow.svg'  class='prev' alt='1'>",
         nextArrow: "<img src='../img/main/section/nextArrow.svg'  class='next' alt='2'>",
-      
+        responsive: [
+          {
+            breakpoint:1111,
+            settings: {
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+
+          {
+            breakpoint: 982,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+
+        ]
       });
 
       $('.slider_oil').slick({
@@ -60,7 +94,7 @@ $(document).ready(function () {
         nextArrow: "<img src='../img/main/section/nextArrow.svg'  class='next' alt='2'>",
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 982,
             settings: {
               arrows: false,
               centerMode: true,
@@ -69,12 +103,12 @@ $(document).ready(function () {
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 767,
             settings: {
               arrows: false,
               centerMode: true,
               centerPadding: '40px',
-              slidesToShow: 1
+              slidesToShow: 2
             }
           }
         ]
