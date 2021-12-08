@@ -43,6 +43,10 @@ body button {
   white-space: nowrap;
 }
 
+body img {
+  pointer-events: none;
+}
+
 body.lock {
   overflow: hidden !important;
 }
@@ -187,7 +191,7 @@ body.lock {
   width: 34px;
   height: 34px;
   position: relative;
-  z-index: 2;
+  z-index: 1005;
   overflow: hidden;
   cursor: pointer !important;
 }
@@ -234,7 +238,7 @@ body.lock {
 }
 
 .wraper header .nav .col-md-3:nth-child(2) a {
-  z-index: 999;
+  z-index: 1005;
 }
 
 .wraper header .nav .col-md-3:nth-child(2) a img:nth-child(1) {
@@ -362,7 +366,7 @@ body.lock {
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a {
-  z-index: 999;
+  z-index: 1005;
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a button {
@@ -423,6 +427,7 @@ body.lock {
 }
 
 .wraper header .nav .col-sm-12.col-12 {
+  z-index: 1000;
   display: none;
   top: 0;
   left: 0;
@@ -1570,6 +1575,9 @@ body.lock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .wraper #contact_row .col-md-2 h3 img {
     margin: 10px 0 0 10px;

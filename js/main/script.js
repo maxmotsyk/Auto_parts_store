@@ -12,7 +12,7 @@ $(document).ready(function () {
       }
     });
 
-    console.log($('.burger_menu_item'));
+    
 
     $($('.burger_menu_item')).click(function(){
       $('.burger_button').toggleClass('active');
@@ -52,7 +52,7 @@ $(document).ready(function () {
         $(this_element).toggleClass('active').slideDown(300);
       }
 
-      console.log(under_menus.length);
+      
       for( let i = 0; i < under_menus.length; i++){
 
         if(under_menus[i] !== this){

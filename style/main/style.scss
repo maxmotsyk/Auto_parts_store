@@ -42,6 +42,10 @@ body{
        white-space: nowrap;
     }
 
+    img {
+     pointer-events: none; 
+    }
+
 }
 
 body.lock{
@@ -181,7 +185,7 @@ body.lock{
                     width: 34px;
                     height: 34px;
                     position: relative;
-                    z-index:2;
+                    z-index:1005;
                     overflow: hidden;
                     cursor: pointer !important;
                   
@@ -232,7 +236,7 @@ body.lock{
             .col-md-3:nth-child(2){
 
                 a{
-                    z-index: 999;
+                    z-index: 1005;
                     img:nth-child(1){
                         width: 170px;
                         height: 60px;
@@ -350,7 +354,7 @@ body.lock{
                 align-items: center;
 
                 a{  
-                    z-index: 999;
+                    z-index: 1005;
                     button{
                         width: 36px;
                         height: 36px;
@@ -414,6 +418,7 @@ body.lock{
             }
 
             .col-sm-12.col-12{
+                z-index: 1000;
                 display: none;
                 top: 0;
                 left: 0;
@@ -1491,6 +1496,7 @@ body.lock{
 
                h3{
                 display: flex;
+                justify-content: center;
             
                    img{
                     margin:10px 0 0 10px;
