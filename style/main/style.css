@@ -838,6 +838,7 @@ body.lock {
 }
 
 .wraper section #assortment_container #slick_row .slider-nav .brend {
+  webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   width: 80px;
   height: 115px;
   display: -webkit-box;
@@ -1591,6 +1592,7 @@ body.lock {
   }
   .wraper #contact_row .col-md-2 ul {
     display: none;
+    text-align: center !important;
   }
   .wraper #contact_row .col-md-2:nth-child(1) {
     display: -webkit-box !important;

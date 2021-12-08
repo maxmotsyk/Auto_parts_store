@@ -768,6 +768,7 @@ body.lock{
                     }
 
                     .brend{
+                        webkit-tap-highlight-color: rgba(0, 0, 0, 0);
                         width: 80px;
                         height: 115px;
                         display: flex;
@@ -1512,6 +1513,7 @@ body.lock{
 
                ul{
                 display: none;
+                text-align: center !important;
                }    
 
             }
