@@ -1,5 +1,31 @@
 $(document).ready(function () {
 
+    $('.burger_button').click(function(){
+      $(this).toggleClass('active');
+      $('body').toggleClass('lock');
+
+      if( $('#burger_menu').hasClass('active')){
+        $('#burger_menu').toggleClass('active').fadeOut(300);
+      }
+      else{
+        $('#burger_menu').toggleClass('active').fadeIn(300);
+      }
+    });
+
+    console.log($('.burger_menu_item'));
+
+    $($('.burger_menu_item')).click(function(){
+      $('.burger_button').toggleClass('active');
+      $('body').toggleClass('lock');
+      
+      if( $('#burger_menu').hasClass('active')){
+        $('#burger_menu').toggleClass('active').fadeOut(0);
+      }
+      else{
+        $('#burger_menu').toggleClass('active').fadeIn(0);
+      }
+    });
+
     $(".tail").click(function(){
       
         if($(this).hasClass('active')){
@@ -47,7 +73,7 @@ $(document).ready(function () {
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         arrows : false,
         asNavFor: '.slider-nav'
@@ -60,8 +86,8 @@ $(document).ready(function () {
         dots: false,
         centerMode: true,
         focusOnSelect: true,
-        prevArrow: "<img src='../img/main/section/prevArrow.svg'  class='prev' alt='1'>",
-        nextArrow: "<img src='../img/main/section/nextArrow.svg'  class='next' alt='2'>",
+        prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
+        nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
         responsive: [
           {
             breakpoint:1111,
@@ -82,6 +108,16 @@ $(document).ready(function () {
             }
           },
 
+          {
+            breakpoint: 575,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '0px',
+              slidesToShow: 3,
+            }
+          }
+
         ]
       });
 
@@ -90,8 +126,8 @@ $(document).ready(function () {
         centerPadding: '0px',
         slidesToShow: 3,
         slidesToScroll: 1,
-        prevArrow: "<img src='../img/main/section/prevArrow.svg'  class='prev' alt='1'>",
-        nextArrow: "<img src='../img/main/section/nextArrow.svg'  class='next' alt='2'>",
+        prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
+        nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
         responsive: [
           {
             breakpoint: 982,
@@ -110,8 +146,34 @@ $(document).ready(function () {
               centerPadding: '40px',
               slidesToShow: 2
             }
+          },
+
+          {
+            breakpoint: 575,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '0px',
+              slidesToShow: 2,
+            }
           }
         ]
+      });
+
+      $('.footer_menu_category').click(function(){
+
+        if ($(window).width() <= 575) {
+          let ul_menu = $(this).next();
+
+          if($(ul_menu).hasClass('active')){
+            $(ul_menu).toggleClass('active').slideUp(300);
+            $(this.childNodes[1]).toggleClass('active')
+          }
+          else{
+            $(ul_menu).toggleClass('active').slideDown(300);
+            $(this.childNodes[1]).toggleClass('active')
+          }
+        }
       });
 
 });
