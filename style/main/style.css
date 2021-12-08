@@ -839,6 +839,7 @@ body.lock {
 }
 
 .wraper section #assortment_container #slick_row .slider-nav .brend {
+  -webkit-tap-highlight-color: transparent;
   width: 80px;
   height: 115px;
   display: -webkit-box;
