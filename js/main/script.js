@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('.burger_button').click(function(){
       $(this).toggleClass('active');
       $('body').toggleClass('lock');
+      $('#information_col').toggleClass('hiden');
 
       if( $('#burger_menu').hasClass('active')){
         $('#burger_menu').toggleClass('active').fadeOut(300);
@@ -17,6 +18,7 @@ $(document).ready(function () {
     $($('.burger_menu_item')).click(function(){
       $('.burger_button').toggleClass('active');
       $('body').toggleClass('lock');
+      $('#information_col').toggleClass('hiden');
       
       if( $('#burger_menu').hasClass('active')){
         $('#burger_menu').toggleClass('active').fadeOut(0);
