@@ -43,10 +43,6 @@ body button {
   white-space: nowrap;
 }
 
-body img {
-  pointer-events: none;
-}
-
 body.lock {
   overflow: hidden !important;
 }
@@ -65,7 +61,11 @@ body.lock {
   border-bottom-width: 1.5px;
 }
 
-.wraper header #additional_information .col-md-10 ul {
+.wraper header #additional_information .col-md-12:nth-child(1) {
+  margin: 5px 0;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,11 +75,11 @@ body.lock {
   margin: 8px 0;
 }
 
-.wraper header #additional_information .col-md-10 ul li:not(:last-child) {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li:not(:last-child) {
   margin-right: 70px;
 }
 
-.wraper header #additional_information .col-md-10 ul li {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,31 +88,71 @@ body.lock {
           align-items: center;
 }
 
-.wraper header #additional_information .col-md-10 ul li a, .wraper header #additional_information .col-md-10 ul li p {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li a, .wraper header #additional_information .col-md-12:nth-child(1) ul li p {
   font-size: 12px;
   color: #848383;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper header #additional_information .col-md-10 ul li a img, .wraper header #additional_information .col-md-10 ul li p img {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li a img, .wraper header #additional_information .col-md-12:nth-child(1) ul li p img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper header #additional_information .col-md-10 ul li a:hover, .wraper header #additional_information .col-md-10 ul li a:active {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li a:hover, .wraper header #additional_information .col-md-12:nth-child(1) ul li a:active {
   color: #848383af;
 }
 
-.wraper header #additional_information .col-md-10 ul li a:hover img, .wraper header #additional_information .col-md-10 ul li a:active img {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li a:hover img, .wraper header #additional_information .col-md-12:nth-child(1) ul li a:active img {
   opacity: 0.8;
 }
 
-.wraper header #additional_information .col-md-12 .information {
+.wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch {
+  width: 200px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 2px solid #F5C536;
+  border-radius: 40px;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch input {
+  font-size: 14px;
+  width: 130px;
+  margin-left: 10px;
+  border: none;
+  color: #848383;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch a {
+  margin-right: 10px;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch a img {
+  width: 16px;
+  height: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch a img:hover, .wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch a img:after {
+  opacity: 0.8;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(2) .information {
   display: none;
 }
 
-.wraper header #additional_information .col-md-12 .information ul {
+.wraper header #additional_information .col-md-12:nth-child(2) .information ul {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,31 +166,31 @@ body.lock {
           align-items: center;
 }
 
-.wraper header #additional_information .col-md-12 .information ul li {
+.wraper header #additional_information .col-md-12:nth-child(2) .information ul li {
   margin-bottom: 15px;
 }
 
-.wraper header #additional_information .col-md-12 .information ul li a, .wraper header #additional_information .col-md-12 .information ul li p {
+.wraper header #additional_information .col-md-12:nth-child(2) .information ul li a, .wraper header #additional_information .col-md-12:nth-child(2) .information ul li p {
   font-size: 16px;
   color: #848383;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper header #additional_information .col-md-12 .information ul li a img, .wraper header #additional_information .col-md-12 .information ul li p img {
+.wraper header #additional_information .col-md-12:nth-child(2) .information ul li a img, .wraper header #additional_information .col-md-12:nth-child(2) .information ul li p img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper header #additional_information .col-md-12 .information ul li a:hover, .wraper header #additional_information .col-md-12 .information ul li a:active {
+.wraper header #additional_information .col-md-12:nth-child(2) .information ul li a:hover, .wraper header #additional_information .col-md-12:nth-child(2) .information ul li a:active {
   color: #848383af;
 }
 
-.wraper header #additional_information .col-md-12 .information ul li a:hover img, .wraper header #additional_information .col-md-12 .information ul li a:active img {
+.wraper header #additional_information .col-md-12:nth-child(2) .information ul li a:hover img, .wraper header #additional_information .col-md-12:nth-child(2) .information ul li a:active img {
   opacity: 0.8;
 }
 
-.wraper header #additional_information .col-md-12 .tail {
+.wraper header #additional_information .col-md-12:nth-child(2) .tail {
   margin: 20px 0 10px;
   display: none;
   -webkit-box-pack: center;
@@ -158,18 +198,21 @@ body.lock {
           justify-content: center;
 }
 
-.wraper header #additional_information .col-md-12 .tail img {
+.wraper header #additional_information .col-md-12:nth-child(2) .tail img {
   width: 20px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper header #additional_information .col-md-12 .tail.active {
+.wraper header #additional_information .col-md-12:nth-child(2) .tail.active {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
 .wraper header .nav {
+  top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -424,6 +467,57 @@ body.lock {
   color: #A0A0A0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.wraper header .nav #serch_mobileV_articul {
+  margin-top: 50px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper header .nav #serch_mobileV_articul .body_serch {
+  width: 350px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 2px solid #F5C536;
+  border-radius: 40px;
+}
+
+.wraper header .nav #serch_mobileV_articul .body_serch input {
+  font-size: 16px;
+  width: 150px;
+  margin-left: 10px;
+  border: none;
+  color: #848383;
+}
+
+.wraper header .nav #serch_mobileV_articul .body_serch a {
+  margin-right: 10px;
+}
+
+.wraper header .nav #serch_mobileV_articul .body_serch a img {
+  width: 22px;
+  height: 22px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header .nav #serch_mobileV_articul .body_serch a img:hover, .wraper header .nav #serch_mobileV_articul .body_serch a img:after {
+  opacity: 0.8;
 }
 
 .wraper header .nav .col-sm-12.col-12 {
@@ -1495,10 +1589,10 @@ body.lock {
 }
 
 @media screen and (max-width: 982px) {
-  .wraper #additional_information .col-md-10 {
+  .wraper #additional_information .col-md-12:nth-child(1) {
     display: none !important;
   }
-  .wraper #additional_information .col-md-12 .tail {
+  .wraper #additional_information .col-md-12:nth-child(2) .tail {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1524,6 +1618,11 @@ body.lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .wraper .nav #serch_mobileV_articul {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 
