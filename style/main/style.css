@@ -44,7 +44,7 @@ body button {
 }
 
 body.lock {
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 .wraper header #additional_information {
@@ -210,15 +210,15 @@ body.lock {
 }
 
 .wraper header .nav {
-  top: 0px;
+  top: 0;
   position: -webkit-sticky;
   position: sticky;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: justify !important;
-      -ms-flex-pack: justify !important;
-          justify-content: space-between !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0px auto;
   max-width: 1300px;
 }
@@ -236,7 +236,7 @@ body.lock {
   position: relative;
   z-index: 1005;
   overflow: hidden;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .wraper header .nav #burger_menu_col .burger_button span {

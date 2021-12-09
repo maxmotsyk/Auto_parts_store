@@ -45,13 +45,13 @@ body{
 }
 
 body.lock{
-    overflow: hidden !important;
+   overflow: hidden;
 }
 
 .wraper{
-    
+   
     header{
-
+       
         #additional_information{
             display: flex;
             justify-content: center;
@@ -205,10 +205,10 @@ body.lock{
         }
 
         .nav{   
-            top: 0px;
+            top: 0;
             position: sticky;
-            display: flex !important;
-            justify-content: space-between !important;
+            display: flex;
+            justify-content: space-between;
             margin: 0px auto;
             max-width: 1300px;
 
@@ -222,7 +222,7 @@ body.lock{
                     position: relative;
                     z-index:1005;
                     overflow: hidden;
-                    cursor: pointer !important;
+                    cursor: pointer;
                   
                     span{
                         width: 100%;
