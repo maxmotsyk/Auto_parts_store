@@ -629,69 +629,29 @@ body.lock {
           flex: 1 1 auto;
 }
 
-.wraper section #main_row {
+.wraper section #news_row {
   margin-top: 100px;
 }
 
-.wraper section #main_row .col:nth-child(1) {
+.wraper section #news_row .col-md-12 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.wraper section #main_row .col:nth-child(1) .text_content {
-  max-width: 590px;
-}
-
-.wraper section #main_row .col:nth-child(1) .text_content h1 {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 177.19%;
-  color: #333333;
-}
-
-.wraper section #main_row .col:nth-child(1) .text_content p {
-  font-size: 16px;
-  color: #848383;
-}
-
-.wraper section #main_row .col:nth-child(2) img {
-  width: 100%;
-  height: auto;
-}
-
-.wraper section #our_qualities_row {
-  margin-top: 160px;
-}
-
-.wraper section #our_qualities_row .col-md-12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.wraper section #our_qualities_row .col-md-12:nth-child(1) {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.wraper section #news_row .col-md-12:nth-child(1) h1 {
   margin-bottom: 70px;
 }
 
-.wraper section #our_qualities_row .col-md-12:nth-child(1) h1 {
+.wraper section #news_row .col-md-12:nth-child(1) h1 h1 {
   font-size: 36px;
   color: #333333;
 }
 
-.wraper section #our_qualities_row .col-md-12:nth-child(2) {
+.wraper section #news_row .col-md-12:nth-child(2) {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -699,25 +659,11 @@ body.lock {
           justify-content: center;
   -ms-grid-columns: (260px)[auto-fit];
       grid-template-columns: repeat(auto-fit, 260px);
-  grid-gap: 60px;
+  grid-gap: 50px;
 }
 
-.wraper section #our_qualities_row .col-md-12:nth-child(2) .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wraper section #our_qualities_row .col-md-12:nth-child(2) .item .round {
-  margin-bottom: 35px;
+.wraper section #news_row .col-md-12:nth-child(2) .news {
+  height: 289px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,105 +673,53 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 135px;
-  height: 135px;
-  border-radius: 100px;
-  -webkit-box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.116);
-          box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.116);
-  background: linear-gradient(94.28deg, #F6CF5A 9.82%, #F5C331 78.18%);
-}
-
-.wraper section #our_qualities_row .col-md-12:nth-child(2) .item h4 {
-  font-weight: bold;
-  font-size: 20px;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-.wraper section #our_qualities_row .col-md-12:nth-child(2) .item p {
-  color: #848383;
-}
-
-.wraper section #shipping_payment_row {
-  margin-top: 160px;
-}
-
-.wraper section #shipping_payment_row .col-md-12:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 70px;
-}
-
-.wraper section #shipping_payment_row .col-md-12:nth-child(1) h1 {
-  font-size: 36px;
-  color: #333333;
-}
-
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) .card {
-  width: 470px;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background: #ffffff;
-  -webkit-box-shadow: 6px 6px 23px 1px rgba(0, 0, 0, 0.25);
-          box-shadow: 6px 6px 23px 1px rgba(0, 0, 0, 0.25);
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+  border-radius: 15px;
+}
+
+.wraper section #news_row .col-md-12:nth-child(2) .news img {
+  width: 235px;
+  margin: 5px 5px 0 5px;
   border-radius: 10px;
 }
 
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) .card .img {
-  width: 100%;
-  height: 110px;
+.wraper section #news_row .col-md-12:nth-child(2) .news .text {
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 0px solid #848383;
-  border-bottom-width: 6px;
 }
 
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) .card .txt {
-  padding: 35px;
+.wraper section #news_row .col-md-12:nth-child(2) .news .text h4 {
+  margin-bottom: 15px;
+  color: #F5C331;
+  font-weight: bold;
+  font-size: 17px;
 }
 
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) .card .txt p {
+.wraper section #news_row .col-md-12:nth-child(2) .news .text p {
+  color: #333333;
   font-size: 16px;
-  line-height: 177.19%;
+}
+
+.wraper section #news_row .col-md-12:nth-child(2) .news time {
+  font-size: 14px;
+  margin-top: 15px;
   color: #848383;
-}
-
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) .card:nth-child(2) .img {
-  border: 0px solid #F5C331;
-  border-bottom-width: 6px;
-}
-
-.wraper section #shipping_payment_row .col-md-12:nth-child(2) .card:nth-child(2) .img img {
-  width: 94px;
 }
 
 .wraper footer #contact_row {
@@ -917,24 +811,6 @@ body.lock {
 
 .wraper footer #contact_row .col-md-4 iframe {
   border-radius: 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  .wraper #shipping_payment_row .col-md-12:nth-child(2) {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-  }
-  .wraper #shipping_payment_row .col-md-12:nth-child(2) .card:nth-child(1) {
-    margin-bottom: 70px;
-  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1074,24 +950,6 @@ body.lock {
   }
   .wraper #contact_row .col-md-2:nth-child(2) {
     display: block !important;
-  }
-}
-
-@media screen and (max-width: 472px) {
-  .wraper #shipping_payment_row .col-md-12:nth-child(2) {
-    padding: 0 !important;
-  }
-  .wraper #shipping_payment_row .col-md-12:nth-child(2) .card {
-    width: auto !important;
-    margin-bottom: 0px !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-    border-radius: 0 !important;
-  }
-  .wraper #shipping_payment_row .col-md-12:nth-child(2) .card .txt {
-    margin-top: 35px;
-    width: auto !important;
-    padding: 0 12px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
