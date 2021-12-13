@@ -94,99 +94,6 @@ $(document).ready(function () {
 
     });
 
-   
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        arrows : false,
-        asNavFor: '.slider-nav'
-    });
-
-      $('.slider-nav').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        focusOnSelect: true,
-        asNavFor: '.slider-for',
-        dots: false,
-        focusOnSelect: true,
-        prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
-        nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
-        responsive: [
-          {
-            breakpoint:1111,
-            settings: {
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-
-          {
-            breakpoint: 982,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-
-          {
-            breakpoint: 575,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '0px',
-              slidesToShow: 3,
-            }
-          }
-
-        ]
-      });
-
-      $('.slider_oil').slick({
-        infinite: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 3,
-        slidesToScroll:3,
-        prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
-        nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
-        responsive: [
-          {
-            breakpoint: 982,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 2
-            }
-          },
-
-          {
-            breakpoint: 575,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '0px',
-              slidesToShow: 2,
-            }
-          }
-        ]
-      });
-
       $('.footer_menu_category').click(function(){
 
         if ($(window).width() <= 575) {
@@ -204,4 +111,3 @@ $(document).ready(function () {
       });
 
 });
-

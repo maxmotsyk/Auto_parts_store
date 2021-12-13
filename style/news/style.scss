@@ -147,7 +147,7 @@ body.lock{
                         }
 
                     }
-                    
+
                 }
 
             }
@@ -620,7 +620,7 @@ body.lock{
                 display: grid;
                 justify-content: center;
                 grid-template-columns: repeat(auto-fit,260px);
-                grid-gap:50px;
+                grid-gap:85px;
 
                 .news{
                     height: 289px;
@@ -631,10 +631,11 @@ body.lock{
                     background: #FFFFFF;
                     box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
                     border-radius: 15px;
+                    transition: 0.5s;
 
                     img{
                         width: 235px;
-                        margin:5px 5px 0 5px;
+                        margin:10px 5px 0 5px;
                         border-radius:10px;
                     }
 
@@ -665,6 +666,10 @@ body.lock{
                         color: #848383;
                     }
 
+                }
+
+                .news:hover,.news:active{
+                    box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.151);
                 }
 
             }
