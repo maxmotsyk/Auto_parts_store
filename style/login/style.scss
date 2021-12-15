@@ -699,6 +699,13 @@ body.lock{
 
     section{
 
+        input:not([type=checkbox]):not([type=radio]){
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        
+        }
+
         .col-md-12{
             margin-top: 100px;
             display: flex;

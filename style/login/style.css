@@ -742,6 +742,12 @@ body.lock {
   color: #333333;
 }
 
+.wraper section input:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .wraper section .col-md-12 {
   margin-top: 100px;
   display: -webkit-box;
