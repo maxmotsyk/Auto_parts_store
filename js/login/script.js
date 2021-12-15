@@ -96,6 +96,36 @@ $(document).ready(function () {
 
     });
 
+    $('.see_password').click(function(){
+
+      if($(this).hasClass('active')){
+        
+        $(this).toggleClass('active');
+        $(this).attr('src','../img/login/section/not_see.svg')
+        $(this).prev().attr('type','password');
+      }
+      else{
+        $(this).toggleClass('active');
+        $(this).attr('src','../img/login/section/see.svg')
+        $(this).prev().attr('type','text');
+      }
+
+    });
+
+    $('#password_input').focus(function(){
+      $(this).parent().css({
+        'box-shadow':"-2px 4px 14px 2px rgba(255, 222, 121, 0.705)"
+      });
+    });
+
+    $('#password_input').focusout(function(){
+      console.log($(this).parent());
+      $(this).parent().css({
+        'box-shadow':"none"
+      });
+    });
+    
+
       $('.footer_menu_category').click(function(){
 
         if ($(window).width() <= 575) {

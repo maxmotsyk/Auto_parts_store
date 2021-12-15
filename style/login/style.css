@@ -780,6 +780,7 @@ body.lock {
 }
 
 .wraper section .col-md-12 .login_body #login {
+  padding-left: 5px;
   width: 315px;
   height: 50px;
   border: 2px solid #F5C331;
@@ -792,15 +793,14 @@ body.lock {
           box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
 }
 
-.wraper section .col-md-12 .login_body .password {
-  position: relative;
+.wraper section .col-md-12 .login_body .password_body {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -810,30 +810,26 @@ body.lock {
   border-radius: 10px;
 }
 
-.wraper section .col-md-12 .login_body .password input {
-  z-index: 5;
-  position: absolute;
+.wraper section .col-md-12 .login_body .password_body input {
+  margin-left: 5px;
+  font-size: 16px;
   color: #333333;
-  width: 100%;
-  height: 100%;
+  width: 260px;
+  height: 46px;
+  padding: 0;
   border: none;
   border-radius: 10px;
 }
 
-.wraper section .col-md-12 .login_body .password input:focus {
-  -webkit-box-shadow: -2px 4px 14px 2px rgba(255, 222, 121, 0.705);
-          box-shadow: -2px 4px 14px 2px rgba(255, 222, 121, 0.705);
-}
-
-.wraper section .col-md-12 .login_body .password a {
+.wraper section .col-md-12 .login_body .password_body img {
   margin-right: 5px;
-  z-index: 10;
   background-color: #ffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.wraper section .col-md-12 .login_body .password:focus {
-  -webkit-box-shadow: -2px 4px 14px 4px rgba(255, 221, 121, 0.44);
-          box-shadow: -2px 4px 14px 4px rgba(255, 221, 121, 0.44);
+.wraper section .col-md-12 .login_body .password_body img:hover {
+  opacity: 0.8;
 }
 
 .wraper section .col-md-12 .login_body .login_button {
@@ -856,7 +852,7 @@ body.lock {
   background: #f5c431e3;
 }
 
-.wraper section .col-md-12 .login_body .additional_Information {
+.wraper section .col-md-12 .login_body .registration_change_password {
   width: 315px;
   margin-top: 20px;
   display: -webkit-box;
@@ -867,14 +863,14 @@ body.lock {
           justify-content: flex-start;
 }
 
-.wraper section .col-md-12 .login_body .additional_Information a {
+.wraper section .col-md-12 .login_body .registration_change_password a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #848383;
   font-size: 14px;
 }
 
-.wraper section .col-md-12 .login_body .additional_Information a:hover, .wraper section .col-md-12 .login_body .additional_Information a:active {
+.wraper section .col-md-12 .login_body .registration_change_password a:hover, .wraper section .col-md-12 .login_body .registration_change_password a:active {
   color: #4b4b4b;
 }
 
@@ -1062,6 +1058,14 @@ body.lock {
   }
   .wraper #contact_row .col-md-2:nth-child(2) {
     display: block !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .wraper .login_body {
+    width: 100% !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
