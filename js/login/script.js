@@ -96,6 +96,26 @@ $(document).ready(function () {
 
     });
 
+    $('.open_registration').click(function(){
+
+      $('#login_col').fadeOut( "slow", function() {
+
+        $('#registration_col').fadeIn("slow",function(){});
+
+      });
+
+    });
+
+    $('.open_login').click(function(){
+
+      $('#registration_col').fadeOut( "slow", function() {
+
+        $('#login_col').fadeIn("slow",function(){});
+
+      });
+
+    });
+
     $('.see_password').click(function(){
 
       if($(this).hasClass('active')){
@@ -112,13 +132,13 @@ $(document).ready(function () {
 
     });
 
-    $('#password_input').focus(function(){
+    $('.password_input').focus(function(){
       $(this).parent().css({
-        'box-shadow':"-2px 4px 14px 2px rgba(255, 222, 121, 0.705)"
+        'box-shadow':"-2px 4px 12px 2px rgba(255, 221, 121, 0.44)"
       });
     });
 
-    $('#password_input').focusout(function(){
+    $('.password_input').focusout(function(){
       console.log($(this).parent());
       $(this).parent().css({
         'box-shadow':"none"

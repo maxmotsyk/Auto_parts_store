@@ -9,7 +9,7 @@ body {
   -webkit-appearance: none;
 }
 
-body a, body p, body button {
+body a, body p, body button, body label {
   font-family: 'Montserrat',sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -755,9 +755,10 @@ body.lock {
           align-items: center;
 }
 
-.wraper section .col-md-12 .login_body {
-  width: 377px;
-  height: 389px;
+.wraper section .login_body, .wraper section .registration_body {
+  margin: 0 auto;
+  width: 380px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,27 +774,31 @@ body.lock {
   border-radius: 10px;
 }
 
-.wraper section .col-md-12 .login_body h3 {
-  margin: 30px 0 40px;
+.wraper section .login_body h3, .wraper section .registration_body h3 {
+  margin: 30px 0 30px;
   color: #333333;
   font-size: 25px;
 }
 
-.wraper section .col-md-12 .login_body #login {
+.wraper section .login_body input, .wraper section .registration_body input {
+  font-size: 14px;
+}
+
+.wraper section .login_body .login {
   padding-left: 5px;
   width: 315px;
   height: 50px;
   border: 2px solid #F5C331;
   border-radius: 10px;
-  color: #333333;
+  color: #848383;
 }
 
-.wraper section .col-md-12 .login_body #login:focus {
+.wraper section .login_body .login:focus {
   -webkit-box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
           box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
 }
 
-.wraper section .col-md-12 .login_body .password_body {
+.wraper section .login_body .password_body {
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,10 +815,9 @@ body.lock {
   border-radius: 10px;
 }
 
-.wraper section .col-md-12 .login_body .password_body input {
+.wraper section .login_body .password_body input {
   margin-left: 5px;
-  font-size: 16px;
-  color: #333333;
+  color: #848383;
   width: 260px;
   height: 46px;
   padding: 0;
@@ -821,19 +825,19 @@ body.lock {
   border-radius: 10px;
 }
 
-.wraper section .col-md-12 .login_body .password_body img {
+.wraper section .login_body .password_body img {
   margin-right: 5px;
   background-color: #ffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper section .col-md-12 .login_body .password_body img:hover {
+.wraper section .login_body .password_body img:hover {
   opacity: 0.8;
 }
 
-.wraper section .col-md-12 .login_body .login_button {
-  margin-top: 40px;
+.wraper section .login_body .login_button {
+  margin-top: 20px;
   width: 140px;
   height: 50px;
   background: #F5C331;
@@ -848,11 +852,150 @@ body.lock {
   color: #333333;
 }
 
-.wraper section .col-md-12 .login_body .login_button:hover {
+.wraper section .login_body .login_button:hover {
   background: #f5c431e3;
 }
 
-.wraper section .col-md-12 .login_body .registration_change_password {
+.wraper section .login_body .registration_change_password {
+  width: 315px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.wraper section .login_body .registration_change_password a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #848383;
+  font-size: 14px;
+}
+
+.wraper section .login_body .registration_change_password a:hover, .wraper section .login_body .registration_change_password a:active {
+  color: #4b4b4b;
+}
+
+.wraper section .col-md-12:nth-child(2) {
+  display: none;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .name_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .name_number input:nth-child(1) {
+  margin-right: 14px;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .name_number input {
+  padding-left: 5px;
+  width: 150px;
+  height: 35px;
+  border: 2px solid #F5C331;
+  border-radius: 10px;
+  color: #333333;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .name_number input:focus {
+  -webkit-box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
+          box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .input_email {
+  margin-top: 20px;
+  width: 315px;
+  height: 35px;
+  border: 2px solid #F5C331;
+  border-radius: 10px;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .input_email:focus {
+  -webkit-box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
+          box-shadow: -2px 4px 12px 2px rgba(255, 221, 121, 0.44);
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .password_body {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 315px;
+  height: 35px;
+  border: 2px solid #F5C331;
+  border-radius: 10px;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .password_body input {
+  margin-left: 5px;
+  color: #848383;
+  width: 260px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .password_body img {
+  margin-right: 5px;
+  background-color: #ffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .password_body img:hover {
+  opacity: 0.8;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .checkbox_area {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .checkbox_area label {
+  font-size: 14px;
+  color: #848383;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .checkbox_area label:nth-child(1) {
+  margin-right: 50px;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .registration_button {
+  margin-top: 20px;
+  width: 140px;
+  height: 50px;
+  background: #F5C331;
+  border: none;
+  -webkit-box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+          box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #333333;
+}
+
+.wraper section .col-md-12:nth-child(2) .registration_body .have_account {
   width: 315px;
   margin-top: 20px;
   display: -webkit-box;
@@ -863,14 +1006,14 @@ body.lock {
           justify-content: flex-start;
 }
 
-.wraper section .col-md-12 .login_body .registration_change_password a {
+.wraper section .col-md-12:nth-child(2) .registration_body .have_account a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #848383;
   font-size: 14px;
 }
 
-.wraper section .col-md-12 .login_body .registration_change_password a:hover, .wraper section .col-md-12 .login_body .registration_change_password a:active {
+.wraper section .col-md-12:nth-child(2) .registration_body .have_account a:hover, .wraper section .col-md-12:nth-child(2) .registration_body .have_account a:active {
   color: #4b4b4b;
 }
 
@@ -1062,7 +1205,7 @@ body.lock {
 }
 
 @media screen and (max-width: 390px) {
-  .wraper .login_body {
+  .wraper .login_body, .wraper .registration_body {
     width: 100% !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;

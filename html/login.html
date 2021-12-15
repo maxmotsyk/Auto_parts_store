@@ -508,7 +508,7 @@
 
             <div class="container">
 
-                <div class="col-md-12">
+                <div id="login_col" class="col-md-12">
 
                     <form action="" method="post">
 
@@ -518,11 +518,11 @@
                                 Авторизация
                             </h3>
 
-                            <input id="login" type="text" placeholder="Телефон или логин" name="login">
+                            <input class="login" type="text" placeholder="Телефон или логин" name="login">
 
                             <div class="password_body">
                                 
-                                <input type="password" name="" id="password_input" placeholder="Пароль" name="password">
+                                <input type="password" name="" class="password_input" placeholder="Пароль" name="password">
 
                                 <img class="see_password" src="../img/login/section/not_see.svg" alt="">
 
@@ -539,8 +539,81 @@
 
                             <div class="registration_change_password">
 
-                                <a href="#">
+                                <a class="open_registration" href="#">
                                     Зарегестрироваться
+                                </a>
+
+                                <a href="#">
+
+                                </a>
+
+                            </div>
+                           
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div id="registration_col" class="col-md-12">
+
+                    <form action="" method="post">
+
+                        <div class="registration_body">
+
+                            <h3>
+                                Регестрация
+                            </h3>
+
+                            <div class="name_number">
+
+                                <input type="text" placeholder="ФИО" name="name">
+
+                                <input type="tel" placeholder="Телефон" name="number">
+
+                            </div>
+
+                            <input class="input_email" type="email" placeholder="Почта" name="email">
+                            
+                            <div class="password_body">
+                                
+                                <input type="password" name="" class="password_input" placeholder="Новый пароль" name="newpassword">
+
+                                <img class="see_password" src="../img/login/section/not_see.svg" alt="">
+
+                            </div>
+
+                            <div class="checkbox_area">
+
+                                <label for="">
+
+                                    <input type="checkbox" name="" id="">
+                                    Сто/Магазин
+
+                                </label>
+
+                                <label for="">
+
+                                    <input type="checkbox" name="" id="">
+                                    Присылать  прайс 
+
+                                </label>
+
+                            </div>
+
+
+                            <a href="#">
+
+                                <button class="registration_button">
+                                    Создать
+                                </button>
+
+                            </a>
+
+                            <div class="have_account">
+
+                                <a class="open_login" href="#">
+                                    Уже есть акаунт ?
                                 </a>
 
                                 <a href="#">
