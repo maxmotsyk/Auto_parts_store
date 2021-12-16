@@ -703,7 +703,7 @@ body.lock{
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        
+
         }
 
         .col-md-12{
@@ -808,13 +808,14 @@ body.lock{
                 display: flex;
                 justify-content: flex-start;
 
-                a{
+                p{
                     transition: 0.3s;
                     color: #848383;
                     font-size: 14px;
+                    cursor: pointer;
                 }
 
-                a:hover,a:active{
+                p:hover,a:active{
                     color: #4b4b4b;
                 }
 
@@ -931,13 +932,14 @@ body.lock{
                     display: flex;
                     justify-content: flex-start;
     
-                    a{
+                    p{
                         transition: 0.3s;
                         color: #848383;
                         font-size: 14px;
+                        cursor: pointer;
                     }
     
-                    a:hover,a:active{
+                    p:hover,a:active{
                         color: #4b4b4b;
                     }
     
@@ -1182,7 +1184,33 @@ body.lock{
 
         .login_body,.registration_body{
             width:100% !important;
+            height: auto !important;
             box-shadow:none !important;
+        }
+
+        .registration_body{
+
+            .name_number{
+                flex-direction: column;
+                
+                input{
+                    margin: 0 !important;
+                    width: 315px !important;
+                    height: 50px !important;
+                }
+
+                input:nth-child(2){
+                    margin-top: 40px !important;
+                }
+
+            }
+
+            .input_email,.password_body{
+                margin-top: 40px !important;
+                width: 315px !important;
+                height: 50px !important;
+            }
+
         }
 
     }

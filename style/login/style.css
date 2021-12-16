@@ -873,14 +873,15 @@ body.lock {
           justify-content: flex-start;
 }
 
-.wraper section .login_body .registration_change_password a {
+.wraper section .login_body .registration_change_password p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #848383;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.wraper section .login_body .registration_change_password a:hover, .wraper section .login_body .registration_change_password a:active {
+.wraper section .login_body .registration_change_password p:hover, .wraper section .login_body .registration_change_password a:active {
   color: #4b4b4b;
 }
 
@@ -1012,14 +1013,15 @@ body.lock {
           justify-content: flex-start;
 }
 
-.wraper section .col-md-12:nth-child(2) .registration_body .have_account a {
+.wraper section .col-md-12:nth-child(2) .registration_body .have_account p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #848383;
   font-size: 14px;
+  cursor: pointer;
 }
 
-.wraper section .col-md-12:nth-child(2) .registration_body .have_account a:hover, .wraper section .col-md-12:nth-child(2) .registration_body .have_account a:active {
+.wraper section .col-md-12:nth-child(2) .registration_body .have_account p:hover, .wraper section .col-md-12:nth-child(2) .registration_body .have_account a:active {
   color: #4b4b4b;
 }
 
@@ -1213,8 +1215,28 @@ body.lock {
 @media screen and (max-width: 390px) {
   .wraper .login_body, .wraper .registration_body {
     width: 100% !important;
+    height: auto !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
+  }
+  .wraper .registration_body .name_number {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wraper .registration_body .name_number input {
+    margin: 0 !important;
+    width: 315px !important;
+    height: 50px !important;
+  }
+  .wraper .registration_body .name_number input:nth-child(2) {
+    margin-top: 40px !important;
+  }
+  .wraper .registration_body .input_email, .wraper .registration_body .password_body {
+    margin-top: 40px !important;
+    width: 315px !important;
+    height: 50px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
