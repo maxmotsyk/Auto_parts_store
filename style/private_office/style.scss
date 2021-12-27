@@ -699,7 +699,31 @@ body.lock{
 
 
     section{
-        
+        margin-top: 100px;
+
+        .col-md-12{
+            display: flex;
+            justify-content: center;
+        }
+
+        .title{
+            margin-bottom: 70px;
+
+            h1{
+                color: #333333;
+                font-size: 36px;
+            }
+
+        }
+
+        .navigation-menu{
+            height:60px;
+            width:450px;
+            display: flex;
+            justify-content: space-between;
+            
+           
+        }
         
     }
 
