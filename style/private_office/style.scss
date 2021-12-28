@@ -720,9 +720,29 @@ body.lock{
             height:60px;
             width:450px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+            border-radius:10px;
+
+            .fio{
+                margin: 0 45px;
+            }
             
-           
+            li{
+                
+                p{
+                    color: #333333;
+                    transition: 0.3s;
+                }
+
+                p:hover,p:active{
+                    color: #F5C331;
+                }
+
+            }
+        
         }
         
     }

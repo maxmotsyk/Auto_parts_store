@@ -770,9 +770,30 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+  border-radius: 10px;
+}
+
+.wraper section .navigation-menu .fio {
+  margin: 0 45px;
+}
+
+.wraper section .navigation-menu li p {
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section .navigation-menu li p:hover {
+  color: #F5C331;
 }
 
 .wraper footer #contact_row {
