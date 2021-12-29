@@ -720,21 +720,18 @@ body.lock{
             height:60px;
             width:450px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: space-around;
             background: #FFFFFF;
             box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
             border-radius:10px;
 
-            .fio{
-                margin: 0 45px;
-            }
-            
             li{
                 
                 p{
                     color: #333333;
                     transition: 0.3s;
+                    cursor: pointer;
                 }
 
                 p:hover,p:active{
@@ -743,6 +740,148 @@ body.lock{
 
             }
         
+        }
+
+        #date_search_col{
+            margin-top: 70px;
+
+            .date_search{
+                display: flex;
+                align-items: center;
+                background: #FFFFFF;
+                border: 2px solid #F5C331;
+                padding: 5px 30px;
+                height: 40px;
+                border-radius:10px;
+                font-size: 16px;
+
+                [type="date"]::-webkit-calendar-picker-indicator {
+                    display: none;
+                }
+
+                input{
+                    border:none;
+                    color: #848383;
+                    width:105px;
+                    cursor: pointer;
+                }
+
+                label:nth-child(1){
+
+                    input{
+                        margin-right: 15px;
+                    }
+
+                }
+
+                .img_serch{
+
+                    img{
+                        width:20px;
+                        margin-left: 40px;
+                        transition: 0.3s;
+                    }
+
+                    img:hover,img:active{
+                        opacity: 0.8;
+                    }
+    
+                }
+
+            }
+
+        }
+
+        #my_orders_conten_col{
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+
+
+            .my_orders_conten{
+                width: 850px;
+                border-radius: 10px;
+                border: 2px solid #EAEAEA;
+
+                .more_info{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 12px 20px;
+
+                    p{
+                        color: #333333;
+
+                        img{
+                            height:12px;
+                            margin: 3px 0 0 12px;
+                            cursor: pointer;
+                        }
+
+                    }
+
+                } 
+                
+                .products{
+                    display: flex;
+                    flex-direction: column;
+
+                    .product{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 20px 0;
+                        padding: 0 20px;
+                       
+                        .img_name_product{
+                            display: flex;
+                            align-items: center;
+
+                            img{
+                               width: 80px;
+                               height: 80px; 
+                            }
+
+                            .text{
+                                margin-left: 50px;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                        }
+
+                        .count_and_price{
+                            width: 50%;
+                            display: flex;
+                            justify-content: space-between;
+
+                            p:nth-child(1){
+                                margin-left: 100px;
+                            }
+
+                            p:nth-child(2){
+                                font-size: 18px;
+                            }
+
+                        }
+
+                    }   
+
+                }
+
+                .total_price{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+
+                    h3{
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+
         }
         
     }
