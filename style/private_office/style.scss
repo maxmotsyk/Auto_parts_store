@@ -805,19 +805,72 @@ body.lock{
 
                 .more_info{
                     display: flex;
-                    justify-content: space-between;
+                    flex-direction: column;
                     padding: 12px 20px;
+                    border: 0px solid #EAEAEA;
+                    border-bottom-width: 2px;
 
-                    p{
-                        color: #333333;
+                   .info{
+                        display: flex;
+                        justify-content: space-between;
 
-                        img{
-                            height:12px;
-                            margin: 3px 0 0 12px;
-                            cursor: pointer;
+                        p{
+                            color: #333333;
+
+                            img{
+                                height:12px;
+                                margin: 3px 0 0 12px;
+                                transition: 0.3s;
+                                cursor: pointer;
+                            }
+
+                            img.active{
+                                transform: rotateX(180deg);
+                            }
+
                         }
 
-                    }
+                   }
+
+                   .under_info_body{
+                        display: none;
+                        margin-top:40px;
+
+                        .under_info{
+                            display: flex;
+    
+                            ul{
+                                display: flex;
+                                flex-direction: column;
+    
+                                li{
+                                    margin-bottom:20px;
+    
+                                    p{
+                                        color: #333333;
+                                    }
+    
+                                }   
+    
+                            }
+    
+                            ul:nth-child(1){
+                                
+                                p{
+                                    white-space: nowrap;
+                                }
+    
+                            }
+    
+                            ul:nth-child(2){
+                                margin-left: 225px;
+                            
+    
+                            }
+    
+                        }
+
+                   }
 
                 } 
                 
@@ -875,6 +928,7 @@ body.lock{
                     margin-bottom: 20px;
 
                     h3{
+                        color: #333333;
                         font-size: 20px;
                     }
 

@@ -13,8 +13,17 @@ $(document).ready(function () {
       }
     });
 
-    $('.password').click(function(){    
+    $('.under_info_click').click(function(){
 
+      if( $(this).hasClass('active')){
+        $(this).toggleClass('active');
+        $(this).parent().parent().next().fadeOut(300);
+      }
+      else{
+        $(this).toggleClass('active');
+        $(this).parent().parent().next().fadeIn(300);
+      }
+     
     });
 
     $('.burger_menu_item').click(function(){

@@ -857,20 +857,76 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 20px;
+  border: 0px solid #EAEAEA;
+  border-bottom-width: 2px;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 12px 20px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info p {
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .info p {
   color: #333333;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info p img {
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .info p img {
   height: 12px;
   margin: 3px 0 0 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .info p img.active {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body {
+  display: none;
+  margin-top: 40px;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul li {
+  margin-bottom: 20px;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul li p {
+  color: #333333;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul:nth-child(1) p {
+  white-space: nowrap;
+}
+
+.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul:nth-child(2) {
+  margin-left: 225px;
 }
 
 .wraper section #my_orders_conten_col .my_orders_conten .products {
@@ -952,6 +1008,7 @@ body.lock {
 }
 
 .wraper section #my_orders_conten_col .my_orders_conten .total_price h3 {
+  color: #333333;
   font-size: 20px;
 }
 
