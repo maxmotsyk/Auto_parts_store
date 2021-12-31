@@ -792,11 +792,15 @@ body.lock {
   color: #F5C331;
 }
 
-.wraper section #date_search_col {
+.wraper section #orders_row {
+  display: none;
+}
+
+.wraper section #orders_row #date_search_col {
   margin-top: 70px;
 }
 
-.wraper section #date_search_col .date_search {
+.wraper section #orders_row #date_search_col .date_search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -811,33 +815,33 @@ body.lock {
   font-size: 16px;
 }
 
-.wraper section #date_search_col .date_search [type="date"]::-webkit-calendar-picker-indicator {
+.wraper section #orders_row #date_search_col .date_search [type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-.wraper section #date_search_col .date_search input {
+.wraper section #orders_row #date_search_col .date_search input {
   border: none;
   color: #848383;
   width: 105px;
   cursor: pointer;
 }
 
-.wraper section #date_search_col .date_search label:nth-child(1) input {
+.wraper section #orders_row #date_search_col .date_search label:nth-child(1) input {
   margin-right: 15px;
 }
 
-.wraper section #date_search_col .date_search .img_serch img {
+.wraper section #orders_row #date_search_col .date_search .img_serch img {
   width: 20px;
   margin-left: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper section #date_search_col .date_search .img_serch img:hover, .wraper section #date_search_col .date_search .img_serch img:active {
+.wraper section #orders_row #date_search_col .date_search .img_serch img:hover, .wraper section #orders_row #date_search_col .date_search .img_serch img:active {
   opacity: 0.8;
 }
 
-.wraper section #my_orders_conten_col {
+.wraper section #orders_row #my_orders_conten_col {
   margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,13 +851,13 @@ body.lock {
           justify-content: center;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten {
   width: 850px;
   border-radius: 10px;
   border: 2px solid #EAEAEA;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -866,7 +870,7 @@ body.lock {
   border-bottom-width: 2px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .info {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -875,11 +879,11 @@ body.lock {
           justify-content: space-between;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .info p {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .info p {
   color: #333333;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .info p img {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .info p img {
   height: 12px;
   margin: 3px 0 0 12px;
   -webkit-transition: 0.3s;
@@ -887,23 +891,23 @@ body.lock {
   cursor: pointer;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .info p img.active {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .info p img.active {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body {
   display: none;
   margin-top: 40px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,23 +917,23 @@ body.lock {
           flex-direction: column;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul li {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul li {
   margin-bottom: 20px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul li p {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul li p {
   color: #333333;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul:nth-child(1) p {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul:nth-child(1) p {
   white-space: nowrap;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul:nth-child(2) {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .more_info .under_info_body .under_info ul:nth-child(2) {
   margin-left: 225px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,7 +943,7 @@ body.lock {
           flex-direction: column;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -953,7 +957,7 @@ body.lock {
   padding: 0 20px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product .img_name_product {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product .img_name_product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,12 +966,12 @@ body.lock {
           align-items: center;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product .img_name_product img {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product .img_name_product img {
   width: 80px;
   height: 80px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product .img_name_product .text {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product .img_name_product .text {
   margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -978,7 +982,7 @@ body.lock {
           flex-direction: column;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product .count_and_price {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product .count_and_price {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,15 +992,15 @@ body.lock {
           justify-content: space-between;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product .count_and_price p:nth-child(1) {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product .count_and_price p:nth-child(1) {
   margin-left: 100px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .products .product .count_and_price p:nth-child(2) {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .products .product .count_and_price p:nth-child(2) {
   font-size: 18px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .total_price {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .total_price {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,9 +1011,118 @@ body.lock {
   margin-bottom: 20px;
 }
 
-.wraper section #my_orders_conten_col .my_orders_conten .total_price h3 {
+.wraper section #orders_row #my_orders_conten_col .my_orders_conten .total_price h3 {
   color: #333333;
   font-size: 20px;
+}
+
+.wraper section #setting_row {
+  margin-top: 70px;
+}
+
+.wraper section #setting_row .setting_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 426px;
+  height: 426px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+  border-radius: 10px;
+}
+
+.wraper section #setting_row .setting_body .password_body {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 315px;
+  height: 35px;
+  border: 2px solid #F5C331;
+  border-radius: 10px;
+}
+
+.wraper section #setting_row .setting_body .password_body input {
+  margin: 0 0 0 5px;
+  color: #848383;
+  width: 260px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.wraper section #setting_row .setting_body .password_body img {
+  margin-right: 5px;
+  background-color: #ffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #setting_row .setting_body .password_body img:hover {
+  opacity: 0.8;
+}
+
+.wraper section #setting_row .setting_body input {
+  margin-top: 20px;
+  padding-left: 5px;
+  width: 315px;
+  height: 35px;
+  border: 2px solid #F5C331;
+  border-radius: 10px;
+  color: #848383;
+}
+
+.wraper section #setting_row .setting_body .button_area {
+  margin-top: 30px;
+  width: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wraper section #setting_row .setting_body .button_area a button {
+  font-weight: bold;
+  color: #525252;
+}
+
+.wraper section #setting_row .setting_body .button_area a:nth-child(1) button {
+  width: 140px;
+  height: 50px;
+  background: #F5C331;
+  -webkit-box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+          box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+  border: none;
+  border-radius: 30px;
+}
+
+.wraper section #setting_row .setting_body .button_area a:nth-child(2) button {
+  width: 90px;
+  height: 50px;
+  background: none;
+  border: 3px solid #F5C331;
+  border-radius: 30px;
 }
 
 .wraper footer #contact_row {
