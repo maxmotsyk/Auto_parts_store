@@ -17,13 +17,84 @@ $(document).ready(function () {
 
       if( $(this).hasClass('active')){
         $(this).toggleClass('active');
-        $(this).parent().parent().next().fadeOut(300);
+        $(this).parent().parent().next().slideUp(350);
       }
       else{
         $(this).toggleClass('active');
-        $(this).parent().parent().next().fadeIn(300);
+        $(this).parent().parent().next().slideDown(350);
       }
      
+    });
+
+
+    $('.navigation-menu-element').click(function(){
+
+      let menu_elements = $('.navigation-menu-element');
+
+      $(this.childNodes).css({
+        'color':'#F5C331',
+      })
+
+      for( let i = 0; i < menu_elements.length; i++){
+
+        if(menu_elements[i] !== this){
+          
+          $(menu_elements[i].childNodes).css({
+            'color':'#333333',
+          })
+
+        }
+
+      }
+
+      if($(this).hasClass('fio')){
+        $('#about_me_row').fadeIn(300);
+        $('#setting_row').fadeOut(300);
+        $('#orders_row').fadeOut(300);
+      }
+      else if($(this).hasClass('setting')){
+        $('#setting_row').fadeIn(300);
+        $('#orders_row').fadeOut(300);
+        $('#about_me_row').fadeOut(300);
+      }
+      else if($(this).hasClass('my_orders')){
+        $('#orders_row').fadeIn(300);
+        $('#about_me_row').fadeOut(300);
+        $('#setting_row').fadeOut(300);
+      }
+      else{
+        console.log('not have this menu element');
+      }
+
+    });
+
+    $('.see_password').click(function(){
+
+      if($(this).hasClass('active')){
+        
+        $(this).toggleClass('active');
+        $(this).attr('src','../img/login/section/not_see.svg')
+        $(this).prev().attr('type','password');
+      }
+      else{
+        $(this).toggleClass('active');
+        $(this).attr('src','../img/login/section/see.svg')
+        $(this).prev().attr('type','text');
+      }
+
+    });
+
+    $('.password_input').focus(function(){
+      $(this).parent().css({
+        'box-shadow':"-2px 4px 12px 2px rgba(255, 221, 121, 0.44)"
+      });
+    });
+
+    $('.password_input').focusout(function(){
+      console.log($(this).parent());
+      $(this).parent().css({
+        'box-shadow':"none"
+      });
     });
 
     $('.burger_menu_item').click(function(){

@@ -944,6 +944,7 @@ body.lock{
         }
 
         #setting_row{
+            display: none;
             margin-top: 70px;
 
             .setting_body{
@@ -1044,6 +1045,44 @@ body.lock{
                 
             }
             
+        }
+
+        #about_me_row{
+            margin-top: 70px;
+
+            .about_me_body{
+                width: 323px;
+                height: 162px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FFFFFF;
+                box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+                border-radius: 10px;
+
+                ul{
+
+                    li:not(:last-child){
+                        margin-bottom: 12px;
+                    }
+
+                    li{
+
+                        p{
+                            color: #333333;
+
+                            img{
+                                margin-right: 20px;
+                            }
+
+                        }
+
+                    }
+                    
+                }
+
+            }
+
         }
 
     }

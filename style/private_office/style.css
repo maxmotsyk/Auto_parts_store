@@ -1017,6 +1017,7 @@ body.lock {
 }
 
 .wraper section #setting_row {
+  display: none;
   margin-top: 70px;
 }
 
@@ -1123,6 +1124,40 @@ body.lock {
   background: none;
   border: 3px solid #F5C331;
   border-radius: 30px;
+}
+
+.wraper section #about_me_row {
+  margin-top: 70px;
+}
+
+.wraper section #about_me_row .about_me_body {
+  width: 323px;
+  height: 162px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+  border-radius: 10px;
+}
+
+.wraper section #about_me_row .about_me_body ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.wraper section #about_me_row .about_me_body ul li p {
+  color: #333333;
+}
+
+.wraper section #about_me_row .about_me_body ul li p img {
+  margin-right: 20px;
 }
 
 .wraper footer #contact_row {
