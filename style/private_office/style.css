@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Quicksand:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 body {
@@ -109,7 +110,7 @@ body.lock {
 
 .wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch {
   width: 200px;
-  height: 35px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,11 +126,11 @@ body.lock {
 }
 
 .wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch input {
-  font-size: 14px;
+  font-size: 13px;
   width: 130px;
   margin-left: 10px;
   border: none;
-  color: #848383;
+  color: #333333;
 }
 
 .wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch a {
@@ -140,8 +141,8 @@ body.lock {
 }
 
 .wraper header #additional_information .col-md-12:nth-child(1) ul li .body_serch a img {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -783,12 +784,10 @@ body.lock {
 
 .wraper section .navigation-menu li p {
   color: #333333;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   cursor: pointer;
 }
 
-.wraper section .navigation-menu li p:hover, .wraper section .navigation-menu li p:active {
+.wraper section .navigation-menu .fio p {
   color: #F5C331;
 }
 
@@ -1106,6 +1105,12 @@ body.lock {
 .wraper section #setting_row .setting_body .button_area a button {
   font-weight: bold;
   color: #525252;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #setting_row .setting_body .button_area a button:hover, .wraper section #setting_row .setting_body .button_area a button:active {
+  background: #f5c431e3;
 }
 
 .wraper section #setting_row .setting_body .button_area a:nth-child(1) button {
@@ -1289,6 +1294,15 @@ body.lock {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .wraper .my_orders_conten .under_info ul:nth-child(2) {
+    margin-left: 125px !important;
+  }
+  .wraper .my_orders_conten .product .count_and_price p:nth-child(1) {
+    margin-left: 50px !important;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .wraper .nav .col-md-3:nth-child(2) a img:nth-child(1) {
     display: none !important;
@@ -1344,6 +1358,62 @@ body.lock {
   }
   .wraper #contact_row .col-md-2:nth-child(2) {
     display: block !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wraper #setting_row .setting_body {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  .wraper #date_search_col {
+    padding: 0 !important;
+  }
+  .wraper #date_search_col form {
+    width: 100%;
+  }
+  .wraper #date_search_col form .date_search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 !important;
+    border-radius: 0px !important;
+    border: 0px solid #F5C331 !important;
+    border-bottom-width: 2px !important;
+    border-top-width: 2px !important;
+  }
+  .wraper .my_orders_conten .more_info .info p:nth-child(2) {
+    content: 'Полная информация' !important;
+  }
+  .wraper .my_orders_conten .more_info .under_info_body ul:nth-child(2) {
+    margin-left: 30px !important;
+  }
+  .wraper .my_orders_conten .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 0px solid #EAEAEA !important;
+    border-bottom-width: 2px !important;
+  }
+  .wraper .my_orders_conten .product .img_name_product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wraper .my_orders_conten .product .img_name_product .text {
+    margin-top: 30px;
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .wraper .my_orders_conten .product .count_and_price {
+    width: 70% !important;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .wraper .my_orders_conten .product .count_and_price p:nth-child(1) {
+    margin-left: 0px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

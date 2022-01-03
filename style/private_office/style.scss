@@ -100,7 +100,7 @@ body.lock{
 
                         .body_serch{
                             width: 200px;
-                            height: 35px;
+                            height: 30px;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
@@ -109,11 +109,11 @@ body.lock{
                             border-radius: 40px;
         
                             input{
-                                font-size: 14px;
+                                font-size: 13px;
                                 width: 130px;
                                 margin-left: 10px;
                                 border:none;
-                                color: #848383;
+                                color: #333333;
                             }
         
                             a{
@@ -122,8 +122,8 @@ body.lock{
                                 margin-right: 10px;
         
                                 img{
-                                    width:16px;
-                                    height:16px;
+                                    width:14px;
+                                    height:14px;
                                     transition: 0.3s;
                                 }
         
@@ -730,14 +730,17 @@ body.lock{
                 
                 p{
                     color: #333333;
-                    transition: 0.3s;
                     cursor: pointer;
                 }
 
-                p:hover,p:active{
+            }
+
+            .fio{
+
+                p{
                     color: #F5C331;
                 }
-
+                
             }
         
         }
@@ -1012,6 +1015,11 @@ body.lock{
                         button{
                             font-weight: bold;
                             color: #525252;
+                            transition: 0.3s;
+                        }
+
+                        button:hover,button:active{
+                            background: #f5c431e3;
                         }
 
                     }
@@ -1228,6 +1236,34 @@ body.lock{
 
     }
 
+    @media screen and (max-width: 767px){
+
+        .my_orders_conten{
+
+            .under_info{
+
+                ul:nth-child(2){
+                    margin-left: 125px !important;
+                }
+
+            }
+
+            .product{
+
+                .count_and_price{
+                    
+                    p:nth-child(1){
+                        margin-left: 50px !important;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
     @media screen and (max-width: 575px) {
 
         .nav{
@@ -1315,5 +1351,90 @@ body.lock{
         }
 
     }
+    
+    @media screen and (max-width: 540px) {
+
+        #setting_row{
+
+            .setting_body{
+                box-shadow:none !important;
+            }
+
+        }
+
+        #date_search_col{   
+            
+            padding: 0 !important;
+            
+            form{
+                width: 100%;
+
+                .date_search{
+                    justify-content: center;
+                    padding: 0 !important;
+                    border-radius:0px !important;
+                    border: 0px solid #F5C331 !important;
+                    border-bottom-width: 2px !important;
+                    border-top-width:2px !important;
+                }
+
+            }
+
+        }
+    
+        .my_orders_conten{
+
+            .more_info{
+
+                .info{
+
+                    p:nth-child(2){
+                        content:'Полная информация' !important;
+                    }
+
+                }
+
+                .under_info_body{
+
+                    ul:nth-child(2){
+                        margin-left: 30px !important;
+                    }
+
+                }
+
+            }
+
+            .product{
+                flex-direction: column;
+                border: 0px solid #EAEAEA !important;
+                border-bottom-width: 2px !important;
+
+                .img_name_product{
+                    flex-direction: column;
+
+                    .text{
+                        margin-top: 30px;
+                        margin-left: 0px !important;
+                        text-align: center;
+                    }
+
+                }
+
+                .count_and_price{
+                    width: 70% !important;
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                    
+                    p:nth-child(1){
+                        margin-left: 0px !important;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }   
 
 }
