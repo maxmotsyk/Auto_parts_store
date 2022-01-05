@@ -765,8 +765,8 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   background: #FFFFFF;
-  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
-          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 10px;
 }
 
@@ -810,6 +810,11 @@ body.lock {
 
 .wraper section .news_detailed .content .img {
   border-radius: 10px;
+}
+
+.wraper section .news_detailed:hover {
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
 }
 
 .wraper footer #contact_row {

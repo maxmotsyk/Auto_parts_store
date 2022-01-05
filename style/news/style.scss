@@ -629,14 +629,13 @@ body.lock{
                     align-items:center;
                     flex-direction: column;
                     background: #FFFFFF;
-                    box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+                    transition: 0.3s;
                     border-radius: 15px;
                     transition: 0.5s;
 
                     img{
                         width: 235px;
                         margin:10px 5px 0 5px;
-                        border-radius:10px;
                     }
 
                     .text{
@@ -662,14 +661,14 @@ body.lock{
 
                     time{
                         font-size: 14px;
-                        margin-top: 15px;
+                        margin: 15px 0 10px;
                         color: #848383;
                     }
 
                 }
 
                 .news:hover,.news:active{
-                    box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.151);
+                    box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
                 }
 
             }

@@ -709,6 +709,7 @@ body.lock{
     }
 
     section{
+        flex: 1 1 auto;
         
         .title{
             display: flex;
@@ -722,13 +723,14 @@ body.lock{
 
         }
 
-        .cards_col{
+        .cell_col{
             margin-top: 70px;
             display: grid;
-            grid-template-columns: repeat(auto-fit,200px);
+            grid-template-columns: repeat(auto-fit,230px);
             grid-gap:30px;
 
-            .card{
+            .cell{
+                width: 100%;
                 min-height: 145px;
                 display: flex;
                 flex-direction: column;
@@ -768,12 +770,11 @@ body.lock{
                             margin-left: 15px;
     
                             li{
+                                width: 120px;
                                 margin-bottom: 6px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                width: 110px;
-                                
     
                                 p{
                                     font-weight: 300;
@@ -788,18 +789,18 @@ body.lock{
 
                 }
 
-                .img_row{
-                    height: 12px;
+                .img_arrow{
+                    height: 13px;
                     margin: 15px 0;
                     transition: 0.3s;
                     cursor: pointer;
                 }
 
-                .img_row:hover,.img_row:active{
+                .img_arrow:hover,.img_arrow:active{
                     opacity: 0.7;
                 }
 
-                .img_row.active{
+                .img_arrow.active{
                     transform: rotateX(180deg);
                 }
 

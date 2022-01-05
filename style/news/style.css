@@ -678,8 +678,8 @@ body.lock {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #FFFFFF;
-  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
-          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border-radius: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -688,7 +688,6 @@ body.lock {
 .wraper section #news_row .col-md-12:nth-child(2) .news img {
   width: 235px;
   margin: 10px 5px 0 5px;
-  border-radius: 10px;
 }
 
 .wraper section #news_row .col-md-12:nth-child(2) .news .text {
@@ -720,13 +719,13 @@ body.lock {
 
 .wraper section #news_row .col-md-12:nth-child(2) .news time {
   font-size: 14px;
-  margin-top: 15px;
+  margin: 15px 0 10px;
   color: #848383;
 }
 
 .wraper section #news_row .col-md-12:nth-child(2) .news:hover, .wraper section #news_row .col-md-12:nth-child(2) .news:active {
-  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.151);
-          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.151);
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
 }
 
 .wraper footer #contact_row {

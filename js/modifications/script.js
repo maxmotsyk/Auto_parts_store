@@ -26,7 +26,7 @@ $(document).ready(function () {
      
     });
 
-    $('.img_row').click(function(){
+    $('.img_arrow').click(function(){
 
         if($(this).hasClass('active')){
             $(this).toggleClass('active');

@@ -757,6 +757,12 @@ body.lock {
   color: #333333;
 }
 
+.wraper section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .wraper section .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -772,16 +778,17 @@ body.lock {
   font-size: 36px;
 }
 
-.wraper section .cards_col {
+.wraper section .cell_col {
   margin-top: 70px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (200px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 200px);
+  -ms-grid-columns: (230px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 230px);
   grid-gap: 30px;
 }
 
-.wraper section .cards_col .card {
+.wraper section .cell_col .cell {
+  width: 100%;
   min-height: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,7 +806,7 @@ body.lock {
   border-radius: 10px;
 }
 
-.wraper section .cards_col .card .img_and_name {
+.wraper section .cell_col .cell .img_and_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,23 +819,23 @@ body.lock {
           align-items: center;
 }
 
-.wraper section .cards_col .card .img_and_name img {
+.wraper section .cell_col .cell .img_and_name img {
   width: 107px;
   height: 50px;
   margin-top: 15px;
 }
 
-.wraper section .cards_col .card .img_and_name p {
+.wraper section .cell_col .cell .img_and_name p {
   margin-top: 20px;
   font-size: 16px;
 }
 
-.wraper section .cards_col .card .hidden_info {
+.wraper section .cell_col .cell .hidden_info {
   display: none;
   width: 100%;
 }
 
-.wraper section .cards_col .card .hidden_info .hidden_info_body {
+.wraper section .cell_col .cell .hidden_info .hidden_info_body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,11 +845,12 @@ body.lock {
   margin-top: 12px;
 }
 
-.wraper section .cards_col .card .hidden_info .hidden_info_body ul {
+.wraper section .cell_col .cell .hidden_info .hidden_info_body ul {
   margin-left: 15px;
 }
 
-.wraper section .cards_col .card .hidden_info .hidden_info_body ul li {
+.wraper section .cell_col .cell .hidden_info .hidden_info_body ul li {
+  width: 120px;
   margin-bottom: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,27 +861,26 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 110px;
 }
 
-.wraper section .cards_col .card .hidden_info .hidden_info_body ul li p {
+.wraper section .cell_col .cell .hidden_info .hidden_info_body ul li p {
   font-weight: 300;
   font-size: 13px;
 }
 
-.wraper section .cards_col .card .img_row {
-  height: 12px;
+.wraper section .cell_col .cell .img_arrow {
+  height: 13px;
   margin: 15px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.wraper section .cards_col .card .img_row:hover, .wraper section .cards_col .card .img_row:active {
+.wraper section .cell_col .cell .img_arrow:hover, .wraper section .cell_col .cell .img_arrow:active {
   opacity: 0.7;
 }
 
-.wraper section .cards_col .card .img_row.active {
+.wraper section .cell_col .cell .img_arrow.active {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
