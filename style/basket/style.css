@@ -42,6 +42,21 @@ body button {
   white-space: nowrap;
 }
 
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 body.lock {
   overflow: hidden;
 }
@@ -742,7 +757,14 @@ body.lock {
   color: #333333;
 }
 
-.wraper section .col-md-12 {
+.wraper section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: 100px;
+}
+
+.wraper section #orders_row .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,9 +773,43 @@ body.lock {
           justify-content: center;
 }
 
-.wraper section .news_detailed {
-  margin-top: 100px;
-  width: 1100px;
+.wraper section #orders_row .title h1 {
+  color: #333333;
+  font-size: 36px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order {
+  margin-top: 70px;
+  width: 100%;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+  border-radius: 20px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .img_name_order {
+  margin-left: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .img_name_order img {
+  width: 100px;
+  height: 100px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .img_name_order .text {
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,54 +817,202 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #FFFFFF;
-  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
-          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
-  border-radius: 10px;
 }
 
-.wraper section .news_detailed .title {
-  width: 100%;
+.wraper section #orders_row #my_orders_conten_col .order .img_name_order .text p:nth-child(3) {
+  margin-top: 10px;
+  color: #848383;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .img_name_order .text p:nth-child(3) img {
+  width: 15px;
+  height: auto;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete {
+  margin-right: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  border: 2.5px solid #F5C331;
+  border-radius: 27px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count input {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 0px solid #F5C331;
-  border-bottom-width: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 15px;
+  text-align: center;
+  border: none;
 }
 
-.wraper section .news_detailed .title h1 {
-  margin: 40px 0;
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #ffffff;
+  border: none;
+  color: #333333;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:hover {
+  background-color: #7148FF;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:active {
+  background-color: #7148FF;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete p {
+  color: #333333;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete button {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 36px;
+  background-color: #ffffff;
+  border: 2.5px solid #F5C331;
+  color: #333333;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+}
+
+.wraper section #form_row {
+  margin-top: 160px;
+}
+
+.wraper section #form_row .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #form_row .title h1 {
   color: #333333;
   font-size: 36px;
 }
 
-.wraper section .news_detailed .content {
-  padding: 50px;
+.wraper section #form_row .col-md-6:nth-child(1) {
+  margin-top: 70px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .title {
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.wraper section .news_detailed .content .text {
+.wraper section #form_row .col-md-6:nth-child(1) .title .round {
+  margin-right: 30px;
+  width: 45px;
+  height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2.5px solid #F5C331;
+  border-radius: 45px;
 }
 
-.wraper section .news_detailed .content .img {
+.wraper section #form_row .col-md-6:nth-child(1) .title .round h1 {
+  font-size: 25px;
+  color: #333333;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .title h3 {
+  font-size: 25px;
+  color: #333333;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .input_area {
+  margin: 0 0 60px 80px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .input_area input {
+  width: 230px;
+  height: 50px;
+  border: 2.5px solid #C4C4C4;
   border-radius: 10px;
 }
 
@@ -903,26 +1107,6 @@ body.lock {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 992px) {
-  .wraper .news_detailed .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .wraper .news_detailed .content .text {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .wraper .news_detailed .content .img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-bottom: 40px;
-  }
-}
-
 @media screen and (max-width: 982px) {
   .wraper #additional_information .col-md-12:nth-child(1) {
     display: none !important;
@@ -958,38 +1142,6 @@ body.lock {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-  }
-}
-
-@media screen and (max-width: 590px) {
-  .wraper .col-md-12 {
-    padding: 0;
-  }
-  .wraper .news_detailed {
-    width: 100% !important;
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-  }
-  .wraper .news_detailed .content {
-    padding: 12px !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .wraper .news_detailed .content .text {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .wraper .news_detailed .content .img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin: 40px 0 !important;
-  }
-  .wraper .news_detailed .content .img img {
-    width: 100%;
   }
 }
 
