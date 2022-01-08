@@ -1006,14 +1006,98 @@ body.lock {
 }
 
 .wraper section #form_row .col-md-6:nth-child(1) .input_area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (230px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 230px);
+  gap: 30px;
   margin: 0 0 60px 80px;
 }
 
 .wraper section #form_row .col-md-6:nth-child(1) .input_area input {
-  width: 230px;
   height: 50px;
   border: 2.5px solid #C4C4C4;
   border-radius: 10px;
+  font-size: 14px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (230px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 230px);
+  gap: 30px;
+  margin: 0 0 60px 80px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area button, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area button {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  border: 2.5px solid #C4C4C4;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area button img, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area button img {
+  width: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area button img.active, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area button img.active {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu {
+  display: none;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul {
+  margin-top: 10px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li {
+  margin-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li p, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li p {
+  padding: 5px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li:hover, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li:hover {
+  background-color: #fff3cdda;
 }
 
 .wraper footer #contact_row {

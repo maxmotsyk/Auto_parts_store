@@ -901,15 +901,89 @@ body.lock{
                 }
 
                 .input_area{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,230px);
+                    gap: 30px;
                     margin: 0 0 60px 80px;
 
                     input{
-                        width: 230px;
                         height: 50px;
                         border: 2.5px solid #C4C4C4;
                         border-radius: 10px;
+                        font-size: 14px;
                     }   
 
+                }
+
+                .delivery_method,.payment_method{
+
+                    .input_area{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit,230px);
+                        gap: 30px;
+                        margin: 0 0 60px 80px;
+    
+                        button{
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background-color: #ffffff;
+                            border: 2.5px solid #C4C4C4;
+                            border-radius: 10px;
+                            font-size: 14px;
+
+                            img{
+                                width: 14px;
+                                transition: 0.3s;
+                            }
+
+                            img.active{
+                                transform: rotateX(180deg);
+                            }
+
+                        }   
+                        
+                        .ul_drop_menu{
+                            display: none;
+
+                            input{
+                                margin-top: 10px;
+                                border-radius:10px;
+                                height: 40px;
+                                width: 100%;
+                            }
+                      
+                            ul{
+                                margin-top: 10px;
+                                height: 160px;
+                                display: flex;
+                                flex-direction: column;
+                                overflow-y: scroll;
+                                
+                                li{
+                                    margin-top: 10px;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+
+                                    p{
+                                        padding: 5px;
+                                        font-size: 14px;
+                                        color: #333333;
+                                    }
+
+                                }
+
+                                li:hover{
+                                    background-color:#fff3cdda
+                                }
+
+                            }
+
+                        }
+                        
+                    }
                 }
 
             }
