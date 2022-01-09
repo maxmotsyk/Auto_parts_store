@@ -944,7 +944,7 @@ body.lock {
 }
 
 .wraper section #form_row {
-  margin-top: 160px;
+  margin-top: 150px;
 }
 
 .wraper section #form_row .title {
@@ -961,11 +961,17 @@ body.lock {
   font-size: 36px;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) {
+.wraper section #form_row form {
   margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .title {
+.wraper section #form_row form .col-md-6:nth-child(1) .title {
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -978,7 +984,7 @@ body.lock {
           align-items: center;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .title .round {
+.wraper section #form_row form .col-md-6:nth-child(1) .title .round {
   margin-right: 30px;
   width: 45px;
   height: 45px;
@@ -995,17 +1001,17 @@ body.lock {
   border-radius: 45px;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .title .round h1 {
+.wraper section #form_row form .col-md-6:nth-child(1) .title .round h1 {
   font-size: 25px;
   color: #333333;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .title h3 {
+.wraper section #form_row form .col-md-6:nth-child(1) .title h3 {
   font-size: 25px;
   color: #333333;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .input_area {
+.wraper section #form_row form .col-md-6:nth-child(1) .input_area {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (230px)[auto-fit];
@@ -1014,14 +1020,24 @@ body.lock {
   margin: 0 0 60px 80px;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .input_area input {
+.wraper section #form_row form .col-md-6:nth-child(1) .input_area input::-moz-placeholder {
+  color: #333333;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(1) .input_area input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(1) .input_area input {
+  padding: 0 5px;
   height: 50px;
   border: 2.5px solid #C4C4C4;
   border-radius: 10px;
   font-size: 14px;
+  color: #333333;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (230px)[auto-fit];
@@ -1030,7 +1046,11 @@ body.lock {
   margin: 0 0 60px 80px;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area button, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area button {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .street_input, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .street_input {
+  display: none;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area button, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area button {
   width: 100%;
   height: 50px;
   display: -webkit-box;
@@ -1042,37 +1062,48 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 5px;
+  color: #333333;
   background-color: #ffffff;
   border: 2.5px solid #C4C4C4;
   border-radius: 10px;
   font-size: 14px;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area button img, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area button img {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area button img, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area button img {
   width: 14px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area button img.active, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area button img.active {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area button img.active, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area button img.active {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu {
   display: none;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input::-moz-placeholder, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input::-moz-placeholder {
+  color: #C4C4C4;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input::-webkit-input-placeholder, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input::-webkit-input-placeholder {
+  color: #C4C4C4;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input {
   margin-top: 10px;
   border-radius: 10px;
   height: 40px;
   width: 100%;
+  color: #333333;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul {
   margin-top: 10px;
-  height: 160px;
+  max-height: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1083,21 +1114,82 @@ body.lock {
   overflow-y: scroll;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li {
   margin-top: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li p, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li p {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li p, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li p {
   padding: 5px;
   font-size: 14px;
   color: #333333;
 }
 
-.wraper section #form_row .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li:hover, .wraper section #form_row .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li:hover {
+.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li:hover, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li:hover {
   background-color: #fff3cdda;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+          box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .title {
+  width: 100%;
+  border: 0px solid #F5C331;
+  border-bottom-width: 3.5px;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .title h3 {
+  margin: 15px 0;
+  color: #333333;
+  font-size: 25px;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data {
+  margin-top: 30px;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card button {
+  width: 171px;
+  height: 47px;
+  background: #F5C331;
+  border: none;
+  -webkit-box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+          box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+  border-radius: 30px;
+  color: #333333;
+  font-size: 20px;
 }
 
 .wraper footer #contact_row {

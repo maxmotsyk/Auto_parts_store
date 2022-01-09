@@ -854,7 +854,7 @@ body.lock{
         }
 
         #form_row{
-            margin-top: 160px;
+            margin-top: 150px;
 
             .title{
                 display: flex;
@@ -867,123 +867,202 @@ body.lock{
 
             }
 
-            .col-md-6:nth-child(1){
+            form{
                 margin-top: 70px;
+                display: flex;
+                justify-content: center;
 
-                .title{
-                    margin-bottom: 30px;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-
-                    .round{
-                        margin-right: 30px;
-                        width: 45px;
-                        height: 45px;
+                .col-md-6:nth-child(1){
+    
+                    .title{
+                        margin-bottom: 30px;
                         display: flex;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: center;
-                        border: 2.5px solid #F5C331;
-                        border-radius:45px;
-
-                        h1{
+    
+                        .round{
+                            margin-right: 30px;
+                            width: 45px;
+                            height: 45px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 2.5px solid #F5C331;
+                            border-radius:45px;
+    
+                            h1{
+                                font-size: 25px;
+                                color: #333333;
+                            }
+    
+                        }
+    
+                        h3{
                             font-size: 25px;
                             color: #333333;
                         }
-
+    
                     }
-
-                    h3{
-                        font-size: 25px;
-                        color: #333333;
-                    }
-
-                }
-
-                .input_area{
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit,230px);
-                    gap: 30px;
-                    margin: 0 0 60px 80px;
-
-                    input{
-                        height: 50px;
-                        border: 2.5px solid #C4C4C4;
-                        border-radius: 10px;
-                        font-size: 14px;
-                    }   
-
-                }
-
-                .delivery_method,.payment_method{
-
+    
                     .input_area{
                         display: grid;
                         grid-template-columns: repeat(auto-fit,230px);
                         gap: 30px;
                         margin: 0 0 60px 80px;
     
-                        button{
-                            width: 100%;
+                        input::-moz-placeholder { 
+                            color:#333333;
+                        }
+    
+                        input::-webkit-input-placeholder { 
+                            color:#333333;
+                        }
+    
+                        input{
+                            padding: 0 5px;
                             height: 50px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            background-color: #ffffff;
                             border: 2.5px solid #C4C4C4;
                             border-radius: 10px;
                             font-size: 14px;
-
-                            img{
-                                width: 14px;
-                                transition: 0.3s;
+                            color:#333333;
+                        }   
+    
+                    }
+    
+                    .delivery_method,.payment_method{
+    
+                        .input_area{
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit,230px);
+                            gap: 30px;
+                            margin: 0 0 60px 80px;
+    
+                            .street_input{
+                                display: none;
                             }
+        
+                            button{
+                                width: 100%;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 5px;
+                                color:#333333;
+                                background-color: #ffffff;
+                                border: 2.5px solid #C4C4C4;
+                                border-radius: 10px;
+                                font-size: 14px;
+    
+                                img{
+                                    width: 14px;
+                                    transition: 0.3s;
+                                }
+    
+                                img.active{
+                                    transform: rotateX(180deg);
+                                }
+    
+                            }   
+                            
+                            .ul_drop_menu{
+                                display: none;
+    
+                                input::-moz-placeholder { 
+                                    color: #C4C4C4;
+                                }
+            
+                                input::-webkit-input-placeholder { 
+                                    color: #C4C4C4;
+                                }
+    
+                                input{
+                                    margin-top: 10px;
+                                    border-radius:10px;
+                                    height: 40px;
+                                    width: 100%;
+                                    color: #333333;
+                                }
+                          
+                                ul{
+                                    margin-top: 10px;
+                                    max-height: 160px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    overflow-y: scroll;
+                                    
+                                    li{
+                                        margin-top: 10px;
+                                        transition: 0.3s;
+                                        cursor: pointer;
+    
+                                        p{
+                                            padding: 5px;
+                                            font-size: 14px;
+                                            color: #333333;
+                                        }
+    
+                                    }
+    
+                                    li:hover{
+                                        background-color:#fff3cdda
+                                    }
+    
+                                }
+    
+                            }
+                            
+                        }
+                    }
+    
+                }
+    
+                .col-md-6:nth-child(2){
+                    display: flex;
+                    justify-content: center;
+                
+                    .total_card{
+                        top:0;
+                        position: sticky;
+                        width: 350px;
+                        height: 350px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-radius:10px;
+                        box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
 
-                            img.active{
-                                transform: rotateX(180deg);
+                        .title{
+                            width: 100%;
+                            border: 0px solid #F5C331;
+                            border-bottom-width: 3.5px;
+
+                            h3{
+                                margin: 15px 0;
+                                color:#333333;
+                                font-size: 25px;
                             }
 
                         }   
-                        
-                        .ul_drop_menu{
-                            display: none;
 
-                            input{
-                                margin-top: 10px;
-                                border-radius:10px;
-                                height: 40px;
-                                width: 100%;
-                            }
-                      
-                            ul{
-                                margin-top: 10px;
-                                height: 160px;
-                                display: flex;
-                                flex-direction: column;
-                                overflow-y: scroll;
-                                
-                                li{
-                                    margin-top: 10px;
-                                    transition: 0.3s;
-                                    cursor: pointer;
-
-                                    p{
-                                        padding: 5px;
-                                        font-size: 14px;
-                                        color: #333333;
-                                    }
-
-                                }
-
-                                li:hover{
-                                    background-color:#fff3cdda
-                                }
-
-                            }
-
+                        .order_data{
+                            margin-top: 30px;
                         }
-                        
+
+                        button{
+                            width: 171px;
+                            height: 47px;
+                            background: #F5C331;
+                            border:none;
+                            box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+                            border-radius: 30px;
+                            color:#333333;
+                            font-size: 20px;
+                        }
+
                     }
+    
                 }
 
             }

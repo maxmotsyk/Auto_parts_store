@@ -52,7 +52,6 @@ $(document).ready(function () {
     $('.button_for_ul_drop_menu').click(function(){
       let drop_menu_mass = $('.button_for_ul_drop_menu');
       
-      
       if($(this).children('img').hasClass('active')){
         $(this).next().slideUp(300);
         $(this).children('img').toggleClass('active');
@@ -79,13 +78,86 @@ $(document).ready(function () {
 
     });
 
+    $('.live_search').keyup(function(){
+
+      let live_word = $(this).val().trim().toLowerCase();
+      let mass_li_item = $(this).next().children('li');
+
+      if(live_word !== ''){
+        mass_li_item.each(function(){
+          if($(this).children('p').text().toLowerCase().search(live_word) == -1){
+            $(this).fadeOut(300);
+          }
+          else{
+            $(this).fadeIn(300);
+          }
+
+        })
+      }
+      else{
+        mass_li_item.each(function(){
+          $(this).fadeIn(300);
+        })
+      }
+
+    })
+
     $('.drop_menu_item').click(function(){
 
-      let item1 = $(this).children('p').text().trim();
+      let input_body = $('.input_body');
+      let item1 = $(this).children('p').text().trim(' ');
       $(this).parent().parent().slideUp(300);
       $(this).parent().parent().prev().children('span').text(item1);
       $(this).parent().parent().prev().children('img').toggleClass('active');
-    })
+
+      if($(this).hasClass('delivery_item')){
+
+        if(item1 == 'Новая Почта'){
+         
+          for(let i = 0; i < input_body.length;i++){
+
+            if($(input_body[i]).hasClass('post')){
+
+              $(input_body[i]).fadeIn(300);
+
+            }
+            else{
+              $(input_body[i]).fadeOut(300);
+            }
+
+          }
+
+        }
+        else if(item1 == 'Доставка' || item1 == 'Такси (по Киеву)'){
+
+          for(let i = 0; i < input_body.length;i++){
+
+            if($(input_body[i]).hasClass('deliver_taxi')){
+
+              $(input_body[i]).fadeIn(300);
+  
+            }
+            else{
+              $(input_body[i]).fadeOut(300);
+            }
+
+          }
+
+        }
+        else if(item1 == 'Самовывоз'){
+          
+          for(let i = 0; i < input_body.length;i++){
+
+            $(input_body[i]).fadeOut(300);
+          }
+
+        }
+
+      }
+
+    });
+
+    
   
     $(".undermenu").click(function(){
       $(this.childNodes[1].childNodes[1]).toggleClass('active');
