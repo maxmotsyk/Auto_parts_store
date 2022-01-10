@@ -941,6 +941,8 @@ body.lock {
   color: #333333;
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wraper section #form_row {
@@ -1149,9 +1151,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1177,16 +1179,54 @@ body.lock {
 }
 
 .wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data {
+  width: 100%;
+  padding: 0 15px;
   margin-top: 30px;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data .total_price dd {
+  font-size: 20px;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0px solid #EFEFEF;
+  border-bottom-width: 0.5px;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data dl dt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #C4C4C4;
+}
+
+.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data dl dd {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
 }
 
 .wraper section #form_row form .col-md-6:nth-child(2) .total_card button {
   width: 171px;
   height: 47px;
-  background: #F5C331;
-  border: none;
-  -webkit-box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
-          box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 3px solid #F5C331;
   border-radius: 30px;
   color: #333333;
   font-size: 20px;

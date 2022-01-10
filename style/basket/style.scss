@@ -841,6 +841,11 @@ body.lock{
                                 color: #333333;
                                 font-family: 'Quicksand', sans-serif;
                                 font-size: 30px;
+                                transition: 0.3s;
+                            }
+
+                            button:hover,button:active{
+
                             }
 
                         }
@@ -1027,7 +1032,7 @@ body.lock{
                         width: 350px;
                         height: 350px;
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-between;
                         align-items: center;
                         flex-direction: column;
                         border-radius:10px;
@@ -1047,15 +1052,52 @@ body.lock{
                         }   
 
                         .order_data{
+                            width: 100%;
+                            padding: 0 15px;
                             margin-top: 30px;
+
+                            .total_price{
+                                
+                                dd{
+                                    font-size: 20px;
+                                }
+
+                            }
+
+                            dl{
+                                display: flex;
+                                padding-bottom: 10px;
+                                justify-content: space-between;
+                                border: 0px solid #EFEFEF;
+                                border-bottom-width: 0.5px;
+
+                                dt{
+                                    display: flex;
+                                    align-items: center;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: #C4C4C4;
+                                }
+
+                                dd{
+                                    margin: 0;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color:#333333;
+                                }
+
+                            }
+
                         }
 
                         button{
                             width: 171px;
                             height: 47px;
-                            background: #F5C331;
-                            border:none;
-                            box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
+                            margin-bottom: 20px;
+                            background-color:#ffffff;
+                            border: 3px solid #F5C331;
                             border-radius: 30px;
                             color:#333333;
                             font-size: 20px;
