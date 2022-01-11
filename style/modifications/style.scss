@@ -726,6 +726,7 @@ body.lock{
         .cell_col{
             margin-top: 70px;
             display: grid;
+            justify-content: center;
             grid-template-columns: repeat(auto-fit,230px);
             grid-gap:30px;
 

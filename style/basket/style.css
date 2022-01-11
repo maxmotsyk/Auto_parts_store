@@ -780,11 +780,13 @@ body.lock {
 
 .wraper section #orders_row #my_orders_conten_col .order {
   margin-top: 70px;
-  width: 100%;
-  height: 110px;
+  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -895,14 +897,11 @@ body.lock {
   color: #333333;
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
+  transition: 0.3s;
 }
 
-.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:hover {
-  background-color: #7148FF;
-}
-
-.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:active {
-  background-color: #7148FF;
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:hover, .wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:active {
+  color: #5f5f5f;
 }
 
 .wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete {
@@ -945,11 +944,16 @@ body.lock {
   transition: 0.3s;
 }
 
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete button:hover, .wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete button:active {
+  color: #5f5f5f;
+}
+
 .wraper section #form_row {
   margin-top: 150px;
 }
 
-.wraper section #form_row .title {
+.wraper section #form_row .main_title {
+  margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -958,22 +962,12 @@ body.lock {
           justify-content: center;
 }
 
-.wraper section #form_row .title h1 {
+.wraper section #form_row .main_title h1 {
   color: #333333;
   font-size: 36px;
 }
 
-.wraper section #form_row form {
-  margin-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.wraper section #form_row form .col-md-6:nth-child(1) .title {
+.wraper section #form_row .col-md-6:nth-child(2) .title {
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +980,7 @@ body.lock {
           align-items: center;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .title .round {
+.wraper section #form_row .col-md-6:nth-child(2) .title .round {
   margin-right: 30px;
   width: 45px;
   height: 45px;
@@ -1003,17 +997,17 @@ body.lock {
   border-radius: 45px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .title .round h1 {
+.wraper section #form_row .col-md-6:nth-child(2) .title .round h1 {
   font-size: 25px;
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .title h3 {
+.wraper section #form_row .col-md-6:nth-child(2) .title h3 {
   font-size: 25px;
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .input_area {
+.wraper section #form_row .col-md-6:nth-child(2) .input_area {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (230px)[auto-fit];
@@ -1022,15 +1016,15 @@ body.lock {
   margin: 0 0 60px 80px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .input_area input::-moz-placeholder {
+.wraper section #form_row .col-md-6:nth-child(2) .input_area input::-moz-placeholder {
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .input_area input::-webkit-input-placeholder {
+.wraper section #form_row .col-md-6:nth-child(2) .input_area input::-webkit-input-placeholder {
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .input_area input {
+.wraper section #form_row .col-md-6:nth-child(2) .input_area input {
   padding: 0 5px;
   height: 50px;
   border: 2.5px solid #C4C4C4;
@@ -1039,7 +1033,7 @@ body.lock {
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (230px)[auto-fit];
@@ -1048,11 +1042,11 @@ body.lock {
   margin: 0 0 60px 80px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .street_input, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .street_input {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .street_input, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .street_input {
   display: none;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area button, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area button {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area button, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area button {
   width: 100%;
   height: 50px;
   display: -webkit-box;
@@ -1072,30 +1066,30 @@ body.lock {
   font-size: 14px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area button img, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area button img {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area button img, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area button img {
   width: 14px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area button img.active, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area button img.active {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area button img.active, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area button img.active {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu {
   display: none;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input::-moz-placeholder, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input::-moz-placeholder {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu input::-moz-placeholder, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu input::-moz-placeholder {
   color: #C4C4C4;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input::-webkit-input-placeholder, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input::-webkit-input-placeholder {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu input::-webkit-input-placeholder, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu input::-webkit-input-placeholder {
   color: #C4C4C4;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu input, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu input {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu input, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu input {
   margin-top: 10px;
   border-radius: 10px;
   height: 40px;
@@ -1103,7 +1097,7 @@ body.lock {
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu ul, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu ul {
   margin-top: 10px;
   max-height: 160px;
   display: -webkit-box;
@@ -1116,24 +1110,24 @@ body.lock {
   overflow-y: scroll;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu ul li, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu ul li {
   margin-top: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li p, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li p {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu ul li p, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu ul li p {
   padding: 5px;
   font-size: 14px;
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(1) .delivery_method .input_area .ul_drop_menu ul li:hover, .wraper section #form_row form .col-md-6:nth-child(1) .payment_method .input_area .ul_drop_menu ul li:hover {
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu ul li:hover, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu ul li:hover {
   background-color: #fff3cdda;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) {
+.wraper section #form_row .col-md-6:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1142,7 +1136,7 @@ body.lock {
           justify-content: center;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
@@ -1166,29 +1160,40 @@ body.lock {
           box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .title {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .title {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 0px solid #F5C331;
   border-bottom-width: 3.5px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .title h3 {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .title h3 {
   margin: 15px 0;
   color: #333333;
   font-size: 25px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .order_data {
   width: 100%;
   padding: 0 15px;
   margin-top: 30px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data .total_price dd {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .order_data .total_price dd {
   font-size: 20px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data dl {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .order_data dl:nth-child(2) {
+  border: 0px solid #EAEAEA;
+  border-bottom-width: 1.5px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .order_data dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,11 +1201,9 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 0px solid #EFEFEF;
-  border-bottom-width: 0.5px;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data dl dt {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .order_data dl dt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1213,7 +1216,7 @@ body.lock {
   color: #C4C4C4;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card .order_data dl dd {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card .order_data dl dd {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
@@ -1221,7 +1224,7 @@ body.lock {
   color: #333333;
 }
 
-.wraper section #form_row form .col-md-6:nth-child(2) .total_card button {
+.wraper section #form_row .col-md-6:nth-child(3) .total_card button {
   width: 171px;
   height: 47px;
   margin-bottom: 20px;
@@ -1361,6 +1364,35 @@ body.lock {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .wraper #my_orders_conten_col .order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+  .wraper #my_orders_conten_col .order .img_name_order, .wraper #my_orders_conten_col .order .count_and_price_delete {
+    margin: 0 !important;
+  }
+  .wraper #my_orders_conten_col .order .count_and_price_delete {
+    margin: 20px 0 !important;
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wraper #form_row .col-md-6:nth-child(2) .input_area {
+    margin-left: 0 !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wraper #form_row .col-md-6:nth-child(3) .total_card {
+    margin: 70px 10px 0 10px !important;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .wraper .nav .col-md-3:nth-child(2) a img:nth-child(1) {
     display: none !important;
@@ -1416,6 +1448,37 @@ body.lock {
   }
   .wraper #contact_row .col-md-2:nth-child(2) {
     display: block !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wraper #my_orders_conten_col .order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px 10px !important;
+    border: 0px solid #EAEAEA !important;
+    border-bottom-width: 2px !important;
+  }
+  .wraper #my_orders_conten_col .order .img_name_order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wraper #my_orders_conten_col .order .img_name_order .text {
+    margin-top: 30px;
+    margin-left: 0px !important;
+    text-align: center;
+  }
+  .wraper #my_orders_conten_col .order .count_and_price_delete {
+    width: 100% !important;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .wraper #my_orders_conten_col .order .count_and_price_delete p:nth-child(1) {
+    margin-left: 0px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
