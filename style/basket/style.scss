@@ -776,9 +776,9 @@ body.lock{
                         .count{
                             width: 120px;
                             display: flex;
-                            justify-content: space-around;
+                            justify-content: space-between;
                             align-items: center;
-                            padding: 0 10px;
+                            padding: 0;
                             border: 2.5px solid #F5C331;
                             border-radius: 27px;
 
@@ -790,17 +790,23 @@ body.lock{
                                 align-items: center;
                                 color: #333333;
                                 font-family: 'Quicksand', sans-serif;
-                                margin-left: 15px;
                                 text-align: center;
                                 border:none;
                             }
 
+                            button:nth-child(1){
+                                margin-left: 15px;
+                            }
+
+                            button:nth-child(3){
+                                margin-right: 15px;
+                            }
+
                             button{
-                                display: flex;
+                                padding: 0;
                                 height: 20px;
+                                display: flex;
                                 align-items: center;
-                                justify-content: center;
-                                transition: 0.3s;
                                 background-color:#ffffff;
                                 border: none;
                                 color: #333333;

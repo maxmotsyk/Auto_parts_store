@@ -850,12 +850,13 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0;
   border: 2.5px solid #F5C331;
   border-radius: 27px;
 }
@@ -874,29 +875,33 @@ body.lock {
           align-items: center;
   color: #333333;
   font-family: 'Quicksand', sans-serif;
-  margin-left: 15px;
   text-align: center;
   border: none;
 }
 
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:nth-child(1) {
+  margin-left: 15px;
+}
+
+.wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button:nth-child(3) {
+  margin-right: 15px;
+}
+
 .wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count button {
+  padding: 0;
+  height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   background-color: #ffffff;
   border: none;
   color: #333333;
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
