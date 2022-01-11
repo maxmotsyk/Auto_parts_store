@@ -774,7 +774,7 @@ body.lock{
                         width: 50%;
 
                         .count{
-                            border:none;
+                            width: 120px;
                             display: flex;
                             justify-content: space-around;
                             align-items: center;
@@ -829,6 +829,7 @@ body.lock{
                             button{
                                 width: 40px;
                                 height: 40px;
+                                padding: 0;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -873,6 +874,11 @@ body.lock{
             
             .col-md-6:nth-child(2){
                
+                input:not([type=checkbox]):not([type=radio]){
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
 
                 .title{
                     margin-bottom: 30px;
@@ -1420,6 +1426,21 @@ body.lock{
                         margin-left: 0px !important;
                     }
 
+                }
+
+            }
+
+        }
+
+        #form_row{
+
+            .col-md-6:nth-child(2){
+
+                .input_area{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,100%) !important;
+                    gap: 30px;
+                    margin: 0 0 60px 80px;
                 }
 
             }

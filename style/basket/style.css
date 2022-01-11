@@ -846,7 +846,7 @@ body.lock {
 }
 
 .wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .count {
-  border: none;
+  width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,6 +925,7 @@ body.lock {
 .wraper section #orders_row #my_orders_conten_col .order .count_and_price_delete .price_delete button {
   width: 40px;
   height: 40px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,6 +966,12 @@ body.lock {
 .wraper section #form_row .main_title h1 {
   color: #333333;
   font-size: 36px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(2) input:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .wraper section #form_row .col-md-6:nth-child(2) .title {
@@ -1479,6 +1486,14 @@ body.lock {
   }
   .wraper #my_orders_conten_col .order .count_and_price_delete p:nth-child(1) {
     margin-left: 0px !important;
+  }
+  .wraper #form_row .col-md-6:nth-child(2) .input_area {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (100%)[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, 100%) !important;
+    gap: 30px;
+    margin: 0 0 60px 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */
