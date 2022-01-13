@@ -708,7 +708,6 @@ body.lock{
             }
 
             .col:nth-child(1){
-                z-index: 999;
                 display: flex;
                 justify-content:center;
                 align-items: center;
@@ -781,6 +780,7 @@ body.lock{
             }
 
             .col:nth-child(2){
+                z-index: -1;
                 overflow-x: hidden;
 
                 .warehouse_fore_mobile{

@@ -683,15 +683,19 @@ body.lock {
   border-radius: 15px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+          box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
 }
 
 .wraper section #news_row .col-md-12:nth-child(2) .news img {
-  width: 235px;
-  margin: 10px 5px 0 5px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin: 0px;
 }
 
 .wraper section #news_row .col-md-12:nth-child(2) .news .text {
   margin-top: 15px;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +703,7 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  text-align: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -709,23 +713,18 @@ body.lock {
   margin-bottom: 15px;
   color: #F5C331;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .wraper section #news_row .col-md-12:nth-child(2) .news .text p {
   color: #333333;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .wraper section #news_row .col-md-12:nth-child(2) .news time {
-  font-size: 14px;
+  font-size: 12px;
   margin: 15px 0 10px;
   color: #848383;
-}
-
-.wraper section #news_row .col-md-12:nth-child(2) .news:hover, .wraper section #news_row .col-md-12:nth-child(2) .news:active {
-  -webkit-box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
-          box-shadow: 6px 6px 24px 1px rgba(79, 79, 79, 0.25);
 }
 
 .wraper footer #contact_row {

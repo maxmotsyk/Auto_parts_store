@@ -752,7 +752,6 @@ body.lock {
 }
 
 .wraper section #main_row .col:nth-child(1) {
-  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,6 +834,7 @@ body.lock {
 }
 
 .wraper section #main_row .col:nth-child(2) {
+  z-index: -1;
   overflow-x: hidden;
 }
 
