@@ -727,8 +727,8 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 135px;
-  height: 135px;
+  width: 125px;
+  height: 125px;
   border-radius: 100px;
   -webkit-box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.116);
           box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.116);

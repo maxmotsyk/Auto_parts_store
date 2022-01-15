@@ -1020,6 +1020,12 @@ body.lock {
   margin-top: 70px;
 }
 
+.wraper section #setting_row input:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .wraper section #setting_row .setting_body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1363,8 +1369,17 @@ body.lock {
 
 @media screen and (max-width: 540px) {
   .wraper #setting_row .setting_body {
+    width: 100% !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
+  }
+  .wraper #setting_row .setting_body .input_email, .wraper #setting_row .setting_body .password_body {
+    width: 315px !important;
+    height: 50px !important;
+  }
+  .wraper #setting_row .setting_body .input_fio, .wraper #setting_row .setting_body .input_phone {
+    width: 315px !important;
+    height: 50px !important;
   }
   .wraper #date_search_col {
     padding: 0 !important;

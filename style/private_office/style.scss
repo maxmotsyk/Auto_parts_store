@@ -950,6 +950,13 @@ body.lock{
             display: none;
             margin-top: 70px;
 
+            input:not([type=checkbox]):not([type=radio]){
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+        
+            }
+
             .setting_body{
                 display: flex;
                 justify-content: center;
@@ -1357,7 +1364,21 @@ body.lock{
         #setting_row{
 
             .setting_body{
+                width: 100% !important;
                 box-shadow:none !important;
+
+                .input_email,.password_body{
+                    width: 315px !important;
+                    height: 50px !important;
+                }
+
+                .input_fio,.input_phone{
+                    
+                    width: 315px !important;
+                    height: 50px !important;
+  
+                }
+
             }
 
         }
