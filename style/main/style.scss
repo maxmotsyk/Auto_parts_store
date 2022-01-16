@@ -508,6 +508,9 @@ body.lock{
                 a{  
                     z-index: 1005;
                     button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         width: 36px;
                         height: 36px;
                         border: none;
@@ -517,8 +520,9 @@ body.lock{
                         transition: 0.3s;
 
                         img{
+                            width: 16px;
+                            height: 16px;
                             transition: 0.3s;
-
                         }
 
                     }
@@ -548,11 +552,17 @@ body.lock{
                         width: 70px;
                         height: 35px;
                         display: flex;
+                        align-items: center;
                         justify-content:space-between;
                         align-items: center;
+                        
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
 
                         .line{
-                            width: 1px;
+                            width:1px;
                             height: 18px;
                             background-color:#A0A0A0;
                         }

@@ -547,6 +547,15 @@ body.lock {
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 36px;
   height: 36px;
   border: none;
@@ -559,6 +568,8 @@ body.lock {
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a button img {
+  width: 16px;
+  height: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -582,12 +593,18 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
+}
+
+.wraper header .nav .col-md-3:nth-child(4) a:nth-child(2) button img {
+  width: 20px;
+  height: 20px;
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a:nth-child(2) button .line {
