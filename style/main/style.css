@@ -596,10 +596,8 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a:nth-child(2) button img {
@@ -1179,8 +1177,8 @@ body.lock {
 }
 
 .wraper section #assortment_container #slick_row .slider-for .models .car:hover, .wraper section #assortment_container #slick_row .slider-for .models .car:active {
-  -webkit-box-shadow: 6px 5px 14px #cacaca;
-          box-shadow: 6px 5px 14px #cacaca;
+  -webkit-box-shadow: 3px 3px 10px #cacaca;
+          box-shadow: 3px 3px 10px #cacaca;
 }
 
 .wraper section #assortment_container #slider_oil_row {
