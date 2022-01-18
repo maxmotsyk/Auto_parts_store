@@ -710,6 +710,160 @@ body.lock{
 
     section{
         flex: 1 1 auto;
+
+        .title{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+
+            h1{
+                color: #333333;
+                font-size: 36px;
+            }
+
+        }
+
+        #filter_col{
+            margin-top: 70px;
+
+            .body_filter{
+                width: 280px;
+                min-height: 315px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 10px;
+                box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+                border-radius: 10px;
+
+                .option_body{
+                    margin-top: 10px;
+                    
+                    button{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border:none;
+                        background-color:#ffffff;
+                        padding: 0 5px;
+
+                        .nameOption_countitems{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: flex-end;
+
+                            p{
+                                font-size: 14px;
+                            }
+
+                            p:nth-child(1){
+                                color:#333333;
+                                transition: 0.3s;
+                            }
+
+                            p:nth-child(2){
+                                margin-left: 8px;
+                                color:#a1a1a1;
+                            }
+
+                        }
+
+                        img{
+                            width: 12px;
+                            height: 12px;
+                            transition: 0.3s;
+                        }
+
+                        img.active{
+                            transform: rotate(45deg);
+                        }
+                        
+                    }
+
+                    button:hover,button:active{
+
+                        .nameOption_countitems{
+
+                            p:nth-child(1){
+                                color:#F5C331;
+                            }
+
+                        }
+
+                    }
+
+                    .option_ul{
+                        margin: 8px 0 0 15px;
+
+                        li{
+                            margin-top: 8px;
+                            padding: 0 5px;
+                            transition: 0.3s;
+                            cursor: pointer;
+
+                            a{
+                                font-size: 16px;
+                                color:#333333;
+                            }
+
+                        }
+
+                        li:hover,li:active{
+                            background-color:#fff3cdda
+                        }
+
+                    }
+
+                }
+
+                .button_create_reset{
+                    width: 100%;
+                    margin-top: 70px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    button{
+                        width: 115px;
+                        height: 50px;
+                        color:#333333;
+                        transition: 0.3s;
+                    }
+
+                    button:nth-child(1){
+                        border:none;
+                        background: #F5C331;
+                        border-radius: 30px;
+                    }
+
+
+                    button:nth-child(2){
+                        border: 2px solid #F5C331;
+                        background-color:#ffffff;
+                        border-radius: 30px;
+                    }
+
+                }
+
+            }
+
+        }
+
+        #cell_col{
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,230px);
+            grid-gap:30px;
+
+            .product{
+                width: 273px;
+                height: 319px;
+                box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+                border-radius: 10px;
+            }
+
+        }
         
     }
 
