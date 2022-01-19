@@ -1022,6 +1022,15 @@ body.lock{
 
                             }
 
+                            ul::-webkit-scrollbar{
+                                width: 5px;
+                            }
+    
+                            ul::-webkit-scrollbar-thumb{
+                                background-color: #F5C331;
+                                border-radius:5px;
+                            }
+
                         }
                         
                     }

@@ -728,13 +728,18 @@ body.lock{
 
             .body_filter{
                 width: 280px;
-                min-height: 315px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 flex-direction: column;
-                padding: 0 10px;
+                padding:12px;
                 box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
                 border-radius: 10px;
+
+                input:not([type=checkbox]):not([type=radio]){
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
 
                 .option_body{
                     margin-top: 10px;
@@ -777,7 +782,7 @@ body.lock{
                         }
 
                         img.active{
-                            transform: rotate(45deg);
+                            transform: rotate(-45deg);
                         }
                         
                     }
@@ -794,24 +799,107 @@ body.lock{
 
                     }
 
-                    .option_ul{
-                        margin: 8px 0 0 15px;
+                    .drop_menu{
+                        display: none;
+                        margin: 8px 0 0 0;
 
-                        li{
-                            margin-top: 8px;
-                            padding: 0 5px;
-                            transition: 0.3s;
-                            cursor: pointer;
-
-                            a{
-                                font-size: 16px;
-                                color:#333333;
-                            }
-
+                        .live_search::-moz-placeholder { 
+                            color: #C4C4C4;
+                        }
+    
+                        .live_search::-webkit-input-placeholder { 
+                            color: #C4C4C4;
                         }
 
-                        li:hover,li:active{
-                            background-color:#fff3cdda
+                        .live_search{
+                            margin-top: 10px;
+                            border-radius:5px;
+                            height: 30px;
+                            width: 100%;
+                            font-size: 14px;
+                            border: 1px solid #C4C4C4;
+                            color: #333333;
+                        }
+
+                        .option_ul{
+                            margin-top: 8px;
+                            max-height: 100px;
+                            overflow-y: scroll;
+                            
+                            li{
+                                margin-top: 8px;
+                                padding: 0 5px;
+                                display: flex;
+                                align-items: center;
+                                transition: 0.3s;
+                                cursor: pointer;
+
+                                input{
+                                    margin-right: 10px;
+                                }
+    
+                                p{
+                                    font-size: 14px;
+                                    color:#333333;
+                                }
+    
+                            }
+    
+                            li:hover,li:active{
+                                background-color:#fff3cdda
+                            }
+    
+                        }
+
+                        .option_ul::-webkit-scrollbar{
+                            width: 5px;
+                        }
+
+                        .option_ul::-webkit-scrollbar-thumb{
+                            background-color: #F5C331;
+                            border-radius:5px;
+                        }
+
+                    }
+
+                }
+
+                #price_option{
+                    
+                    /* Chrome, Safari, Edge, Opera */
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                    }
+
+                    /* Firefox */
+                    input[type=number] {
+                    -moz-appearance: textfield;
+                    }
+
+                    .filters_prise_input{
+                        margin: 10px 0 0 0;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        input{
+                            width: 65px;
+                            height: 32px;
+                            border-radius:5px;
+                            padding:2px;
+                            font-size: 14px;
+                            color: #333333;
+                            border: 1px solid #C4C4C4;
+                        }
+
+                        span{
+                            display: block;
+                            width: 15px;
+                            height: 1px;
+                            margin: 0 5px;
+                            background-color:#C4C4C4;
                         }
 
                     }
@@ -858,9 +946,144 @@ body.lock{
 
             .product{
                 width: 273px;
-                height: 319px;
+                height: 315px;
+                padding:15px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
                 box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
                 border-radius: 10px;
+
+                .img_product{
+                    width: 120px;
+                    height:120px;
+                }
+
+                .title_product{
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 55px;
+                }
+
+                .rating_star{
+                    margin-top: 5px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    
+                    .rating_value{
+                        position: absolute;
+                        visibility:hidden;
+                    }
+
+                    .rating_body{
+                        font-size:18px;
+                        position: relative;
+
+                        .rating_active{
+                            position: absolute;
+                            width: 0%;
+                            height: 100%;
+                            top:0;
+                            left:0;
+                            overflow: hidden;
+                        }
+
+                        .rating_active::before{
+                            content:"★★★★★";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top:0;
+                            left:0;
+                            color: #F5C331;
+                        }
+
+                        .rating_items{
+                            display: flex;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top:0;
+                            left:0;
+
+                            .rating_item{
+                                flex:0 0 20%;
+                                height: 100%;
+                                opacity: 0;
+                            }
+
+                        }
+
+                    }
+
+                    .rating_body::before{
+                        display: block;
+                        content:"★★★★★";
+                        color:#E1E1E1;
+                        
+                    }
+
+                    .count_reviews{
+                        margin-left: 4px;
+                        font-size: 12px;
+                    }
+
+                }
+
+                .body_price_addInBasket{
+                    width: 100%;
+                    margin-top: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .price_and_availability{
+
+                        p:nth-child(1){
+                            font-size: 20px;
+                            color:#333333;
+                        }
+
+                        p:nth-child(2){
+                            font-size: 12px;
+                            color:#333333;
+
+                            img{
+                                margin-left: 5px;
+                                width: 10px;
+                            }
+
+                        }
+
+                    }
+
+                    .round{
+                        width: 40px;
+                        height: 40px;
+                        border-radius:40px;
+                        background: #FFFFFF;
+                        border: 2px solid #F5C331;
+
+                        img{
+                            width: 16px;
+                            height: 16px;
+                            transition: 0.3s;
+                        }
+
+                    }
+
+                    .round:hover{
+
+                        img{
+                            transform: rotate(90deg);
+                        }
+
+                    }
+
+                }
+
             }
 
         }

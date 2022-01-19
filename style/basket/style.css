@@ -1139,6 +1139,15 @@ body.lock {
   background-color: #fff3cdda;
 }
 
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu ul::-webkit-scrollbar, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wraper section #form_row .col-md-6:nth-child(2) .delivery_method .input_area .ul_drop_menu ul::-webkit-scrollbar-thumb, .wraper section #form_row .col-md-6:nth-child(2) .payment_method .input_area .ul_drop_menu ul::-webkit-scrollbar-thumb {
+  background-color: #F5C331;
+  border-radius: 5px;
+}
+
 .wraper section #form_row .col-md-6:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
