@@ -7,8 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/main/header/Group 25.svg" type="image/x-icon">
     <title>autooil</title>
+    <script src="../js/product_page/priseslider/nouislider.min.js" defer></script>
+    <script src="../js/product_page/priseslider/priseslider.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
     <script src="../js/product_page/script.js" defer></script>
+    <link rel="stylesheet" href="../style/product_page/priceslider/nouislider.min.css">
     <link rel="stylesheet" href="../style/product_page/style.css">
 </head>
 
@@ -506,9 +509,9 @@
 
         <section>
             
-            <div class="container">
+            <div class="container-fluid">
 
-                <div class="row">
+                <div id="filter_product_row" class="row">
 
                     <div class="col-md-12 title">
 
@@ -518,14 +521,31 @@
     
                     </div>
     
-                    <div id="filter_col" class="col-md-3">
-    
-                        <form action="." method="post">
+                    <div id="filter_col" class="col-xl-3 col-md-4 col-sm-12">
+
+                        <button class="mobile_filter_button">
+
+                                <p>
+                                    Фильтр
+                                </p>
+
+                                <img src="../img/product_page/section/setting-lines.svg" alt="">
+
+                        </button>
+
+                        <div class="body_filter">
+
+                            <div class="exit_filter_mobile">  
+
+                                <img src="../img/product_page/section/cross.svg" alt="">
+
+                            </div>
                             
-                            <div class="body_filter">
-    
+                            
+                            <form action="." method="post">
+                                
                                 <div class="search_options">
-    
+
                                     <div id="price_option" class="option_body">
     
                                         <button class="button_for_ul_drop_list" type="button">
@@ -541,19 +561,40 @@
                                             <img src="../img/product_page/section/cross.svg" alt="">
     
                                         </button>
-
+    
                                         <div class="drop_menu">
-
+    
                                             <div class="filters_prise_input">
-
-                                                <input type="number" name="" id="">
-
-                                                <span></span>
-
-                                                <input type="number" name="" id="">
-
+    
+                                                <label for="prise_input">
+    
+                                                    <span>от</span>
+    
+                                                    <input type="number" name="" class="prise_input">
+    
+                                                    <span>₴</span>
+    
+                                                </label>
+    
+                                                
+                                                <label for="prise_input">
+    
+                                                    <span>до</span>
+    
+                                                    <input type="number" name="" class="prise_input">
+    
+                                                    <span>₴</span>
+    
+                                                </label>
+    
                                             </div>
-
+    
+                                            <div class="prise_slider_col"> 
+    
+                                                <div id="prise_slider"></div>
+    
+                                            </div>
+    
                                         </div>
     
                                     </div>
@@ -577,17 +618,17 @@
                                             <img src="../img/product_page/section/cross.svg" alt="">
     
                                         </button>
-
+    
                                         <div class="drop_menu">
-
+    
                                             <input class="live_search" type="text" placeholder="Введите бренд">
-
+    
                                             <ul class="option_ul">
     
                                                 <li class="option_ul_item">
         
                                                     <input type="checkbox" name="" id="">
-
+    
                                                     <p>Mersedes</p>
         
                                                 </li>
@@ -595,7 +636,7 @@
                                                 <li class="option_ul_item">
         
                                                     <input type="checkbox" name="" id="">
-
+    
                                                     <p>BMW</p>
         
                                                 </li>
@@ -609,7 +650,7 @@
                                                 </li>
         
                                             </ul>
-
+    
                                         </div>
                                        
                                     </div>
@@ -628,31 +669,34 @@
                                     </button>
     
                                 </div>
-    
-                            </div>
-    
-                        </form>
+
+                            </form>
+
+                        </div>
     
                     </div>
     
-                    <div id="cell_col" class="col-md-9">
+                    <div id="cell_col" class="col-xl-9 col-md-8 col-sm-12">
+
+                        <!-- начало карточки -->
     
                         <div class="cell">
     
                             <div class="product">
 
-                                <a class="img_product" href="">
+                                <a class="title_img_product" href="">
 
-                                    <img src="../img/product_page/section/product_img.png" alt="">
+                                    <img class="img_product" src="../img/product_page/section/product_img.png" alt="">
+    
+    
+                                    <p class="title_product">
+    
+                                        #456323  поршень
+                                        Sprinter 2.9tdi, 89mm 
+    
+                                    </p>
 
                                 </a>
-
-                                <p class="title_product">
-
-                                    #456323  поршень
-                                    Sprinter 2.9tdi, 89mm 
-
-                                </p>
 
                                 <div class="rating_star">
 
@@ -715,6 +759,260 @@
                             </div>
     
                         </div>
+
+                        <!-- конец карточки -->
+
+                      <!-- начало карточки -->
+    
+                      <div class="cell">
+    
+                        <div class="product">
+
+                            <a class="title_img_product" href="">
+
+                                <img class="img_product" src="../img/product_page/section/product_img.png" alt="">
+
+
+                                <p class="title_product">
+
+                                    #456323  поршень
+                                    Sprinter 2.9tdi, 89mm 
+
+                                </p>
+
+                            </a>
+
+                            <div class="rating_star">
+
+                                <div class="rating_value">
+                                    3.5
+                                </div>
+
+                                <div class="rating_body">
+
+                                    <div class="rating_active">
+
+                                    </div>
+
+                                    <div class="rating_items">
+
+                                        <input class="rating_item" type="radio" name="rating" value="1" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="2" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="3" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="4" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="5" >
+
+                                    </div>
+
+                                </div>
+
+                                <span class="count_reviews">
+                                    (2) отзыва
+                                </span>
+
+                            </div>
+
+                            <div class="body_price_addInBasket">
+
+                                <div class="price_and_availability">
+
+                                    <p>
+                                        1300 ₴
+                                    </p>
+
+                                    <p>
+                                        В наличие
+                                        <img src="../img/product_page/section/check-mark-yes.svg" alt="">
+
+                                    </p>
+
+                                </div>
+
+                                <button class="round">
+
+                                    <img src="../img/product_page/section/cross.svg" alt="">
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- конец карточки -->
+
+                      <!-- начало карточки -->
+    
+                      <div class="cell">
+    
+                        <div class="product">
+
+                            <a class="title_img_product" href="">
+
+                                <img class="img_product" src="../img/product_page/section/product_img.png" alt="">
+
+
+                                <p class="title_product">
+
+                                    #456323  поршень
+                                    Sprinter 2.9tdi, 89mm 
+
+                                </p>
+
+                            </a>
+
+                            <div class="rating_star">
+
+                                <div class="rating_value">
+                                    3.5
+                                </div>
+
+                                <div class="rating_body">
+
+                                    <div class="rating_active">
+
+                                    </div>
+
+                                    <div class="rating_items">
+
+                                        <input class="rating_item" type="radio" name="rating" value="1" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="2" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="3" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="4" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="5" >
+
+                                    </div>
+
+                                </div>
+
+                                <span class="count_reviews">
+                                    (2) отзыва
+                                </span>
+
+                            </div>
+
+                            <div class="body_price_addInBasket">
+
+                                <div class="price_and_availability">
+
+                                    <p>
+                                        1300 ₴
+                                    </p>
+
+                                    <p>
+                                        В наличие
+                                        <img src="../img/product_page/section/check-mark-yes.svg" alt="">
+
+                                    </p>
+
+                                </div>
+
+                                <button class="round">
+
+                                    <img src="../img/product_page/section/cross.svg" alt="">
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- конец карточки -->
+
+                      <!-- начало карточки -->
+    
+                      <div class="cell">
+    
+                        <div class="product">
+
+                            <a class="title_img_product" href="">
+
+                                <img class="img_product" src="../img/product_page/section/product_img.png" alt="">
+
+
+                                <p class="title_product">
+
+                                    #456323  поршень
+                                    Sprinter 2.9tdi, 89mm 
+
+                                </p>
+
+                            </a>
+
+                            <div class="rating_star">
+
+                                <div class="rating_value">
+                                    3.5
+                                </div>
+
+                                <div class="rating_body">
+
+                                    <div class="rating_active">
+
+                                    </div>
+
+                                    <div class="rating_items">
+
+                                        <input class="rating_item" type="radio" name="rating" value="1" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="2" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="3" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="4" >
+
+                                        <input class="rating_item" type="radio" name="rating" value="5" >
+
+                                    </div>
+
+                                </div>
+
+                                <span class="count_reviews">
+                                    (2) отзыва
+                                </span>
+
+                            </div>
+
+                            <div class="body_price_addInBasket">
+
+                                <div class="price_and_availability">
+
+                                    <p>
+                                        1300 ₴
+                                    </p>
+
+                                    <p>
+                                        В наличие
+                                        <img src="../img/product_page/section/check-mark-yes.svg" alt="">
+
+                                    </p>
+
+                                </div>
+
+                                <button class="round">
+
+                                    <img src="../img/product_page/section/cross.svg" alt="">
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- конец карточки -->
     
                     </div>
 

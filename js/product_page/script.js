@@ -147,6 +147,30 @@ $(document).ready(function () {
         }
       });
 
+
+      $('.mobile_filter_button').click(function(){
+        if($(this).hasClass('active')){
+          $(this).toggleClass('active');
+          $('.body_filter').fadeOut(200);
+        }
+        else{
+          $(this).toggleClass('active');
+          $('.body_filter').fadeIn(200);
+        }
+
+      });
+
+      $('.exit_filter_mobile').children('img').click(function(){
+        if($(this).hasClass('active')){
+          $(this).toggleClass('active');
+          $('.body_filter').fadeOut(200);
+        }
+        else{
+          $(this).toggleClass('active');
+          $('.body_filter').fadeIn(200);
+        }
+      });
+
       const ratings = $('.rating_star');
 
       if(ratings.length > 0){
@@ -172,7 +196,6 @@ $(document).ready(function () {
         function initRatingVars(rating){
           rating_active = $(rating).find('.rating_active');
           rating_value = $(rating).children('.rating_value');
-          console.log($(rating_active));
 
         }
 

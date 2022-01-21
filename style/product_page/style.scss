@@ -711,8 +711,14 @@ body.lock{
     section{
         flex: 1 1 auto;
 
+        #filter_product_row{
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
         .title{
             margin-top: 100px;
+            margin-bottom: 70px;
             display: flex;
             justify-content: center;
 
@@ -724,10 +730,38 @@ body.lock{
         }
 
         #filter_col{
-            margin-top: 70px;
 
+            .mobile_filter_button{
+                margin-bottom: 70px;
+                width: 335px;
+                height: 50px;
+                display: none;
+                padding: 0 25px;
+                align-items: center;
+                justify-content: space-between;
+                background-color:#ffffff;
+                border:none;
+                box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+                border-radius: 10px;
+                cursor: pointer;
+
+                p{
+                    font-size: 16px;
+                    color:#333333;
+                }
+
+                img{
+                    width: 27px;
+                    height: 27px;
+                }
+
+            }
+            
             .body_filter{
+                top:0;
+                position: sticky;
                 width: 280px;
+                min-width: 270px;
                 display: flex;
                 justify-content: flex-start;
                 flex-direction: column;
@@ -741,6 +775,19 @@ body.lock{
                     appearance: none;
                 }
 
+                .exit_filter_mobile{
+                    margin: 15px 0;
+                    width: 100%;
+                    display: none;
+                    justify-content: flex-end;
+
+                    img{
+                       width: 16px;
+                        transform: rotate(-45deg);
+                    }
+
+                }
+
                 .option_body{
                     margin-top: 10px;
                     
@@ -751,7 +798,7 @@ body.lock{
                         justify-content: space-between;
                         border:none;
                         background-color:#ffffff;
-                        padding: 0 5px;
+                        padding: 0;
 
                         .nameOption_countitems{
                             display: flex;
@@ -801,7 +848,7 @@ body.lock{
 
                     .drop_menu{
                         display: none;
-                        margin: 8px 0 0 0;
+                        margin: 10px 0 0 0;
 
                         .live_search::-moz-placeholder { 
                             color: #C4C4C4;
@@ -879,27 +926,66 @@ body.lock{
                     }
 
                     .filters_prise_input{
-                        margin: 10px 0 0 0;
                         width: 100%;
                         display: flex;
+                        justify-content: space-between;
                         align-items: center;
 
-                        input{
-                            width: 65px;
-                            height: 32px;
-                            border-radius:5px;
-                            padding:2px;
-                            font-size: 14px;
-                            color: #333333;
+                        label{
                             border: 1px solid #C4C4C4;
+                            border-radius:5px;
+                            padding:3px;
+
+                            input{
+                                width: 60px;
+                                height: 32px;
+                                font-size: 14px;
+                                border:none;
+                                color: #333333;
+                            }
+
+                            span{
+                                font-family: 'Montserrat',sans-serif;
+                                font-weight: 500;
+                                color:#C4C4C4;
+                            }
+
                         }
 
-                        span{
-                            display: block;
-                            width: 15px;
-                            height: 1px;
-                            margin: 0 5px;
+                    }
+
+                    .prise_slider_col{
+                        display: flex;
+                        justify-content: center;
+
+                        .noUi-target{
+                            width: 90%;
+                            height: 3px;
+                            margin: 20px 0;
                             background-color:#C4C4C4;
+                            border:none;
+                            box-shadow:none;
+                        }
+    
+                        .noUi-connect{
+                            background-color:#F5C331;
+                        }
+    
+                        .noUi-handle:after,
+                        .noUi-handle:before{
+                            display: none;
+                        }
+    
+                        .noUi-handle{
+                            top: -15px;
+                            width: 32px;
+                            height: 32px;
+                            background-color: #ffffff;
+                            border-radius:30px;
+                            border:none;
+                            box-shadow: none;
+                            background-image: url(/Auto_parts_store/img/product_page/section/gear.svg);
+                            background-position: center;
                         }
 
                     }
@@ -939,13 +1025,14 @@ body.lock{
         }
 
         #cell_col{
-            margin-top: 70px;
+            justify-content: center;
             display: grid;
-            grid-template-columns: repeat(auto-fit,230px);
-            grid-gap:30px;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(253px, 260px));
+            grid-gap:15px;
 
             .product{
-                width: 273px;
+                width: 260px;
                 height: 315px;
                 padding:15px;
                 display: flex;
@@ -954,15 +1041,24 @@ body.lock{
                 box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
                 border-radius: 10px;
 
-                .img_product{
-                    width: 120px;
-                    height:120px;
-                }
+                .title_img_product{
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .img_product{
+                        width: 120px;
+                        height:105px
+                    }
+    
+                    .title_product{
+                        margin-top: 20px;
+                        width: 100%;
+                        height: 55px;
+                        color:#333333;
+                    }
 
-                .title_product{
-                    margin-top: 20px;
-                    width: 100%;
-                    height: 55px;
                 }
 
                 .rating_star{
@@ -974,10 +1070,12 @@ body.lock{
                     
                     .rating_value{
                         position: absolute;
+                        z-index:-2;
                         visibility:hidden;
                     }
 
                     .rating_body{
+                        z-index:-2;
                         font-size:18px;
                         position: relative;
 
@@ -1034,7 +1132,7 @@ body.lock{
 
                 .body_price_addInBasket{
                     width: 100%;
-                    margin-top: 40px;
+                    margin-top: 30px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -1065,7 +1163,8 @@ body.lock{
                         border-radius:40px;
                         background: #FFFFFF;
                         border: 2px solid #F5C331;
-
+                        cursor: pointer;
+                        
                         img{
                             width: 16px;
                             height: 16px;
@@ -1225,6 +1324,110 @@ body.lock{
 
             #serch_mobileV_articul{
                 display:flex !important;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 878px) {
+
+        #filter_product_row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #filter_col{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .mobile_filter_button{
+                    display: flex !important;
+                }
+
+                .body_filter{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    box-shadow:none !important;
+                    position: absolute;
+                    background-color:#ffff;
+
+                    .exit_filter_mobile{
+                        display: flex;
+                    }
+
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding-bottom: 70px;
+                        height:100%;
+
+                        .option_body{
+                            border: 0px solid #EAEAEA;
+                            border-bottom-width: 1.5px;
+                            margin-top: 15px !important;
+                            padding-bottom: 6px !important;
+
+                            .button_for_ul_drop_list{
+                                height: 40px;
+
+                                .nameOption_countitems{
+    
+                                    p{
+                                        font-size: 16px !important;
+                                    }
+    
+                                }
+    
+                                img{
+                                    width: 16px !important;
+                                    height: 16px !important;
+                                }
+    
+                            }
+
+                            .drop_menu{
+                                
+                                .live_search{
+                                    font-size: 16px;
+                                    height: 35px !important;
+                                }
+
+                                .option_ul_item{
+
+                                    input{
+                                        width: 16px;
+                                    }
+
+                                    p{
+                                        font-size: 16px !important;
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .button_create_reset{
+                           margin: 0 !important;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            #cell_col{
+                width: 100%;
             }
 
         }
