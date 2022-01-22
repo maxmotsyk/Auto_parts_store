@@ -766,7 +766,7 @@ body.lock{
                 justify-content: flex-start;
                 flex-direction: column;
                 padding:12px;
-                box-shadow: 6px 6px 24px 1px rgba(134, 134, 134, 0.25);
+                box-shadow: 6px 6px 35px 1px rgba(134, 134, 134, 0.39);
                 border-radius: 10px;
 
                 input:not([type=checkbox]):not([type=radio]){
@@ -1336,7 +1336,7 @@ body.lock{
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            
             #filter_col{
                 width: 100%;
                 display: flex;
@@ -1355,11 +1355,11 @@ body.lock{
                     left: 0;
                     right: 0;
                     bottom: 0;
-                    box-shadow:none !important;
                     position: fixed;
                     background-color:#ffff;
 
                     .exit_filter_mobile{
+                        margin-top: 10px;
                         display: flex;
                     }
 
@@ -1538,6 +1538,8 @@ body.lock{
 
             .body_filter{
                 width: 100% !important;
+                border-radius:0 !important;
+                box-shadow:none !important;
             }
 
         }
