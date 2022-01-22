@@ -149,26 +149,13 @@ $(document).ready(function () {
 
 
       $('.mobile_filter_button').click(function(){
-        if($(this).hasClass('active')){
-          $(this).toggleClass('active');
-          $('.body_filter').fadeOut(200);
-        }
-        else{
-          $(this).toggleClass('active');
           $('.body_filter').fadeIn(200);
-        }
-
+          $('body').toggleClass('lock');
       });
 
       $('.exit_filter_mobile').children('img').click(function(){
-        if($(this).hasClass('active')){
-          $(this).toggleClass('active');
           $('.body_filter').fadeOut(200);
-        }
-        else{
-          $(this).toggleClass('active');
-          $('.body_filter').fadeIn(200);
-        }
+          $('body').toggleClass('lock');
       });
 
       const ratings = $('.rating_star');

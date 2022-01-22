@@ -762,7 +762,7 @@ body.lock{
                 position: sticky;
                 width: 280px;
                 min-width: 270px;
-                display: flex;
+                display: flex ;
                 justify-content: flex-start;
                 flex-direction: column;
                 padding:12px;
@@ -776,14 +776,13 @@ body.lock{
                 }
 
                 .exit_filter_mobile{
-                    margin: 15px 0;
-                    width: 100%;
+                    height: 40px;
                     display: none;
+                    align-items: center;
                     justify-content: flex-end;
 
                     img{
-                       width: 16px;
-                        transform: rotate(-45deg);
+                       width: 20px;
                     }
 
                 }
@@ -1162,6 +1161,7 @@ body.lock{
                         height: 40px;
                         border-radius:40px;
                         background: #FFFFFF;
+                        padding: 0;
                         border: 2px solid #F5C331;
                         cursor: pointer;
                         
@@ -1350,12 +1350,13 @@ body.lock{
                     display: none;
                     width: 100%;
                     height: 100%;
+                    padding: 0 15px;
                     top: 0;
                     left: 0;
                     right: 0;
                     bottom: 0;
                     box-shadow:none !important;
-                    position: absolute;
+                    position: fixed;
                     background-color:#ffff;
 
                     .exit_filter_mobile{
@@ -1363,11 +1364,18 @@ body.lock{
                     }
 
                     form{
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        padding-bottom: 70px;
+                        padding-bottom: 30px;
                         height:100%;
+
+                        .search_options{
+                            overflow-y: scroll;
+                            overflow-x: hidden;
+                            
+                        }
 
                         .option_body{
                             border: 0px solid #EAEAEA;
@@ -1417,7 +1425,7 @@ body.lock{
                         }
 
                         .button_create_reset{
-                           margin: 0 !important;
+                           margin: 30px 0 !important;
                         }
 
                     }
@@ -1428,6 +1436,7 @@ body.lock{
 
             #cell_col{
                 width: 100%;
+                grid-gap: 30px;
             }
 
         }

@@ -844,18 +844,18 @@ body.lock {
 }
 
 .wraper section #filter_col .body_filter .exit_filter_mobile {
-  margin: 15px 0;
-  width: 100%;
+  height: 40px;
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
 .wraper section #filter_col .body_filter .exit_filter_mobile img {
-  width: 16px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  width: 20px;
 }
 
 .wraper section #filter_col .body_filter .option_body {
@@ -1276,6 +1276,7 @@ body.lock {
   height: 40px;
   border-radius: 40px;
   background: #FFFFFF;
+  padding: 0;
   border: 2px solid #F5C331;
   cursor: pointer;
 }
@@ -1452,13 +1453,14 @@ body.lock {
     display: none;
     width: 100%;
     height: 100%;
+    padding: 0 15px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    position: absolute;
+    position: fixed;
     background-color: #ffff;
   }
   .wraper #filter_product_row #filter_col .body_filter .exit_filter_mobile {
@@ -1467,6 +1469,7 @@ body.lock {
     display: flex;
   }
   .wraper #filter_product_row #filter_col .body_filter form {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1477,8 +1480,12 @@ body.lock {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     height: 100%;
+  }
+  .wraper #filter_product_row #filter_col .body_filter form .search_options {
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .wraper #filter_product_row #filter_col .body_filter form .option_body {
     border: 0px solid #EAEAEA;
@@ -1507,10 +1514,11 @@ body.lock {
     font-size: 16px !important;
   }
   .wraper #filter_product_row #filter_col .body_filter form .button_create_reset {
-    margin: 0 !important;
+    margin: 30px 0 !important;
   }
   .wraper #filter_product_row #cell_col {
     width: 100%;
+    grid-gap: 30px;
   }
 }
 
