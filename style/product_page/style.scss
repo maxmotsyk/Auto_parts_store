@@ -1348,7 +1348,7 @@ body.lock{
 
                 .body_filter{
                     display: none;
-                    width: 100%;
+                    width: 340px;
                     height: 100%;
                     padding: 0 15px;
                     top: 0;
@@ -1526,6 +1526,18 @@ body.lock{
 
             .col-md-2:nth-child(2){
                 display: block !important;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 400px) {
+
+        #filter_col{
+
+            .body_filter{
+                width: 100% !important;
             }
 
         }
