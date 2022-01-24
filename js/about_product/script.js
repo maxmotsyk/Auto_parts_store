@@ -168,16 +168,27 @@ $(document).ready(function () {
           $('.fabricator_body').slideDown(300);
           $('.reviews_body').slideUp(300);
           $('.specification_body').slideUp(300);
+          $('.description_body').slideUp(300);
         }
         else if($(this).hasClass('reviews')){
           $('.reviews_body').slideDown(300);
           $('.fabricator_body').slideUp(300);
           $('.specification_body').slideUp(300);
+          $('.description_body').slideUp(300);
         }
         else if($(this).hasClass('specification')){
           $('.specification_body').slideDown(300);
           $('.reviews_body').slideUp(300);
+          $('.fabricator_body').slideUp(300);
+          $('.description_body').slideUp(300);
+        }
+        else if ($(this).hasClass('description')){
+          $('.description_body').slideDown(300);
+          $('.reviews_body').slideUp(300);
+          $('.fabricator_body').slideUp(300);
           $('.specification_body').slideUp(300);
+          
+          
         }
         else{
           console.log('not have this menu element');

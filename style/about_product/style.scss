@@ -920,7 +920,6 @@ body.lock{
                     .nav_menu{
                         height: 40px;
                         white-space: nowrap;
-                        overflow-x: scroll;
 
                         ul{
                             display: flex;
@@ -951,7 +950,7 @@ body.lock{
 
                     }
 
-                    .fabricator_body,.reviews_body{
+                    .fabricator_body,.reviews_body,.description_body,.specification_body{
                         margin-top: 50px;
                         display: flex;
                         flex-direction: column;
@@ -970,6 +969,40 @@ body.lock{
                         p{
                             font-size: 14px;
                             color:#333333;
+                        }
+
+                    }
+
+                    .description_body{
+                        display: none;
+
+                        p{
+                            font-size: 14px;
+                            color:#333333;
+                        }
+
+                    }
+
+                    .specification_body{
+                        display: none;
+                        
+                        .specification_item:nth-child(2n){
+                            background-color:#FFF3CD;
+                        }
+
+                        .specification_item{
+                            display: flex;
+                            align-items:center;
+                            justify-content: space-between;
+                            padding: 5px;
+                            border-radius:5px;
+                            font-size: 14px;
+
+                            dt,dd{
+                                color:#333333;
+                                font-size:14px;
+                            }
+
                         }
 
                     }
@@ -1377,9 +1410,16 @@ body.lock{
         #about_product_col{
             margin-top: 70px !important;
 
+            .nav_menu{
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+
             .about_product_body{
                 margin: 0 !important;
             }
+
+            
 
         }
 

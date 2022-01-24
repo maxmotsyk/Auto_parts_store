@@ -1003,7 +1003,6 @@ body.lock {
 .wraper section #about_product_col .about_product_body .product_parameters .nav_menu {
   height: 40px;
   white-space: nowrap;
-  overflow-x: scroll;
 }
 
 .wraper section #about_product_col .about_product_body .product_parameters .nav_menu ul {
@@ -1031,7 +1030,7 @@ body.lock {
   color: #F5C331;
 }
 
-.wraper section #about_product_col .about_product_body .product_parameters .fabricator_body, .wraper section #about_product_col .about_product_body .product_parameters .reviews_body {
+.wraper section #about_product_col .about_product_body .product_parameters .fabricator_body, .wraper section #about_product_col .about_product_body .product_parameters .reviews_body, .wraper section #about_product_col .about_product_body .product_parameters .description_body, .wraper section #about_product_col .about_product_body .product_parameters .specification_body {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1042,7 +1041,7 @@ body.lock {
           flex-direction: column;
 }
 
-.wraper section #about_product_col .about_product_body .product_parameters .fabricator_body h3, .wraper section #about_product_col .about_product_body .product_parameters .reviews_body h3 {
+.wraper section #about_product_col .about_product_body .product_parameters .fabricator_body h3, .wraper section #about_product_col .about_product_body .product_parameters .reviews_body h3, .wraper section #about_product_col .about_product_body .product_parameters .description_body h3, .wraper section #about_product_col .about_product_body .product_parameters .specification_body h3 {
   margin-bottom: 25px;
   font-weight: 700;
   font-size: 20px;
@@ -1052,6 +1051,43 @@ body.lock {
 .wraper section #about_product_col .about_product_body .product_parameters .fabricator_body p {
   font-size: 14px;
   color: #333333;
+}
+
+.wraper section #about_product_col .about_product_body .product_parameters .description_body {
+  display: none;
+}
+
+.wraper section #about_product_col .about_product_body .product_parameters .description_body p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.wraper section #about_product_col .about_product_body .product_parameters .specification_body {
+  display: none;
+}
+
+.wraper section #about_product_col .about_product_body .product_parameters .specification_body .specification_item:nth-child(2n) {
+  background-color: #FFF3CD;
+}
+
+.wraper section #about_product_col .about_product_body .product_parameters .specification_body .specification_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.wraper section #about_product_col .about_product_body .product_parameters .specification_body .specification_item dt, .wraper section #about_product_col .about_product_body .product_parameters .specification_body .specification_item dd {
+  color: #333333;
+  font-size: 14px;
 }
 
 .wraper section #about_product_col .about_product_body .product_parameters .reviews_body {
@@ -1418,6 +1454,10 @@ body.lock {
 @media screen and (max-width: 458px) {
   .wraper #about_product_col {
     margin-top: 70px !important;
+  }
+  .wraper #about_product_col .nav_menu {
+    overflow-y: hidden;
+    overflow-x: scroll;
   }
   .wraper #about_product_col .about_product_body {
     margin: 0 !important;
