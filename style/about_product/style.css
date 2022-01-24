@@ -983,6 +983,7 @@ body.lock {
 .wraper section #about_product_col .about_product_body .price_title_reting_buy_block .price_buy button {
   width: 135px;
   height: 60px;
+  color: #333333;
   border: 3px solid #F5C331;
   background-color: #ffffff;
   font-size: 20px;
