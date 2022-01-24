@@ -587,7 +587,6 @@ body.lock{
                 align-items:center;
 
                 .body_serch{
-                        
                     width: 350px;
                     height: 45px;
                     display: flex;
@@ -710,6 +709,435 @@ body.lock{
 
     section{
         flex: 1 1 auto;
+        
+        .col-md-6{
+            margin-top: 100px;
+        }
+
+        #img_slder_col{
+            display: flex;
+            justify-content: center;
+
+            .product_img_slider{
+                min-width: 0;
+                display: flex;
+                flex-direction: column;
+
+                .slider-for{
+                    display: flex;
+                    justify-content: center;
+                   
+
+                    .slider-for-item{
+                        display: flex;
+                        justify-content: center;
+                       
+
+                        img{
+                            width: 290px;
+                        }
+
+                    }
+
+                }
+
+                .slider-nav{
+                    display: flex;
+                    align-items:center;
+                    margin-top: 30px;
+
+                    .slider-nav-item{
+                        display: flex;
+                        justify-content: center;
+
+                        img{
+                            width: 115px;
+                            cursor: pointer;
+                        }
+                        
+                    }
+
+                    .prev,.next{
+                        height: 22px;
+                        width: 15px !important;
+                        cursor: pointer;
+                    }
+
+                    .prev:hover,.prev:active{
+                        opacity:0.7;
+                    }
+
+                    .next:hover,.next:active{
+                        opacity:0.7;
+                    }
+
+                    .prev{
+                        transform: rotate(-180deg);
+                    }
+
+                }
+
+            }
+
+        }
+
+        #about_product_col{
+
+            .about_product_body{
+                margin-left: 50px;
+
+                .price_title_reting_buy_block{
+
+                    .price{
+                        max-width: 400px;
+                        font-size: 24px;
+                        color:#333333;
+                        font-weight: 700;
+                    }
+
+                    .rating_star{
+                        margin-top: 5px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        
+                        .rating_value{
+                            position: absolute;
+                            z-index:-2;
+                            visibility:hidden;
+                        }
+    
+                        .rating_body{
+                            z-index:-2;
+                            font-size:24px;
+                            position: relative;
+    
+                            .rating_active{
+                                position: absolute;
+                                width: 85%;
+                                height: 100%;
+                                top:0;
+                                left:0;
+                                overflow: hidden;
+                            }
+    
+                            .rating_active::before{
+                                content:"★★★★★";
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top:0;
+                                left:0;
+                                color: #F5C331;
+                            }
+    
+                            .rating_items{
+                                display: flex;
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top:0;
+                                left:0;
+    
+                                .rating_item{
+                                    flex:0 0 20%;
+                                    height: 100%;
+                                    opacity: 0;
+                                }
+    
+                            }
+    
+                        }
+    
+                        .rating_body::before{
+                            display: block;
+                            content:"★★★★★";
+                            color:#E1E1E1;
+                            
+                        }
+    
+                        .count_reviews{
+                            margin-left: 4px;
+                            font-size: 12px;
+                        }
+    
+                    }
+
+                    .price_buy{
+                        margin-top: 20px;
+                        display: flex;
+                        align-items:center;
+
+                        .price_presence{
+                            margin-right: 60px;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: column;
+
+                            h3{
+                                font-size: 24px;
+                                font-weight: 700;
+                                color:#333333;
+                            }
+
+                            p{
+                                margin-right: 10px;
+                                font-size: 14px;
+                                color:#333333;
+
+                                img{
+                                    width: 16px;
+                                    height: 11px;
+                                }
+
+                            }
+
+                        }
+
+                        button{
+                            width: 135px;
+                            height: 60px;
+                            border: 3px solid #F5C331;
+                            background-color: #ffffff;
+                            font-size: 20px;
+                            border-radius: 10px;
+                            transition: 0.3s;
+                        }
+
+                        button:hover,button:active{
+                            border: 3px solid #f5c431e7;
+                        }
+
+                    }
+
+                }
+
+                .product_parameters{
+                    margin-top: 50px;
+
+                    .nav_menu{
+                        height: 40px;
+                        white-space: nowrap;
+                        overflow-x: scroll;
+
+                        ul{
+                            display: flex;
+                            
+                            li:nth-child(1){
+
+                                p{
+                                    color:#F5C331;
+                                }
+
+                            }
+                            
+                            li:not(:last-child){
+                                margin-right: 15px;
+                            }
+                            
+                            p{
+                                color:#333333;
+                                transition: 0.3s;
+                                cursor: pointer;
+                            }
+
+                            p:hover,p:active{
+                                color:#F5C331;
+                            }
+
+                        }
+
+                    }
+
+                    .fabricator_body,.reviews_body{
+                        margin-top: 50px;
+                        display: flex;
+                        flex-direction: column;
+
+                        h3{
+                            margin-bottom: 25px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            color:#333333;
+                        }
+
+                    }
+
+                    .fabricator_body{
+
+                        p{
+                            font-size: 14px;
+                            color:#333333;
+                        }
+
+                    }
+
+
+                    .reviews_body{
+                        display: none;
+
+                        .review{
+                            margin-bottom: 30px;
+                            padding-bottom: 15px;
+                            border: 0px solid #F5C331;;
+                            border-bottom-width: 1.5px ;
+
+                            .fio{
+                                font-family: 'Montserrat',sans-serif;
+                                font-weight: 500;
+                                margin: 0;
+                                font-size: 16px;
+                                color:#333333;
+                            }
+
+                            .reting_and_data{
+                                display: flex;
+                                align-items:flex-end;
+
+                                .rating_star{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    
+                                    .rating_value{
+                                        position: absolute;
+                                        z-index:-2;
+                                        visibility:hidden;
+                                    }
+                
+                                    .rating_body{
+                                        z-index:-2;
+                                        font-size:20px;
+                                        position: relative;
+                
+                                        .rating_active{
+                                            position: absolute;
+                                            width: 85%;
+                                            height: 100%;
+                                            top:0;
+                                            left:0;
+                                            overflow: hidden;
+                                        }
+                
+                                        .rating_active::before{
+                                            content:"★★★★★";
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            top:0;
+                                            left:0;
+                                            color: #F5C331;
+                                        }
+                
+                                        .rating_items{
+                                            display: flex;
+                                            position: absolute;
+                                            width: 100%;
+                                            height: 100%;
+                                            top:0;
+                                            left:0;
+                
+                                            .rating_item{
+                                                flex:0 0 20%;
+                                                height: 100%;
+                                                opacity: 0;
+                                            }
+                
+                                        }
+                
+                                    }
+                
+                                    .rating_body::before{
+                                        display: block;
+                                        content:"★★★★★";
+                                        color:#E1E1E1;
+                                        
+                                    }
+                
+                                    .count_reviews{
+                                        margin-left: 4px;
+                                        font-size: 12px;
+                                    }
+                
+                                }
+
+                                time{
+                                    padding-bottom: 2px;
+                                    margin-left: 25px;
+                                    font-family: 'Montserrat',sans-serif;
+                                    font-size: 14px;
+                                    color:#C4C4C4;
+                                }
+
+                            }
+
+                            .content{
+                                margin-top: 15px;
+                                font-size: 14px;
+                                color:#333333;
+                            }
+
+                        }
+
+
+                        .pagination{
+                            margin-top: 30px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+            
+                            .pagination_ul{
+                                display: flex;
+                                flex-direction: row;
+            
+                                li{
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 0 10px;
+            
+                                    img{
+                                        height: 14px;
+                                        cursor: pointer;
+                                        transition: 0.3s;
+                                    }
+            
+                                    img:hover,img:active{
+                                        opacity: 0.8;
+                                    }
+            
+                                    a{
+                                        font-family: 'Quicksand', sans-serif;
+                                        font-size: 14px;
+                                        color:#C4C4C4;
+                                        transition: 0.3s;
+                                    }
+            
+                                    a:hover,a:active{
+                                        color:#F5C331;
+                                    }
+            
+                                }
+            
+                                .prev_page{
+            
+                                    img{
+                                        transform: rotate(-180deg);
+                                    }
+            
+                                }
+            
+                            }
+            
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
         
     }
 
@@ -937,6 +1365,19 @@ body.lock{
 
             .col-md-2:nth-child(2){
                 display: block !important;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 458px) {
+
+        #about_product_col{
+            margin-top: 70px !important;
+
+            .about_product_body{
+                margin: 0 !important;
             }
 
         }
