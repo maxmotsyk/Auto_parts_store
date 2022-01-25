@@ -334,7 +334,7 @@ body.lock{
 
         .nav{   
             top: 0;
-            position: sticky;
+            position: relative;
             display: flex;
             justify-content: space-between;
             margin: 0px auto;
@@ -779,6 +779,42 @@ body.lock{
 
             }
 
+            .shipping_and_payment{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: center;
+                margin-top: 50px;
+                
+    
+                .payment{
+                    margin-bottom: 20px;
+                }
+    
+                .payment,.shipping{
+                    padding: 5px 25px;
+                    max-width: 470px;
+                    min-height: 75px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;
+                    box-shadow: 6px 6px 24px rgba(134, 134, 134, 0.25);
+                    border-radius: 10px;
+    
+                    p{
+                        width: 350px;
+                        font-size: 14px;
+                        color:#333333;
+                    }
+
+                    img{
+                        margin-right: 20px;
+                    }
+    
+                }
+    
+            }
+
         }
 
         #about_product_col{
@@ -920,6 +956,7 @@ body.lock{
                     .nav_menu{
                         height: 40px;
                         white-space: nowrap;
+                        overflow-x:auto;
 
                         ul{
                             display: flex;
@@ -948,6 +985,15 @@ body.lock{
 
                         }
 
+                    }
+
+                    .nav_menu::-webkit-scrollbar{
+                        height: 3px ;
+                    }
+
+                    .nav_menu::-webkit-scrollbar-thumb{
+                        background-color: #F5C331;
+                        border-radius:3px;
                     }
 
                     .fabricator_body,.reviews_body,.description_body,.specification_body{
@@ -1009,7 +1055,48 @@ body.lock{
 
 
                     .reviews_body{
+                        min-height: 0;
                         display: none;
+
+                        .send_reviews{
+                            position: absolute;
+                            z-index: 1008;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items:center;
+                            top: 0;
+                            left:0;
+                            background: rgba(12,6,26,.6);
+
+                            form{
+                                width: 480px;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                background-color:#ffffff;
+                                padding: 10px;
+                                margin: 0 20px;
+                                border-radius:10px;
+
+                                .name_end_email{
+                                    margin-bottom: 20px;
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    input{
+                                        width: 200px;
+                                        height: 45px;
+                                        display: flex;
+                                        border: 2px solid #F5C331;
+                                        border-radius: 10px;
+                                    }
+
+                                }
+
+                            }
+                        }
 
                         .review{
                             margin-bottom: 30px;
@@ -1167,6 +1254,38 @@ body.lock{
 
                     }
 
+                    .shipping_and_payment{
+                        display: none;
+                        margin-top: 50px;
+                        
+                        .payment{
+                            margin-bottom: 20px;
+                        }
+            
+                        .payment,.shipping{
+                            padding: 5px 25px;
+                            max-width: 470px;
+                            min-height: 75px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items:center;
+                            box-shadow: 6px 6px 24px rgba(134, 134, 134, 0.25);
+                            border-radius: 10px;
+            
+                            p{
+                                width: 350px;
+                                font-size: 14px;
+                                color:#333333;
+                            }
+        
+                            img{
+                                margin-right: 20px;
+                            }
+            
+                        }
+            
+                    }
+
                 }
 
             }
@@ -1310,6 +1429,33 @@ body.lock{
 
             #serch_mobileV_articul{
                 display:flex !important;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 767px){
+
+        #img_slder_col{
+            
+            .shipping_and_payment{
+                display: none !important;
+            }
+
+        }
+
+        #about_product_col{
+
+            .shipping_and_payment{
+                display: block !important;
+
+                .shipping,.payment{
+                    padding: 0 !important;
+                    width: 100% !important;
+                    box-shadow:none !important;
+                }
+
             }
 
         }
