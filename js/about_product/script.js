@@ -196,6 +196,14 @@ $(document).ready(function () {
   
       });
 
+      $('#send_reviewsLink').click(function(){
+        $('.send_reviews').css("display", "flex").hide().fadeIn();
+      });
+
+      $('#send_reviews_exit_img').click(function(){
+        $('.send_reviews').fadeOut();
+      });
+
       const ratings = $('.rating_star');
 
       if(ratings.length > 0){

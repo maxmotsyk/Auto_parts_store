@@ -1055,47 +1055,198 @@ body.lock{
 
 
                     .reviews_body{
-                        min-height: 0;
                         display: none;
 
+                        .title_end_send_reviewsLink{
+                            display: flex;
+                            justify-content: space-between;
+
+                            p{
+                                color:#C4C4C4;
+                                font-size: 16px;
+                                cursor:pointer;
+                                transition: 0.3s;
+                            }
+
+                            p:hover,p:active{
+                                color:#F5C331;
+                            }
+
+                        }
+
                         .send_reviews{
-                            position: absolute;
+                            position: fixed;
+                            display: block;
                             z-index: 1008;
                             width: 100%;
                             height: 100%;
-                            display: flex;
+                            display: none;
+                            
+                            text-align: center;
                             justify-content: center;
                             align-items:center;
                             top: 0;
                             left:0;
                             background: rgba(12,6,26,.6);
+                            
+                            .exit_row{
+                                margin-bottom: 20px;
+                                display: flex;
+                                justify-content: flex-end;
+
+                                img{
+                                    width: 17px;
+                                    height: 17px;
+                                    transition: 0.3s;
+                                    cursor: pointer;
+                                }
+
+                                img:hover,img:active{
+                                    transform: rotate(90deg);
+                                }
+
+                            }
+
+                            .title{
+                                font-size: 24px;
+                                font-weight: 500;
+                            }
 
                             form{
-                                width: 480px;
+                                width: 455px;
+                                max-width: 455px;
+                                min-height: 455px ;
                                 display: flex;
                                 justify-content: center;
                                 flex-direction: column;
                                 background-color:#ffffff;
-                                padding: 10px;
+                                padding:20px;
                                 margin: 0 20px;
                                 border-radius:10px;
 
-                                .name_end_email{
-                                    margin-bottom: 20px;
+                                .reting_row{
                                     display: flex;
-                                    justify-content: space-between;
+                                    align-items:center;
+                                    margin-bottom: 20px;
+
+                                    h3{
+                                        font-weight: 500;
+                                        margin: 0 10px 0 0;
+                                        font-size: 15px;
+                                        color:#333333;
+                                    }
+
+                                    .rating_star{
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-start;
+                                        
+                                        .rating_value{
+                                            position: absolute;
+                                            z-index:-2;
+                                            visibility:hidden;
+                                        }
+                    
+                                        .rating_body{
+                                            font-size:25px;
+                                            position: relative;
+                    
+                                            .rating_active{
+                                                position: absolute;
+                                                width: 85%;
+                                                height: 100%;
+                                                top:0;
+                                                left:0;
+                                                overflow: hidden;
+                                            }
+                    
+                                            .rating_active::before{
+                                                content:"★★★★★";
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                top:0;
+                                                left:0;
+                                                color: #F5C331;
+                                            }
+                    
+                                            .rating_items{
+                                                display: flex;
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                top:0;
+                                                left:0;
+                    
+                                                .rating_item{
+                                                    flex:0 0 20%;
+                                                    height: 100%;
+                                                    opacity: 0;
+                                                    cursor: pointer;
+                                                }
+                    
+                                            }
+                    
+                                        }
+                    
+                                        .rating_body::before{
+                                            display: block;
+                                            content:"★★★★★";
+                                            color:#E1E1E1;
+                                            
+                                        }
+                    
+                                        .count_reviews{
+                                            margin-left: 4px;
+                                            font-size: 12px;
+                                        }
+                    
+                                    }
+
+                                }
+
+                                .name_end_email{
+                                    display: flex;
+                                    flex-direction: column;
 
                                     input{
-                                        width: 200px;
+                                        font-size: 14px;
+                                        padding-right: 5px;
+                                        margin-bottom: 20px;
+                                        width: 100%;
                                         height: 45px;
                                         display: flex;
-                                        border: 2px solid #F5C331;
+                                        border: 2px solid #C4C4C4;
                                         border-radius: 10px;
                                     }
 
                                 }
 
+                                textarea{
+                                    margin-bottom: 20px;
+                                    min-height: 90px;
+                                    
+                                    border: 2px solid #C4C4C4;
+                                    border-radius: 10px;
+                                    font-size: 14px;
+                                    color:#333333;
+                                    
+                                } 
+
+                                .send_reviews_button{
+                                    margin: 0 auto 0 auto;
+                                    width: 150px;
+                                    height: 50px;
+                                    background: #F5C331;
+                                    border:none;
+                                    border-radius: 30px;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-size: 20px;
+                                    color:#333333;
+                                }   
+
                             }
+
                         }
 
                         .review{
