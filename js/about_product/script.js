@@ -198,10 +198,12 @@ $(document).ready(function () {
 
       $('#send_reviewsLink').click(function(){
         $('.send_reviews').css("display", "flex").hide().fadeIn();
+        $('body').toggleClass('lock')
       });
 
       $('#send_reviews_exit_img').click(function(){
         $('.send_reviews').fadeOut();
+        $('body').toggleClass('lock')
       });
 
       const ratings = $('.rating_star');
