@@ -763,6 +763,15 @@ body.lock {
           flex: 1 1 auto;
 }
 
+.wraper section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .wraper section #question_and_answer_col {
   margin-top: 100px;
   display: -webkit-box;
@@ -775,24 +784,21 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .wraper section #question_and_answer_col h1 {
   color: #333333;
-  font-size: 36px;
-  margin-bottom: 70px;
+  font-size: 30px;
+  margin: 0 auto 70px auto;
   text-align: center;
 }
 
 .wraper section #question_and_answer_col .question_and_answer {
   margin-bottom: 20px;
-  padding-bottom: 15px;
-  max-width: 880px;
-  border: 0px solid #F5C331;
-  border-bottom-width: 1px;
+  width: 100%;
 }
 
 .wraper section #question_and_answer_col .question_and_answer .question {
@@ -809,13 +815,13 @@ body.lock {
 }
 
 .wraper section #question_and_answer_col .question_and_answer .question img {
-  -webkit-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wraper section #question_and_answer_col .question_and_answer .question img.active {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 
 .wraper section #question_and_answer_col .question_and_answer .question p {
@@ -827,19 +833,100 @@ body.lock {
 }
 
 .wraper section #question_and_answer_col .question_and_answer .answer {
-  margin-left: 26px;
-  max-width: 854px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
+  display: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0px solid #F5C331;
+  border-bottom-width: 2px;
 }
 
 .wraper section #question_and_answer_col .question_and_answer .answer p {
+  max-width: 854px;
+  margin-bottom: 1em;
   font-size: 16px;
   color: #333333;
+}
+
+.wraper section #question_and_answer_col .question_and_answer .answer p a {
+  color: #F5C331;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper section #question_and_answer_col .question_and_answer .answer p a:hover, .wraper section #question_and_answer_col .question_and_answer .answer p a:active {
+  color: #f5c4319f;
+}
+
+.wraper section #questions_left {
+  background-image: url(/Auto_parts_store/img/FAQ/section/bacground_img_questions_left.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  background-position: center;
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper section #questions_left h1 {
+  color: #333333;
+  font-size: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.wraper section #questions_left p {
+  max-width: 675px;
+  text-align: center;
+  color: #333333;
+  font-size: 20px;
+}
+
+.wraper section #questions_left .button_area {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wraper section #questions_left .button_area button {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+.wraper section #questions_left .button_area a:nth-child(1) button {
+  margin-right: 30px;
+  width: 115px;
+  height: 50px;
+  background: #F5C331;
+  border: none;
+  border-radius: 30px;
+}
+
+.wraper section #questions_left .button_area a:nth-child(2) button {
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #F5C331;
 }
 
 .wraper footer #contact_row {

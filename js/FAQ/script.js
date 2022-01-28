@@ -79,6 +79,21 @@ $(document).ready(function () {
 
     });
 
+    $('.question').click(function(){
+
+      if($(this).next().hasClass('active')){
+        $(this).children('img').toggleClass('active');
+        $(this).next().slideUp(300);
+        $(this).next().toggleClass('active');
+      }
+      else{
+        $(this).next().css("display", "flex").hide().slideDown(300);
+        $(this).children('img').toggleClass('active');
+        $(this).next().toggleClass('active');
+      }
+
+    })
+
 
       $('.footer_menu_category').click(function(){
 

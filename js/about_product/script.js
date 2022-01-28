@@ -226,19 +226,51 @@ $(document).ready(function () {
         function initRating(rating){
           initRatingVars(rating);
           setRatingActiveWidth();
+
+          if($(rating).hasClass('rating_set')){
+            setRating(rating);
+          }
+
         }
 
         function initRatingVars(rating){
           rating_active = $(rating).find('.rating_active');
           rating_value = $(rating).children('.rating_value');
-
         }
 
-        function setRatingActiveWidth(){
-          let index = $(rating_value).text().trim()
+        function setRatingActiveWidth(index = $(rating_value).text().trim()){
           let rating_active_width = index / 0.05;
           $(rating_active).css("width",`${rating_active_width}%`);
         }
+
+        function setRating(rating){
+          let radio = $(rating).find('.rating_item');
+          
+          for(let i = 0; i < radio.length; i++){
+              const rating_radio = radio[i];
+              rating_radio.addEventListener('mouseenter',function(e) {
+                  initRatingVars(rating);
+                  setRatingActiveWidth(rating_radio.value);
+              });
+  
+              rating_radio.addEventListener('mouseleave',function (e){
+                  setRatingActiveWidth();
+              });
+  
+              rating_radio.addEventListener('click',function (e){
+                  initRatingVars(rating);
+  
+                  if(rating.dataset.ajax){
+                      // setRa
+                  }
+                  else{
+                    $(rating_value).text(i + 1);
+                    setRatingActiveWidth();
+                  }
+
+              });
+          }
+      }
 
       }
 

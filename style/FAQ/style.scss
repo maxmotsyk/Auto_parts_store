@@ -539,7 +539,6 @@ body.lock{
 
                         img,p{
                             opacity: 0.8;
-
                         }
 
                     }
@@ -711,27 +710,28 @@ body.lock{
     section{
         flex: 1 1 auto;
 
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+
         #question_and_answer_col{
             margin-top: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items:center;
+            align-items:flex-start;
             
             h1{
                 color: #333333;
-                font-size: 36px;
-                margin-bottom: 70px;
+                font-size: 30px;
+                margin: 0 auto 70px auto;
                 text-align: center;
             }
 
             .question_and_answer{
                 margin-bottom: 20px;
-                padding-bottom: 15px;
-                
-                max-width: 880px;
-                border: 0px solid #F5C331;
-                border-bottom-width: 1px;
+                width: 100%;
 
                 .question{
                     padding: 0;
@@ -742,11 +742,11 @@ body.lock{
                     border:none;
 
                     img{
-                        transition: 0.3;
+                        transition: 0.3s;
                     }
 
                     img.active{
-                        transform: rotateY(-180deg);
+                        transform: rotateX(180deg);
                     }
 
                     p{
@@ -760,14 +760,94 @@ body.lock{
                 }
 
                 .answer{
-                    margin-left: 26px;
-                    max-width: 854px;
-                    display: flex;
-                    justify-content: center;
+                    width: 100%;
+                    display: none;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    border: 0px solid #F5C331;
+                    border-bottom-width: 2px;
+
 
                     p{
+                        max-width: 854px;
+                        margin-bottom: 1em;
                         font-size: 16px;
                         color:#333333;
+
+                        a{
+                            color:#F5C331;
+                            transition: 0.3s;
+                        }
+        
+                        a:hover,a:active{
+                            color:#f5c4319f;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        #questions_left{
+            background-image: url(/Auto_parts_store/img/FAQ/section/bacground_img_questions_left.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-repeat:repeat-y;
+            background-position: center;
+            margin-top: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+
+            h1{
+                color: #333333;
+                font-size: 30px;
+                margin-bottom: 70px;
+                text-align: center;
+            }
+
+            p{
+                max-width: 675px;
+                text-align: center;
+                color: #333333;
+                font-size: 20px;
+            }
+
+            .button_area{
+                margin-top: 40px;
+                margin-bottom: 10px;
+                display: flex;
+
+                button{
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 20px;
+                    color:#333333;
+                }
+
+                a:nth-child(1){
+
+                    button{
+                        margin-right: 30px;
+                        width: 115px;
+                        height: 50px;
+                        background: #F5C331;
+                        border:none;
+                        border-radius: 30px;
+                    }
+
+                }
+
+                a:nth-child(2){
+
+                    button{
+                        height: 50px;
+                        background-color:#ffffff;
+                        border-radius: 30px;
+                        border: 2px solid #F5C331;
                     }
 
                 }
