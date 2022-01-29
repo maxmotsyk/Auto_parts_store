@@ -83,6 +83,45 @@ $(document).ready(function () {
 
       });
 
+      $('.alternative_product_slider').slick({
+        infinite: true,
+        slidesToShow:4,
+        slidesToScroll: 1,
+        centerPadding: '0px',
+        variableWidth:true,
+        prevArrow: "<img src='../img/about_product/section/prew-next-arrow.svg'  class='prev' alt='1'>",
+        nextArrow: "<img src='../img/about_product/section/prew-next-arrow.svg'  class='next' alt='2'>",
+        dots: false,
+        arrows: true,
+        
+
+        responsive: [
+            {
+              breakpoint:988,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+                breakpoint:580,
+                settings: {
+                  variableWidth:false,
+                  slidesToShow: 2,
+                  arrows: false,
+                }
+            },
+            {
+              breakpoint:441,
+                settings: {
+                  slidesToShow: 1,
+                  arrows: false,
+                }
+            },
+          
+        ]
+
+      });
+
     $(".tail").click(function(){
       
         if($(this).hasClass('active')){
