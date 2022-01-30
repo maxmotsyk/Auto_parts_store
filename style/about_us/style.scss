@@ -147,7 +147,77 @@ body.lock{
                         }
 
                     }
+
+                    .phone_menu{
+                        display: flex !important;
+
+                        img{
+                            margin-top:2px ;
+                            width: 6px;
+                            height: 10px;
+                            margin-left: 3px;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                            //  filter: hue-rotate(150deg);
+                        }
+
+                        img.active{
+                            width: 10px;
+                            height: 20px;
+                            transform: rotateY(180deg);
+                        }
+
+                        a.active{
+                            font-size: 16px;
+                        }
+
+                        .phone_menu_hiden{
+                            display: none;
+                        }
+                        
+                        .phone_menu_hiden.active{
+                           background-color:#ffffff;
+                           display: flex;
+                           overflow: hidden;
+                           width: 0%;
+                           
+                           ul{  
+                                margin-left: 15px;
+                                display: flex;
+                                
+                                li{
+                                    display: flex;
+                                    margin-right: 15px;
+                                    
+                                    a{
+                                        font-size: 14px;
+                                        text-decoration: none;
+                                        white-space: nowrap;
+                                        color: #848383;
+                                        transition: 0.3s;
+                                    }
+    
+                                    a:hover,a:active{
+                                        color: #333333;
+                                    }
+                                    
+                                }
+
+                           }
+           
+                       }
+
+                   }
                     
+                }
+
+                ul.unactive{
+
+                    li{
+                        display: none;
+                        margin: 0;
+                    }
+
                 }
 
             }

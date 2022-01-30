@@ -162,6 +162,78 @@ body.lock {
   opacity: 0.8;
 }
 
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu img {
+  margin-top: 2px;
+  width: 6px;
+  height: 10px;
+  margin-left: 3px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu img.active {
+  width: 10px;
+  height: 20px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu a.active {
+  font-size: 16px;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden {
+  display: none;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden.active {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 0%;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden.active ul {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden.active ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden.active ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #848383;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden.active ul li a:hover, .wraper header #additional_information .col-md-12:nth-child(1) ul .phone_menu .phone_menu_hiden.active ul li a:active {
+  color: #333333;
+}
+
+.wraper header #additional_information .col-md-12:nth-child(1) ul.unactive li {
+  display: none;
+  margin: 0;
+}
+
 .wraper header #additional_information .col-md-12:nth-child(2) .information {
   display: none;
 }

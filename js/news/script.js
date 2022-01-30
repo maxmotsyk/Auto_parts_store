@@ -27,7 +27,28 @@ $(document).ready(function(){
           $('#burger_menu').toggleClass('active').fadeIn(0);
         }
       });
-      
+
+      $('.phone_menu').click(function(){
+        $(this).parent().toggleClass('unactive');
+        $(this.childNodes[1]).toggleClass('active');
+        $(this.childNodes[5]).toggleClass('active');
+        
+        if($(this.childNodes[3]).hasClass('active')){
+  
+          $(this.childNodes[3]).width('0%');
+  
+          $(this.childNodes[3]).toggleClass('active');
+            
+        } 
+        else{
+          $(this.childNodes[3]).toggleClass('active');
+        
+          $(this.childNodes[3]).animate({
+            width:"100%" 
+          },1000);
+        }
+        
+      });
 
       $(".undermenu").click(function(){
         $(this.childNodes[1].childNodes[1]).toggleClass('active');

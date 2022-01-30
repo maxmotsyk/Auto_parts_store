@@ -751,8 +751,8 @@ body.lock{
                         display: flex;
 
                         button{
-                            width: 164px;
-                            height: 46px;
+                            width: 160px;
+                            height: 50px;
                             font-weight: bold;
                             color: #333333;
                             transition: 0.3s;
@@ -761,21 +761,19 @@ body.lock{
                         button:nth-child(1){
                             margin-right: 35px;
                             background: #F5C331;
-                            box-shadow: 6px 10px 14px rgba(255, 221, 121, 0.44);
                             border:none;
-                            border-radius: 15px;
+                            border-radius: 30px;
                         }
 
                         button:nth-child(2){
                             background: #FFFFFF;
                             border: 3px solid #F5C331;
-                            border-radius: 15px;
+                            border-radius: 30px;
 
                         }
 
                         button:nth-child(1):hover,button:nth-child(1):active{
                             background: #f5c431e7;
-                            box-shadow: 6px 10px 12px rgba(255, 222, 121, 0.596);
                         }
 
                         button:nth-child(2):hover,button:nth-child(2):active{
