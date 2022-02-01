@@ -43,6 +43,10 @@ body button {
   white-space: nowrap;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .wraper header #additional_information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,8 +345,7 @@ body button {
 
 .wraper header .nav {
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
