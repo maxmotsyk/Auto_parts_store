@@ -11,6 +11,7 @@
     <title>autooil</title>
     <script type="text/javascript" src="slick/slick.min.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/main/script.js" defer></script>
     <link rel="stylesheet" href="style/main/style.css">
 </head>
@@ -85,14 +86,14 @@
 
                                 </div>
                               
-                                <img src="../Auto_parts_store/img/main/header/arrow_right.svg" alt="">
+                                <img src="img/main/header/arrow_right.svg" alt="">
     
                             </li>
 
                             <li>
 
                                 <div class="body_serch">
-                                    
+
                                     <input type="text" placeholder="Введите артикул" name="search_by_article">
         
                                     <a href="#">
@@ -255,7 +256,7 @@
 
                             <li>
 
-                                <a href="../Auto_parts_store/html/about_us.html">
+                                <a href="Auto_parts_store/html/about_us.html">
                                     О нас
                                 </a>
 
@@ -325,14 +326,6 @@
 
                                     </li>
 
-                                    <li>
-
-                                        <a href="../Auto_parts_store/html/FAQ.html">
-                                            FAQ
-                                        </a>
-
-                                    </li>
-
                                 </ul>
 
                             </li>
@@ -347,7 +340,7 @@
 
                             <li>
 
-                                <a href="../Auto_parts_store/html/news.html">
+                                <a href="Auto_parts_store/html/news.html">
                                     Новости
                                 </a>
 
@@ -359,7 +352,7 @@
 
                     <div class="col-md-3 col-3">
 
-                        <a href="../Auto_parts_store/html/login.html">
+                        <a href="">
 
                             <button>
 
@@ -369,7 +362,7 @@
 
                         </a>
 
-                        <a href="../Auto_parts_store/html/basket.html">
+                        <a href="">
 
                             <button>
 
@@ -403,11 +396,19 @@
 
                     <div id="burger_menu" class="col-sm-12 col-12">
 
+                        <div class="exit_row">
+
+                            <img src="img\main\header\auto_oil_short_logo.svg" alt="short_logo">
+
+                            <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
+
+                        </div>
+
                         <ul class="menu_list">
 
                             <li class="burger_menu_item">
 
-                                <a href="../Auto_parts_store/html/login.html">
+                                <a href="">
                                     Кабинет
                                 </a>
 
@@ -421,71 +422,298 @@
 
                             </li>
 
-                            <li class="undermenu">
+                            <li class="undermenu_mobile_v">
 
                                 <a href="#">
                                     Ассортимент
 
-                                    <img src="img/main/header/arrow_under_menu.png" alt="">
+                                    <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
                                 </a>
 
-                                <ul class="menu_hiden">
+                                <div class="menu_hiden">
 
-                                    <li class="burger_menu_item">
+                                    <div class="exit_and_back_row">
 
-                                        <a href="#auto_parts">
-                                            Автозапчасти
-                                        </a>
+                                        <p class="back">
+                                            <img  src="img/main/header/arow_mobile_burger_menu.svg" alt="img_back">
 
-                                    </li>
+                                            Назад
+                                        </p>
 
-                                    <li class="burger_menu_item">
 
-                                        <a href="#oil">
-                                            Масла
-                                        </a>
+                                        <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
 
-                                    </li>
+                                    </div>
 
-                                </ul>
+                                    <ul>
+
+                                        <li class="burger_menu_item">
+    
+                                            <a href="#auto_parts">
+                                                Автозапчасти
+                                            </a>
+    
+                                        </li>
+    
+                                        <li class="burger_menu_item">
+    
+                                            <a href="#oil">
+                                                Масла
+                                            </a>
+    
+                                        </li>
+    
+                                    </ul>
+
+                                </div>
 
                             </li>
 
-                            <li class="undermenu">
+                            <li class="undermenu_mobile_v">
 
                                 <a href="#">
                                     Поиск
 
-                                    <img src="img/main/header/arrow_under_menu.png" alt="">
+                                    <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
                                 </a>
 
-                                <ul class="menu_hiden">
+                                <div class="menu_hiden">
 
-                                    <li class="burger_menu_item">
+                                    <div class="exit_and_back_row">
 
-                                        <a href="#brands">
-                                            Бренды
-                                        </a>
+                                        <p class="back">
+                                            <img  src="img/main/header/arow_mobile_burger_menu.svg" alt="img_back">
 
-                                    </li>
+                                            Назад
+                                        </p>
 
-                                    <li class="burger_menu_item">
 
-                                        <a href="#vendor_code">
-                                            Артикул
-                                        </a>
+                                        <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
 
-                                    </li>
+                                    </div>
 
-                                    <li class="burger_menu_item">
+                                    <ul>
 
-                                        <a href="../Auto_parts_store/html/FAQ.html">
-                                            FAQ
-                                        </a>
+                                        <li class="burger_menu_item">
+    
+                                            <a href="#brands">
+                                                Бренды
+                                            </a>
+    
+                                        </li>
+    
+                                        <li class="burger_menu_item">
+    
+                                            <a href="#vendor_code">
+                                                Артикул
+                                            </a>
+    
+                                        </li>
+    
+                                    </ul>
 
-                                    </li>
+                                </div>
 
-                                </ul>
+                            </li>
+
+                            <li class="undermenu_mobile_v">
+
+                                <a href="#">
+                                    Каталог
+
+                                    <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
+                                </a>
+
+                                <div class="menu_hiden">
+
+                                    <div class="exit_and_back_row">
+
+                                        <p class="back">
+                                            <img  src="img/main/header/arow_mobile_burger_menu.svg" alt="img_back">
+
+                                            Назад
+                                        </p>
+
+
+                                        <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
+
+                                    </div>
+
+                                    <ul>
+
+                                        <li class="undermenu_mobile_v">
+    
+                                            <a href="#">
+                                                Запчасти ТО
+
+                                                <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
+                                            </a>
+
+                                            <div class="menu_hiden">
+
+                                                <div class="exit_and_back_row">
+            
+                                                    <p class="back">
+                                                        <img  src="img/main/header/arow_mobile_burger_menu.svg" alt="img_back">
+            
+                                                        Назад
+                                                    </p>
+            
+            
+                                                    <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
+            
+                                                </div>
+
+                                                <input class="live_search" type="text" placeholder="Поиск">
+
+                                                <ul>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Моторное масло
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Масляный фильтр
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Воздушный фильтр
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Свечи накаливания
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Свечи зажигания
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Аккамулятор
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Щетки стеклоочистителя
+                                                        </a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+    
+                                        </li>
+    
+                                        <li class="undermenu_mobile_v">
+    
+                                            <a href="#vendor_code">
+                                                Топливная система
+
+                                                <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
+                                            </a>
+
+                                            <div class="menu_hiden">
+
+                                                <div class="exit_and_back_row">
+            
+                                                    <p class="back">
+                                                        <img  src="img/main/header/arow_mobile_burger_menu.svg" alt="img_back">
+            
+                                                        Назад
+                                                    </p>
+            
+            
+                                                    <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
+            
+                                                </div>
+
+                                                <input class="live_search" type="text" placeholder="Поиск">
+
+                                                <ul>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Топливный фильтр
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Топливный насос
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Топливная форсунка
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Прокладка топливной форсунки
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Дросельная заслонка
+                                                        </a>
+
+                                                    </li>
+
+                                                    <li>
+
+                                                        <a href="">
+                                                            Топливный бак
+                                                        </a>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+    
+                                        </li>
+    
+                                    </ul>
+
+                                </div>
 
                             </li>
 
