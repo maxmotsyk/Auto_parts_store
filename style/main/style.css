@@ -43,10 +43,6 @@ body button {
   white-space: nowrap;
 }
 
-body.lock {
-  overflow: hidden;
-}
-
 .wraper header #additional_information {
   display: -webkit-box;
   display: -ms-flexbox;
