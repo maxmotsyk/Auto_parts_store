@@ -61,13 +61,8 @@ $(document).ready(function () {
       $('.burger_button').toggleClass('active');
       $('body').toggleClass('lock');
       $('#information_col').toggleClass('hiden');
+      $('#burger_menu').toggleClass('active').toggle( "drop",300);
       
-      if( $('#burger_menu').hasClass('active')){
-        $('#burger_menu').toggleClass('active').fadeOut(0);
-      }
-      else{
-        $('#burger_menu').toggleClass('active').fadeIn(0);
-      }
     });
 
 

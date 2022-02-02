@@ -658,9 +658,10 @@ body.lock{
                 }
 
                 .menu_list{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+                    height: calc(100% - 56px);
+                    overflow-y: auto;
+                    display: block;
+                   
 
                     li{
                         width: 100%;
