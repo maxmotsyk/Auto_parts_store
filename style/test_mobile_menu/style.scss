@@ -453,6 +453,189 @@ body.lock{
 
                     }
 
+
+                    .open_catalog:after{
+                        content:none;
+                    }
+
+                    .open_catalog:hover,.open_catalog:active{
+                        color: #F5C331;
+                    }
+
+                    #modal_window_catalog_body{
+                        z-index: 1005;
+                        top:0;
+                        left:0;
+                        right: 0;
+                        bottom:0;
+                        width: 100%;
+                        height:100%;
+                        background: rgba(12,6,26,.6);
+                        position: fixed;
+                        display: none;
+                        justify-content: center;
+                        align-items:center;
+
+                        .modal_window_catalog{
+                            width: 900px;
+                            height: 538px;
+                            position: relative;
+                            padding: 0 15px;
+                            display:flex;
+                            align-items:center;
+                            border-radius:10px;
+                            background-color:#ffff;
+
+                            a:after{
+                                content:none;
+                            }
+                            
+                            .menu_list_desktop{   
+                                width: 260px;
+                                height: 460px;
+                                position: relative;
+                                background-color:#FFFFFF;
+                                
+                                .undermenu_item_li{
+                                    padding: 6px;
+                                    border-radius:30px;
+                                    transition: 0.3s;
+                                    margin: 0 0 15px 0;
+
+                                    a{
+                                        width: 100%;
+                                        font-size: 16px;
+                                        display: flex;
+                                        align-items:center;
+                                        justify-content: space-between;
+
+                                        img{
+                                            transition: all 0.3s;
+                                            //  filter: hue-rotate(150deg);
+                                        }
+               
+                                        img.active{
+                                            transform: rotateY(180deg);
+                                        }
+
+                                    }
+
+                                    ul::-webkit-scrollbar{
+                                        width: 5px;
+                                    }
+            
+                                    ul::-webkit-scrollbar-thumb{
+                                        background-color: #F5C331;
+                                        border-radius:5px;
+                                    }
+                                    
+                                    .menu_hiden{
+                                        display: none;
+                                        margin-left: 50px;
+                                        top: 0;
+                                        left:100%;
+                                        width: 260px;
+                                        height: 460px;
+                                        position: absolute;
+
+                                        .live_search{
+                                            margin-bottom: 20px;
+                                            padding: 0 5px;
+                                            width: 90%;
+                                            height: 30px;
+                                            border: 2px solid #F5C536;
+                                            border-radius: 30px;
+                                            font-size: 14px;
+                                            color:#333333;
+                                        }
+
+                                        ul{
+                                            position: relative;
+                                            height: 400px;
+                                            width: 260px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            word-wrap: break-word;
+                                            overflow-y: scroll;
+                                            overflow-x: hidden;
+
+                                            li{
+                                                margin-right: 0;
+                                                margin-bottom: 15px;
+                                                
+                                                a{
+                                                    transition: 0.3s;
+                                                    font-size: 16px;
+                                                    color:#848383;
+                                                    cursor: pointer;
+                                                }
+
+                                                a:hover{
+                                                    color:#333333;
+                                                }
+                                                
+                                            }
+
+                                        }
+
+                                        
+                                        
+                                    }
+
+                                }
+
+                                .undermenu_item_li:hover{
+                                    background: #FFF3CD;
+                                }
+
+                            }
+
+                            .baner{
+                                background-image: url(/Auto_parts_store/img/test_mobile_menu/header/baner.png);
+                                background-size: cover;
+                                margin-left: 50px;
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                border-radius:10px;
+                                width: 276px;
+                                height: 100%;
+                                right: 0;
+                              
+                                color:#333333;
+
+                                h3{
+                                    margin-bottom: 20px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+
+                                p{
+                                    margin-bottom: 20px;
+                                    font-size: 14px;
+                                    width: 220px;
+                                    height: 90px;
+                                }
+
+                                button{
+                                    margin-bottom: 30px;
+                                    width: 121px;
+                                    height: 42px;
+                                    background-color:#ffff;
+                                    border:2px solid #F5C331;
+                                    border-radius: 30px;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                }
+
+                            }
+                            
+                        }
+
+                    }
+
                     .undermenu{
                         position: relative;
                         white-space: nowrap;
@@ -755,14 +938,13 @@ body.lock{
                                 color:#333333;
                             }
 
+
                             ul{
                                 position: relative;
                                 height: calc(100% - 56px);
                                 overflow-y: auto;
                                 display: flex;
                                 flex-direction: column;
-
-                                
 
                                 li{
                                     display: flex;
@@ -798,7 +980,7 @@ body.lock{
 
     section{
         flex: 1 1 auto;
-        
+
     }
 
     footer{

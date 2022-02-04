@@ -488,6 +488,205 @@ body.lock {
   width: 100%;
 }
 
+.wraper header .nav .col-md-6 .menu_list .open_catalog:after {
+  content: none;
+}
+
+.wraper header .nav .col-md-6 .menu_list .open_catalog:hover, .wraper header .nav .col-md-6 .menu_list .open_catalog:active {
+  color: #F5C331;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body {
+  z-index: 1005;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 6, 26, 0.6);
+  position: fixed;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog {
+  width: 900px;
+  height: 538px;
+  position: relative;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: #ffff;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog a:after {
+  content: none;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop {
+  width: 260px;
+  height: 460px;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li {
+  padding: 6px;
+  border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 0 15px 0;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li a {
+  width: 100%;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li a img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li a img.active {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li ul::-webkit-scrollbar {
+  width: 5px;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li ul::-webkit-scrollbar-thumb {
+  background-color: #F5C331;
+  border-radius: 5px;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden {
+  display: none;
+  margin-left: 50px;
+  top: 0;
+  left: 100%;
+  width: 260px;
+  height: 460px;
+  position: absolute;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden .live_search {
+  margin-bottom: 20px;
+  padding: 0 5px;
+  width: 90%;
+  height: 30px;
+  border: 2px solid #F5C536;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden ul {
+  position: relative;
+  height: 400px;
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden ul li {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden ul li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #848383;
+  cursor: pointer;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden ul li a:hover {
+  color: #333333;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li:hover {
+  background: #FFF3CD;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .baner {
+  background-image: url(/Auto_parts_store/img/test_mobile_menu/header/baner.png);
+  background-size: cover;
+  margin-left: 50px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 10px;
+  width: 276px;
+  height: 100%;
+  right: 0;
+  color: #333333;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .baner h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .baner p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  width: 220px;
+  height: 90px;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .baner button {
+  margin-bottom: 30px;
+  width: 121px;
+  height: 42px;
+  background-color: #ffff;
+  border: 2px solid #F5C331;
+  border-radius: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .wraper header .nav .col-md-6 .menu_list .undermenu {
   position: relative;
   white-space: nowrap;

@@ -676,12 +676,14 @@ body.lock {
 }
 
 .wraper header .nav #burger_menu .exit_row img:nth-child(2) {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 20px;
 }
 
-.wraper header .nav #burger_menu .exit_row img:nth-child(2).active {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+.wraper header .nav #burger_menu .exit_row img:nth-child(2):hover, .wraper header .nav #burger_menu .exit_row img:nth-child(2):active {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .wraper header .nav #burger_menu .menu_list {

@@ -8,6 +8,23 @@ $(document).ready(function () {
     
     });
 
+    $('.open_catalog').click(function(){
+      $('#modal_window_catalog_body').css("display", "flex").fadeIn(300);
+    });
+
+    $('#modal_window_catalog_body').click(function(){
+      $(this).fadeOut(300);
+    });
+
+    let temp_last_li_item;
+
+    $('.item').click(function(e){
+      $(temp_last_li_item).fadeOut(0);
+      $(this).next('.menu_hiden').fadeIn(300);
+      temp_last_li_item = $(this).next('.menu_hiden');
+      e.stopPropagation();
+    });
+
     $('.img_exit').click(function(e){
         $('#burger_menu').toggleClass('active').toggle( "drop",300);
         $('#information_col').toggleClass('hiden');

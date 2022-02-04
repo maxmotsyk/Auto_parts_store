@@ -636,11 +636,12 @@ body.lock{
                     }
 
                     img:nth-child(2){
+                        transition: 0.3s;
                         width: 20px;
                     }
 
-                    img:nth-child(2).active{
-                        transform: rotateY(180deg);
+                    img:nth-child(2):hover,img:nth-child(2):active{
+                        transform: rotate(-45deg);
                     }
 
                 }
