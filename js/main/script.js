@@ -55,7 +55,30 @@ $(document).ready(function () {
   
   });
 
-    
+  $('.open_catalog').click(function(){
+    $('#modal_window_catalog_body').css("display", "flex").fadeIn(300);
+    $('body').toggleClass('lock');
+  });
+
+  $('#modal_window_catalog_body').click(function(){
+    $(this).fadeOut(300);
+    $('body').toggleClass('lock');
+  });
+
+  let temp_last_li_item;
+
+  $('.item').click(function(e){
+    if(temp_last_li_item != null){
+      $(temp_last_li_item).next('.menu_hiden').fadeOut(0);
+      $(temp_last_li_item).children('img').toggleClass('active');
+    }
+
+    $(this).children('img').toggleClass('active');
+    $(this).next('.menu_hiden').fadeIn(300);
+    temp_last_li_item = $(this);
+    e.stopPropagation();
+  });
+
 
     $('.burger_menu_item').click(function(){
       $('.burger_button').toggleClass('active');
@@ -135,6 +158,7 @@ $(document).ready(function () {
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         arrows: false,
         fade: true,
         arrows : false,
@@ -188,8 +212,8 @@ $(document).ready(function () {
         infinite: true,
         centerMode: true,
         centerPadding: '0px',
-        slidesToShow: 3,
-        slidesToScroll:3,
+        slidesToShow: 5,
+        slidesToScroll:1,
         prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
         nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
         responsive: [
@@ -208,7 +232,7 @@ $(document).ready(function () {
               arrows: false,
               centerMode: true,
               centerPadding: '40px',
-              slidesToShow: 2
+              slidesToShow: 3
             }
           },
 
@@ -218,7 +242,7 @@ $(document).ready(function () {
               arrows: false,
               centerMode: true,
               centerPadding: '0px',
-              slidesToShow: 2,
+              slidesToShow: 3,
             }
           }
         ]

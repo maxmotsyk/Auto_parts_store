@@ -517,15 +517,12 @@ body.lock {
 
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog {
   width: 900px;
-  height: 538px;
+  min-height: 540px;
   position: relative;
   padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 10px;
   background-color: #ffff;
 }
@@ -534,19 +531,30 @@ body.lock {
   content: none;
 }
 
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog ul::-webkit-scrollbar {
+  width: 3px;
+}
+
+.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog ul::-webkit-scrollbar-thumb {
+  background-color: #F5C331;
+  border-radius: 5px;
+}
+
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop {
+  margin: auto 0;
   width: 260px;
   height: 460px;
-  position: relative;
+  overflow-y: auto;
   background-color: #FFFFFF;
 }
 
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li {
+  white-space: normal;
   padding: 6px;
   border-radius: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 0 0 15px 0;
+  margin: 0 10px 15px 0;
 }
 
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li a {
@@ -573,20 +581,11 @@ body.lock {
           transform: rotateY(180deg);
 }
 
-.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li ul::-webkit-scrollbar {
-  width: 5px;
-}
-
-.wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li ul::-webkit-scrollbar-thumb {
-  background-color: #F5C331;
-  border-radius: 5px;
-}
-
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden {
+  top: 40px;
   display: none;
   margin-left: 50px;
-  top: 0;
-  left: 100%;
+  left: 260px;
   width: 260px;
   height: 460px;
   position: absolute;
@@ -604,8 +603,7 @@ body.lock {
 }
 
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden ul {
-  position: relative;
-  height: 400px;
+  max-height: 400px;
   width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,12 +612,12 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  word-wrap: break-word;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 .wraper header .nav .col-md-6 .menu_list #modal_window_catalog_body .modal_window_catalog .menu_list_desktop .undermenu_item_li .menu_hiden ul li {
+  white-space: normal;
   margin-right: 0;
   margin-bottom: 15px;
 }

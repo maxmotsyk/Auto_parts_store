@@ -478,30 +478,40 @@ body.lock{
 
                         .modal_window_catalog{
                             width: 900px;
-                            height: 538px;
+                            min-height: 540px;
                             position: relative;
                             padding: 0 15px;
                             display:flex;
-                            align-items:center;
                             border-radius:10px;
                             background-color:#ffff;
 
                             a:after{
                                 content:none;
                             }
+
+                            ul::-webkit-scrollbar{
+                                width: 3px;
+                            }
+    
+                            ul::-webkit-scrollbar-thumb{
+                                background-color: #F5C331;
+                                border-radius:5px;
+                            }
                             
-                            .menu_list_desktop{   
+                            .menu_list_desktop{
+                                margin: auto 0;  
                                 width: 260px;
                                 height: 460px;
-                                position: relative;
+                                overflow-y: auto;
                                 background-color:#FFFFFF;
                                 
                                 .undermenu_item_li{
+                                    white-space: normal;
                                     padding: 6px;
                                     border-radius:30px;
                                     transition: 0.3s;
-                                    margin: 0 0 15px 0;
-
+                                    margin: 0 10px 15px 0;
+                                   
                                     a{
                                         width: 100%;
                                         font-size: 16px;
@@ -519,24 +529,16 @@ body.lock{
                                         }
 
                                     }
-
-                                    ul::-webkit-scrollbar{
-                                        width: 5px;
-                                    }
-            
-                                    ul::-webkit-scrollbar-thumb{
-                                        background-color: #F5C331;
-                                        border-radius:5px;
-                                    }
                                     
                                     .menu_hiden{
+                                        top: 40px;
                                         display: none;
                                         margin-left: 50px;
-                                        top: 0;
-                                        left:100%;
+                                        left:260px;
                                         width: 260px;
                                         height: 460px;
                                         position: absolute;
+                                        
 
                                         .live_search{
                                             margin-bottom: 20px;
@@ -550,16 +552,15 @@ body.lock{
                                         }
 
                                         ul{
-                                            position: relative;
-                                            height: 400px;
+                                            max-height: 400px;
                                             width: 260px;
-                                            display: flex;
+                                            display:flex;
                                             flex-direction: column;
-                                            word-wrap: break-word;
                                             overflow-y: scroll;
                                             overflow-x: hidden;
 
                                             li{
+                                                white-space: normal;
                                                 margin-right: 0;
                                                 margin-bottom: 15px;
                                                 
@@ -578,8 +579,6 @@ body.lock{
 
                                         }
 
-                                        
-                                        
                                     }
 
                                 }

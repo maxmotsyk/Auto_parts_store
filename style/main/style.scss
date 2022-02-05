@@ -443,6 +443,187 @@ body.lock{
 
                     }
 
+                    .open_catalog:after{
+                        content:none;
+                    }
+
+                    .open_catalog:hover,.open_catalog:active{
+                        color: #F5C331;
+                    }
+
+                    #modal_window_catalog_body{
+                        z-index: 1005;
+                        top:0;
+                        left:0;
+                        right: 0;
+                        bottom:0;
+                        width: 100%;
+                        height:100%;
+                        background: rgba(12,6,26,.6);
+                        position: fixed;
+                        display: none;
+                        justify-content: center;
+                        align-items:center;
+
+                        .modal_window_catalog{
+                            width: 900px;
+                            min-height: 540px;
+                            position: relative;
+                            padding: 0 15px;
+                            display:flex;
+                            border-radius:10px;
+                            background-color:#ffff;
+
+                            a:after{
+                                content:none;
+                            }
+
+                            ul::-webkit-scrollbar{
+                                width: 3px;
+                            }
+    
+                            ul::-webkit-scrollbar-thumb{
+                                background-color: #F5C331;
+                                border-radius:5px;
+                            }
+                            
+                            .menu_list_desktop{
+                                margin: auto 0;  
+                                width: 260px;
+                                height: 460px;
+                                overflow-y: auto;
+                                background-color:#FFFFFF;
+                                
+                                .undermenu_item_li{
+                                    white-space: normal;
+                                    padding: 6px;
+                                    border-radius:30px;
+                                    transition: 0.3s;
+                                    margin: 0 10px 15px 0;
+                                   
+                                    a{
+                                        width: 100%;
+                                        font-size: 16px;
+                                        display: flex;
+                                        align-items:center;
+                                        justify-content: space-between;
+
+                                        img{
+                                            transition: all 0.3s;
+                                            //  filter: hue-rotate(150deg);
+                                        }
+               
+                                        img.active{
+                                            transform: rotateY(180deg);
+                                        }
+
+                                    }
+                                    
+                                    .menu_hiden{
+                                        top: 40px;
+                                        display: none;
+                                        margin-left: 50px;
+                                        left:260px;
+                                        width: 260px;
+                                        height: 460px;
+                                        position: absolute;
+                                        
+
+                                        .live_search{
+                                            margin-bottom: 20px;
+                                            padding: 0 5px;
+                                            width: 90%;
+                                            height: 30px;
+                                            border: 2px solid #F5C536;
+                                            border-radius: 30px;
+                                            font-size: 14px;
+                                            color:#333333;
+                                        }
+
+                                        ul{
+                                            max-height: 400px;
+                                            width: 260px;
+                                            display:flex;
+                                            flex-direction: column;
+                                            overflow-y: scroll;
+                                            overflow-x: hidden;
+
+                                            li{
+                                                white-space: normal;
+                                                margin-right: 0;
+                                                margin-bottom: 15px;
+                                                
+                                                a{
+                                                    transition: 0.3s;
+                                                    font-size: 16px;
+                                                    color:#848383;
+                                                    cursor: pointer;
+                                                }
+
+                                                a:hover{
+                                                    color:#333333;
+                                                }
+                                                
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                                .undermenu_item_li:hover{
+                                    background: #FFF3CD;
+                                }
+
+                            }
+
+                            .baner{
+                                background-image: url(/Auto_parts_store/img/test_mobile_menu/header/baner.png);
+                                background-size: cover;
+                                margin-left: 50px;
+                                position: absolute;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                border-radius:10px;
+                                width: 276px;
+                                height: 100%;
+                                right: 0;
+                              
+                                color:#333333;
+
+                                h3{
+                                    margin-bottom: 20px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+
+                                p{
+                                    margin-bottom: 20px;
+                                    font-size: 14px;
+                                    width: 220px;
+                                    height: 90px;
+                                }
+
+                                button{
+                                    margin-bottom: 30px;
+                                    width: 121px;
+                                    height: 42px;
+                                    background-color:#ffff;
+                                    border:2px solid #F5C331;
+                                    border-radius: 30px;
+                                    font-family: 'Quicksand', sans-serif;
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                }
+
+                            }
+                            
+                        }
+
+                    }
+
                     .undermenu{
                         position: relative;
                         white-space: nowrap;
@@ -1184,31 +1365,27 @@ body.lock{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            height:200px;
+                            width: 187px;
 
-                            .drop{
-                                position:relative;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 140px;
-                                height: 190px;
-                                border-radius: 20px;
+                            img{
+                                position: relative;
+                                bottom:0;
+                                transition: 0.6s;
+                                width:100px;
+                                height: auto;
+                                filter: grayscale(1);
+                                opacity: 0.2;
+                            }
 
-                                .drop_oil{
-                                    position: absolute;
-                                    width:140px;
-                                    height: 190px;
-                                }
-
-                                img{
-                                    width:80px;
-                                    height: auto;
-                                }
-
+                            img:hover,img:active{
+                                bottom:30px;
+                                opacity: 1;
+                                filter: grayscale(0);
                             }
 
                         }
+
+                       
 
                     }
 
