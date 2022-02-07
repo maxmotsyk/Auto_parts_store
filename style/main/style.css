@@ -805,6 +805,7 @@ body.lock {
           box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #E7E7E7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding: 0;
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a button img {
@@ -831,15 +832,16 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a:nth-child(2) button .line {
+  margin: 0 10px;
   width: 1px;
   height: 18px;
   background-color: #A0A0A0;
@@ -1392,6 +1394,7 @@ body.lock {
   height: 40px;
   background: #F5C531;
   border-radius: 40px;
+  padding: 0;
   border: none;
 }
 

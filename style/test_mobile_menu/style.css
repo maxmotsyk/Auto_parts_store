@@ -757,6 +757,7 @@ body.lock {
           box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #E7E7E7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  padding: 34px;
 }
 
 .wraper header .nav .col-md-3:nth-child(4) a button img {
@@ -802,57 +803,6 @@ body.lock {
   color: #A0A0A0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.wraper header .nav #serch_mobileV_articul {
-  margin-top: 50px;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wraper header .nav #serch_mobileV_articul .body_serch {
-  width: 350px;
-  height: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #FFFFFF;
-  border: 2px solid #F5C536;
-  border-radius: 40px;
-}
-
-.wraper header .nav #serch_mobileV_articul .body_serch input {
-  font-size: 16px;
-  width: 150px;
-  margin-left: 10px;
-  border: none;
-  color: #848383;
-}
-
-.wraper header .nav #serch_mobileV_articul .body_serch a {
-  margin-right: 10px;
-}
-
-.wraper header .nav #serch_mobileV_articul .body_serch a img {
-  width: 22px;
-  height: 22px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.wraper header .nav #serch_mobileV_articul .body_serch a img:hover, .wraper header .nav #serch_mobileV_articul .body_serch a img:after {
-  opacity: 0.8;
 }
 
 .wraper header .nav #burger_menu {

@@ -707,6 +707,7 @@ body.lock{
                         background: #ffffff;
                         box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 7px #E7E7E7;
                         transition: 0.3s;
+                        padding: 34px;
 
                         img{
                             transition: 0.3s;
@@ -720,7 +721,6 @@ body.lock{
 
                         img,p{
                             opacity: 0.8;
-
                         }
 
                     }
@@ -761,50 +761,50 @@ body.lock{
 
             }
             
-            #serch_mobileV_articul{
-                margin-top: 50px;
-                display: none;
-                justify-content: center;
-                align-items:center;
+            // #serch_mobileV_articul{
+            //     margin-top: 50px;
+            //     display: none;
+            //     justify-content: center;
+            //     align-items:center;
 
-                .body_serch{
+            //     .body_serch{
                         
-                    width: 350px;
-                    height: 45px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    background: #FFFFFF;
-                    border: 2px solid #F5C536;
-                    border-radius: 40px;
+            //         width: 350px;
+            //         height: 45px;
+            //         display: flex;
+            //         justify-content: space-between;
+            //         align-items: center;
+            //         background: #FFFFFF;
+            //         border: 2px solid #F5C536;
+            //         border-radius: 40px;
 
-                    input{
-                        font-size: 16px;
-                        width: 150px;
-                        margin-left: 10px;
-                        border:none;
-                        color: #848383;
-                    }
+            //         input{
+            //             font-size: 16px;
+            //             width: 150px;
+            //             margin-left: 10px;
+            //             border:none;
+            //             color: #848383;
+            //         }
 
-                    a{
+            //         a{
                       
-                        margin-right: 10px;
+            //             margin-right: 10px;
 
-                        img{
-                            width:22px;
-                            height:22px;
-                            transition: 0.3s;
-                        }
+            //             img{
+            //                 width:22px;
+            //                 height:22px;
+            //                 transition: 0.3s;
+            //             }
 
-                        img:hover,img:after{
-                            opacity: 0.8;
-                        }
+            //             img:hover,img:after{
+            //                 opacity: 0.8;
+            //             }
 
-                    }
+            //         }
 
-                }
+            //     }
 
-            }
+            // }
 
             #burger_menu{
                 z-index: 1000;
