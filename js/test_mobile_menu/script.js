@@ -32,6 +32,10 @@ $(document).ready(function () {
       e.stopPropagation();
     });
 
+    $('.rotate_serchcards_button').click(function(){
+      $('.card_serch_by').toggleClass('active');
+    });
+
     $('.img_exit').click(function(e){
         $('#burger_menu').toggleClass('active').toggle( "drop",300);
         $('#information_col').toggleClass('hiden');

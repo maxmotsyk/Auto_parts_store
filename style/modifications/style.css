@@ -831,6 +831,7 @@ body.lock {
 .wraper section .cell_col .cell .img_and_name p {
   margin-top: 20px;
   font-size: 16px;
+  color: #333333;
 }
 
 .wraper section .cell_col .cell .hidden_info {

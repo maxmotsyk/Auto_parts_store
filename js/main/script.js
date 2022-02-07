@@ -1,11 +1,17 @@
 $(document).ready(function () {
 
+  $('.preloader').fadeOut(1500);
+
   $('.burger_button').click(function(){
     $(this).toggleClass('active');
     $('body').toggleClass('lock');
     $('#information_col').toggleClass('hiden');
     $('#burger_menu').toggleClass('active').css("display", "flex").hide().toggle( "drop",300);
   
+  });
+
+  $('.rotate_serchcards_button').click(function(){
+    $('.card_serch_by').toggleClass('active');
   });
 
   $('.img_exit').click(function(e){
