@@ -1,36 +1,110 @@
 $(document).ready(function () {
 
-    $('.burger_button').click(function(){
-      $(this).toggleClass('active');
-      $('body').toggleClass('lock');
-      $('#information_col').toggleClass('hiden');
+  // закрытие окно загрузки страницы (preloader)
+  $('.preloader').fadeOut(1500);
 
-      if( $('#burger_menu').hasClass('active')){
-        $('#burger_menu').toggleClass('active').fadeOut(300);
+  // кнопка бургер меню
+  $('.burger_button').click(function(){
+    $(this).toggleClass('active');
+    $('body').toggleClass('lock');
+    $('#information_col').toggleClass('hiden');
+    $('#burger_menu').toggleClass('active').css("display", "flex").hide().toggle( "drop",300);
+  });
+
+  // смена положения карточек поиска по бренду и артиклу
+  $('.rotate_serchcards_button').click(function(){
+    $('.card_serch_by').toggleClass('active');
+  });
+
+  // выход с бургер меню
+  $('.img_exit').click(function(e){
+      $('#burger_menu').toggleClass('active').toggle( "drop",300);
+      $('#information_col').toggleClass('hiden');
+      $('.burger_button').toggleClass('active');
+      $('body').toggleClass('lock');
+      $('.menu_hiden').css("display", "none");
+      e.stopPropagation();
+  });
+
+  // открытие под меню в бургер меню
+  $('.undermenu_mobile_v').click(function(e){
+      $(this).children('.menu_hiden').toggle( "drop",300);
+      e.stopPropagation();
+  });
+  
+  // назад в бургер меню
+  $('.back').click(function(e){
+      $(this).parent().parent().toggle( "drop",300);
+      e.stopPropagation();
+  });
+
+  // фикс бага при нажатие на живой поиск в бургер меню
+  $('.live_search').click(function(e){
+      e.stopPropagation();
+  });
+
+  // логика живого поиска
+  $('.live_search').keyup(function(e){
+      
+      let live_word = $(this).val().trim().toLowerCase();
+      let mass_li_item = $(this).next().children('li');
+
+      if(live_word !== ''){
+        mass_li_item.each(function(){
+          if($(this).children('a').text().toLowerCase().search(live_word) == -1){
+            $(this).fadeOut(300);
+          }
+          else{
+            $(this).fadeIn(300);
+          }
+
+        })
       }
       else{
-        $('#burger_menu').toggleClass('active').fadeIn(300);
+        mass_li_item.each(function(){
+          $(this).fadeIn(300);
+        })
       }
-    });
+  
+  });
 
-    $('.password').click(function(){    
+  // открытие каталога на Декстоп верси
+  $('.open_catalog').click(function(){
+    $('#modal_window_catalog_body').css("display", "flex").fadeIn(300);
+    $('body').toggleClass('lock');
+  });
 
-    });
+  // закрытие каталога на Декстоп верси
+  $('#modal_window_catalog_body').click(function(){
+    $(this).fadeOut(300);
+    $('body').toggleClass('lock');
+  });
+
+  // переменая сохраняет последние открытие позиции в каталоге Декстоп верси
+  let temp_last_li_item;
+
+  // открытие позиции в каталоге Декстоп верси
+  $('.item').click(function(e){
+    if(temp_last_li_item != null){
+      $(temp_last_li_item).next('.menu_hiden').fadeOut(0);
+      $(temp_last_li_item).children('img').toggleClass('active');
+    }
+
+    $(this).children('img').toggleClass('active');
+    $(this).next('.menu_hiden').fadeIn(300);
+    temp_last_li_item = $(this);
+    e.stopPropagation();
+  });
+
 
     $('.burger_menu_item').click(function(){
       $('.burger_button').toggleClass('active');
       $('body').toggleClass('lock');
       $('#information_col').toggleClass('hiden');
-      
-      if( $('#burger_menu').hasClass('active')){
-        $('#burger_menu').toggleClass('active').fadeOut(0);
-      }
-      else{
-        $('#burger_menu').toggleClass('active').fadeIn(0);
-      }
+      $('#burger_menu').toggleClass('active').toggle( "drop",300);
     });
 
-
+    // раскрытие номеров телефона в  #additional_information
     $('.phone_menu').click(function(){
       $(this).parent().toggleClass('unactive');
       $(this.childNodes[1]).toggleClass('active');
@@ -53,6 +127,7 @@ $(document).ready(function () {
       
     });
 
+    // открытие #additional_information на моб верcи
     $(".tail").click(function(){
       
         if($(this).hasClass('active')){
@@ -66,6 +141,7 @@ $(document).ready(function () {
 
     });
   
+    // открытие undermenu в navbar
     $(".undermenu").click(function(){
       $(this.childNodes[1].childNodes[1]).toggleClass('active');
     
@@ -96,56 +172,61 @@ $(document).ready(function () {
 
     });
 
-    $('.open_registration').click(function(){
+       // открывает форму регестрации
+       $('.open_registration').click(function(){
 
-      $('#login_col').fadeOut( "slow", function() {
-
-        $('#registration_col').fadeIn("slow",function(){});
-
+        $('#login_col').fadeOut( "slow", function() {
+  
+          $('#registration_col').fadeIn("slow",function(){});
+  
+        });
+  
       });
-
-    });
-
-    $('.open_login').click(function(){
-
-      $('#registration_col').fadeOut( "slow", function() {
-
-        $('#login_col').fadeIn("slow",function(){});
-
+  
+      // открывает форму входа в акаунт
+      $('.open_login').click(function(){
+  
+        $('#registration_col').fadeOut( "slow", function() {
+  
+          $('#login_col').fadeIn("slow",function(){});
+  
+        });
+  
       });
-
-    });
-
-    $('.see_password').click(function(){
-
-      if($(this).hasClass('active')){
-        
-        $(this).toggleClass('active');
-        $(this).attr('src','../img/login/section/not_see.svg')
-        $(this).prev().attr('type','password');
-      }
-      else{
-        $(this).toggleClass('active');
-        $(this).attr('src','../img/login/section/see.svg')
-        $(this).prev().attr('type','text');
-      }
-
-    });
-
-    $('.password_input').focus(function(){
-      $(this).parent().css({
-        'box-shadow':"-2px 4px 12px 2px rgba(255, 221, 121, 0.44)"
+  
+      // подсмотреть пароль
+      $('.see_password').click(function(){
+  
+        if($(this).hasClass('active')){
+          
+          $(this).toggleClass('active');
+          $(this).attr('src','../img/login/section/not_see.svg')
+          $(this).prev().attr('type','password');
+        }
+        else{
+          $(this).toggleClass('active');
+          $(this).attr('src','../img/login/section/see.svg')
+          $(this).prev().attr('type','text');
+        }
+  
       });
-    });
-
-    $('.password_input').focusout(function(){
-      console.log($(this).parent());
-      $(this).parent().css({
-        'box-shadow':"none"
+  
+      // включает подсветку password_input
+      $('.password_input').focus(function(){
+        $(this).parent().css({
+          'box-shadow':"-2px 4px 12px 2px rgba(255, 221, 121, 0.44)"
+        });
       });
-    });
-    
-
+  
+      // выключает подсветку password_input
+      $('.password_input').focusout(function(){
+        console.log($(this).parent());
+        $(this).parent().css({
+          'box-shadow':"none"
+        });
+      });
+	
+	    // раскрывающийся список в footer
       $('.footer_menu_category').click(function(){
 
         if ($(window).width() <= 575) {

@@ -873,6 +873,47 @@ body.lock{
 
                 }
 
+                .body_serch{
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    margin-bottom: 40px;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #FFFFFF;
+                    border: 2px solid #F5C536;
+                    border-radius: 50px;
+
+                    input{
+                        font-size: 16px;
+                        width: 160px;
+                        margin-left: 10px;
+                        border:none;
+                        color: #848383;
+                    }
+
+                    button{
+                        cursor: pointer;
+                        transition: 0.3s;
+                        margin-right: 10px;
+                        border:none;
+                        background-color:#fff;
+                        padding: 0;
+
+                        img{
+                            width:20px;
+                            height:20px;
+                            transition: 0.3s;
+                        }
+
+                        img:hover,img:after{
+                            opacity: 0.8;
+                        }
+
+                    }
+
+                }
+
                 .menu_list{
                     height: calc(100% - 56px);
                     overflow-y: auto;

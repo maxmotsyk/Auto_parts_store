@@ -1,19 +1,22 @@
 $(document).ready(function () {
 
+  // закрытие окно загрузки страницы (preloader)
   $('.preloader').fadeOut(1500);
 
+  // кнопка бургер меню
   $('.burger_button').click(function(){
     $(this).toggleClass('active');
     $('body').toggleClass('lock');
     $('#information_col').toggleClass('hiden');
     $('#burger_menu').toggleClass('active').css("display", "flex").hide().toggle( "drop",300);
-  
   });
 
+  // смена положения карточек поиска по бренду и артиклу
   $('.rotate_serchcards_button').click(function(){
     $('.card_serch_by').toggleClass('active');
   });
 
+  // выход с бургер меню
   $('.img_exit').click(function(e){
       $('#burger_menu').toggleClass('active').toggle( "drop",300);
       $('#information_col').toggleClass('hiden');
@@ -23,20 +26,24 @@ $(document).ready(function () {
       e.stopPropagation();
   });
 
+  // открытие под меню в бургер меню
   $('.undermenu_mobile_v').click(function(e){
       $(this).children('.menu_hiden').toggle( "drop",300);
       e.stopPropagation();
   });
-
+  
+  // назад в бургер меню
   $('.back').click(function(e){
       $(this).parent().parent().toggle( "drop",300);
       e.stopPropagation();
   });
 
+  // фикс бага при нажатие на живой поиск в бургер меню
   $('.live_search').click(function(e){
       e.stopPropagation();
   });
 
+  // логика живого поиска
   $('.live_search').keyup(function(e){
       
       let live_word = $(this).val().trim().toLowerCase();
@@ -61,18 +68,22 @@ $(document).ready(function () {
   
   });
 
+  // открытие каталога на Декстоп верси
   $('.open_catalog').click(function(){
     $('#modal_window_catalog_body').css("display", "flex").fadeIn(300);
     $('body').toggleClass('lock');
   });
 
+  // закрытие каталога на Декстоп верси
   $('#modal_window_catalog_body').click(function(){
     $(this).fadeOut(300);
     $('body').toggleClass('lock');
   });
 
+  // переменая сохраняет последние открытие позиции в каталоге Декстоп верси
   let temp_last_li_item;
 
+  // открытие позиции в каталоге Декстоп верси
   $('.item').click(function(e){
     if(temp_last_li_item != null){
       $(temp_last_li_item).next('.menu_hiden').fadeOut(0);
@@ -91,10 +102,9 @@ $(document).ready(function () {
       $('body').toggleClass('lock');
       $('#information_col').toggleClass('hiden');
       $('#burger_menu').toggleClass('active').toggle( "drop",300);
-      
     });
 
-
+    // раскрытие номеров телефона в  #additional_information
     $('.phone_menu').click(function(){
       $(this).parent().toggleClass('unactive');
       $(this.childNodes[1]).toggleClass('active');
@@ -117,6 +127,7 @@ $(document).ready(function () {
       
     });
 
+    // открытие #additional_information на моб верcи
     $(".tail").click(function(){
       
         if($(this).hasClass('active')){
@@ -130,6 +141,7 @@ $(document).ready(function () {
 
     });
   
+    // открытие undermenu в navbar
     $(".undermenu").click(function(){
       $(this.childNodes[1].childNodes[1]).toggleClass('active');
     
@@ -160,7 +172,7 @@ $(document).ready(function () {
 
     });
 
-   
+    // slick slider марки авто
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -171,104 +183,109 @@ $(document).ready(function () {
         asNavFor: '.slider-nav'
     });
 
-      $('.slider-nav').slick({
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        focusOnSelect: true,
-        asNavFor: '.slider-for',
-        dots: false,
-        focusOnSelect: true,
-        prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
-        nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
-        responsive: [
-          {
-            breakpoint:1111,
-            settings: {
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-
-          {
-            breakpoint: 982,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-
-          {
-            breakpoint: 575,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '0px',
-              slidesToShow: 3,
-            }
+    // slick slider модели авто
+    $('.slider-nav').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      focusOnSelect: true,
+      asNavFor: '.slider-for',
+      dots: false,
+      focusOnSelect: true,
+      prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
+      nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
+      responsive: [
+        {
+          breakpoint:1111,
+          settings: {
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
           }
+        },
 
-        ]
-      });
-
-      $('.slider_oil').slick({
-        infinite: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 5,
-        slidesToScroll:1,
-        prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
-        nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
-        responsive: [
-          {
-            breakpoint: 982,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-
-          {
-            breakpoint: 575,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '0px',
-              slidesToShow: 3,
-            }
+        {
+          breakpoint: 982,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
           }
-        ]
-      });
+        },
 
-      $('.footer_menu_category').click(function(){
-
-        if ($(window).width() <= 575) {
-          let ul_menu = $(this).next();
-
-          if($(ul_menu).hasClass('active')){
-            $(ul_menu).toggleClass('active').slideUp(300);
-            $(this.childNodes[1]).toggleClass('active')
-          }
-          else{
-            $(ul_menu).toggleClass('active').slideDown(300);
-            $(this.childNodes[1]).toggleClass('active')
+        {
+          breakpoint: 575,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
           }
         }
-      });
+
+      ]
+    });
+    
+    // slick slider масла
+    $('.slider_oil').slick({
+      infinite: true,
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToShow: 5,
+      slidesToScroll:1,
+      prevArrow: "<img src='img/main/section/prevArrow.svg'  class='prev' alt='1'>",
+      nextArrow: "<img src='img/main/section/nextArrow.svg'  class='next' alt='2'>",
+      responsive: [
+        {
+          breakpoint: 982,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+
+        {
+          breakpoint: 575,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 3,
+          }
+        }
+      ]
+    });
+
+    // раскрывающийся список в footer
+    $('.footer_menu_category').click(function(){
+
+      if ($(window).width() <= 575) {
+        let ul_menu = $(this).next();
+
+        if($(ul_menu).hasClass('active')){
+          $(ul_menu).toggleClass('active').slideUp(300);
+          $(this.childNodes[1]).toggleClass('active')
+        }
+        else{
+          $(ul_menu).toggleClass('active').slideDown(300);
+          $(this.childNodes[1]).toggleClass('active')
+        }
+      }
+    });
 
 });
+
+
 

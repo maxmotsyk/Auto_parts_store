@@ -5,24 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta meta name="viewport" content="width = device-width, user-scalable=no"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- стили  jQuery плагина (slick slider) -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- логотип в адресной строке браузера -->
     <link rel="shortcut icon" href="img/main/header/Group 25.svg" type="image/x-icon">
-    <title>autooil</title>
+    <!-- названия сайта в адресной строке браузера -->
+    <title>AutoOil</title>
+    <!-- script jQuery плагина (slick slider) -->
     <script type="text/javascript" src="slick/slick.min.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+    <!-- строка подключения jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- строка подключения jQuery UI -->
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- script страницы-->
     <script src="js/main/script.js" defer></script>
+    <!-- style страницы-->
     <link rel="stylesheet" href="style/main/style.css">
 </head>
 
 <body>
     
     <div class="wraper">
-
+        
         <header>
 
+            <!-- окно загрузки страницы (preloader) -->
             <div class="preloader">
 
                 <div class="preloader_body">
@@ -33,9 +43,9 @@
             </div>
 
             <div class="container-fluid">
-
+            
                 <div id="additional_information" class="row">  
-    
+                    <!--Декстоп версия колонки с доп инфой (тел. ,адрес ,формой для поиска товара по артиклу, facebook, график роботы) -->
                     <div class="col-md-12">
     
                         <ul>
@@ -101,18 +111,22 @@
                             </li>
 
                             <li>
+                                <!-- форма для поиска товара по артиклу -->
+                                <form action="" method="post">
 
-                                <div class="body_serch">
+                                    <div class="body_serch">
+                                        <!-- input type="number" -->
+                                        <input type="number" placeholder="Введите артикул" name="search_by_article">
+            
+                                        <a href="#">
+            
+                                            <img src="img/main/section/loupe.png" alt="">
+            
+                                        </a>
+                                        
+                                    </div>    
 
-                                    <input type="text" placeholder="Введите артикул" name="search_by_article">
-        
-                                    <a href="#">
-        
-                                        <img src="img/main/section/loupe).png" alt="">
-        
-                                    </a>
-                                    
-                                </div>
+                                </form>
 
                             </li>
     
@@ -137,7 +151,7 @@
                         </ul>
     
                     </div>
-
+                    <!-- МОБИЛЬНАЯ ВЕРСИЯ ряд с доп инфой (тел. ,адрес ,график роботы,facebook) -->
                     <div id="information_col" class="col-md-12">
 
                         <div class="information">
@@ -231,11 +245,11 @@
                     </div>
     
                 </div>
-
+                <!-- навбар с бургер меню ,логотипом ,меню ,кнопки вход в акаунт и корзина -->
                 <div class="nav">
-
+                    
                     <div id="burger_menu_col" class="col-md-3 col-3">
-
+                        <!-- кнопка для открытия бургер меню -->
                         <div class="burger_button">
                             <span></span>
                             <span></span>
@@ -245,11 +259,11 @@
                     </div>
 
                     <div class="col-md-3 col-3">
-
+                        <!-- логотипы -->
                         <a href="">
-
+                            <!-- десктоп версия -->
                             <img src="img/main/header/logo.svg" alt="">
-
+                            <!-- мобльная версия -->
                             <img src="img/main/header/logo_for_mobile.svg" alt="logo_for_mobile">
 
                         </a>
@@ -257,9 +271,9 @@
                     </div>
 
                     <div class="col-md-6">
-
+                        <!-- меню(Мы,Контакты,Асортимент,КАТАЛОГ,AvtoPro) -->
                         <ul class="menu_list">
-
+                            <!-- li с класом undermenu имеют вложеное меню -->
                             <li class="undermenu">
 
                                 <a href="#">
@@ -344,34 +358,34 @@
                                 </a>
 
                             </li>
-
+                            <!-- КАТАЛОГ -->
                             <li>
 
                                 <a class="open_catalog" href="#">
                                     Каталог
                                 </a>
-
+                                <!-- модальное окно с каталогом -->
                                 <div id="modal_window_catalog_body">
                                     
                                     <div class="modal_window_catalog">
-
+                                        <!-- menu_list_desktop список в который надо вставлять позиции каталога -->
                                         <ul class="menu_list_desktop">
-
+                                            <!-- li с класом undermenu_item_li ето позиции каталога -->
                                             <li class="undermenu_item_li">
-
+                                                <!-- наименования позиции -->
                                                 <a class="item" href="#">
                                                     Запчасти ТО
 
                                                     <img src="img/test_mobile_menu/header/arow_mobile_burger_menu.svg" alt="">
                                                 </a>
 
-
+                                                <!-- вложенное выпадающие меню с названиями товара  -->
                                                 <div class="menu_hiden">
-
+                                                    <!-- живой поиск по названиям товара -->
                                                     <input class="live_search" type="text" placeholder="Поиск">
 
                                                     <ul>
-
+                                                        <!-- товар -->
                                                         <li>
 
                                                             <a href="">
@@ -379,7 +393,7 @@
                                                             </a>
     
                                                         </li>
-    
+                                                        <!-- товар -->
                                                         <li>
     
                                                             <a href="">
@@ -387,7 +401,7 @@
                                                             </a>
     
                                                         </li>
-    
+                                                        <!-- товар -->
                                                         <li>
     
                                                             <a href="">
@@ -395,7 +409,7 @@
                                                             </a>
     
                                                         </li>
-    
+                                                        <!-- товар -->
                                                         <li>
     
                                                             <a href="">
@@ -403,7 +417,7 @@
                                                             </a>
     
                                                         </li>
-    
+                                                        <!-- товар -->
                                                         <li>
     
                                                             <a href="">
@@ -411,7 +425,7 @@
                                                             </a>
     
                                                         </li>
-    
+                                                        <!-- товар -->
                                                         <li>
     
                                                             <a href="">
@@ -419,7 +433,7 @@
                                                             </a>
     
                                                         </li>
-    
+                                                        <!-- товар -->
                                                         <li>
     
                                                             <a href="">
@@ -436,14 +450,14 @@
                                             </li>
 
                                             <li class="undermenu_item_li">
-
+                                                <!-- наименования позиции -->
                                                 <a class="item" href="#">
                                                     Топливная система
 
                                                     <img class="" src="img/test_mobile_menu/header/arow_mobile_burger_menu.svg" alt="">
                                                 </a>
 
-
+                                                <!-- вложенное выпадающие меню с названиями товара  -->
                                                 <div class="menu_hiden">
 
                                                     <input class="live_search" type="text" placeholder="Поиск">
@@ -623,7 +637,7 @@
                                             </li>
                                     
                                         </ul>
-
+                                        <!-- банер -->
                                         <div class="baner">
                                           
                                             <h3>
@@ -635,7 +649,7 @@
                                                 опытом покупок на нашем сайте? <br>
                                                 Будем рады вашему отзыву! <br>
                                             </p>
-
+                                            <!-- кнопка с сылкой на форму -->
                                             <a href="https://docs.google.com/forms/d/10Hat-vZQAT4jA_R5y7M0iRCNI6Ys9_IKeIqBzAb46wU/edit">
 
                                                 <button>
@@ -651,7 +665,7 @@
                                 </div>
                                 
                             </li>
-
+                            <!-- Avto.pro -->
                             <li>
 
                                 <a href="../Auto_parts_store/html/Avto.pro.html">
@@ -663,9 +677,9 @@
                         </ul>
 
                     </div>
-
+                    <!-- колонки с кнопками  -->
                     <div class="col-md-3 col-3">
-
+                        <!-- входа в кабинет -->
                         <a href="../Auto_parts_store/html/login.html">
 
                             <button>
@@ -675,7 +689,7 @@
                             </button>
 
                         </a>
-
+                        <!-- корзина -->
                         <a href="../Auto_parts_store/html/basket.html">
 
                             <button>
@@ -683,7 +697,7 @@
                                 <img src="img/main/header/box.png" alt="">
 
                                 <div class="line"></div>
-                                
+                                <!-- количество товара в корзине -->
                                 <p>0</p>
 
                             </button>
@@ -691,9 +705,9 @@
                         </a>
 
                     </div>
-
+                    <!-- бургер меню -->
                     <div id="burger_menu" class="col-sm-12 col-12">
-
+                        <!-- ряд с логотипом и закрытием бургер меню -->
                         <div class="exit_row">
 
                             <img src="img\main\header\auto_oil_short_logo.svg" alt="short_logo">
@@ -702,8 +716,25 @@
 
                         </div>
 
-                        <ul class="menu_list">
+                        <form action="" method="post">
 
+                            <div class="body_serch">
+
+                                <input type="text" placeholder="Введите артикул" name="search_by_article">
+    
+                                <button>
+    
+                                    <img src="img/main/section/loupe.png" alt="">
+    
+                                </button>
+                                
+                            </div>
+
+                        </form>
+
+                        <!-- меню -->
+                        <ul class="menu_list">
+                            <!-- елемент с классом burger_menu_item не имеет под меню ,елемент с классом undermenu_mobile_v имеет под меню -->
                             <li class="burger_menu_item">
 
                                 <a href="../Auto_parts_store/html/private_office.html">
@@ -727,9 +758,9 @@
 
                                     <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
                                 </a>
-
+                                <!-- под меню -->
                                 <div class="menu_hiden">
-
+                                    <!-- назад закрыть ,бургер меню -->
                                     <div class="exit_and_back_row">
 
                                         <p class="back">
@@ -742,9 +773,9 @@
                                         <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
 
                                     </div>
-
+                                    <!-- меню -->
                                     <ul>
-
+                                        <!-- елемент меню -->
                                         <li class="burger_menu_item">
     
                                             <a href="#auto_parts">
@@ -752,7 +783,7 @@
                                             </a>
     
                                         </li>
-    
+                                        <!-- елемент меню -->
                                         <li class="burger_menu_item">
     
                                             <a href="#oil">
@@ -774,7 +805,7 @@
                                 </a>
 
                             </li>
-
+                            <!-- КАТАЛОГ моб версия  -->
                             <li class="undermenu_mobile_v">
 
                                 <a href="#">
@@ -799,15 +830,15 @@
                                     </div>
 
                                     <ul>
-
+                                        <!-- позициия каталога -->
                                         <li class="undermenu_mobile_v">
-    
+                                            <!-- названия позиции -->
                                             <a href="#">
                                                 Запчасти ТО
 
                                                 <img src="img/main/header/arow_mobile_burger_menu.svg" alt="">
                                             </a>
-
+                                            <!-- вложенное выпадающие меню с названиями товара  -->
                                             <div class="menu_hiden">
 
                                                 <div class="exit_and_back_row">
@@ -822,11 +853,11 @@
                                                     <img class="img_exit" src="img/main/header/exit_mobile_menu.svg" alt="exit">
             
                                                 </div>
-
+                                                <!-- живой поиск -->
                                                 <input class="live_search" type="text" placeholder="Поиск">
 
                                                 <ul>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -834,7 +865,7 @@
                                                         </a>
 
                                                     </li>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -842,7 +873,7 @@
                                                         </a>
 
                                                     </li>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -850,7 +881,7 @@
                                                         </a>
 
                                                     </li>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -858,7 +889,7 @@
                                                         </a>
 
                                                     </li>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -866,7 +897,7 @@
                                                         </a>
 
                                                     </li>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -874,7 +905,7 @@
                                                         </a>
 
                                                     </li>
-
+                                                    <!-- товар -->
                                                     <li>
 
                                                         <a href="">
@@ -1031,7 +1062,7 @@
                                 </div>  
 
                             </li>
-
+                            <!-- Avto.pro -->
                             <li class="burger_menu_item">
 
                                 <a href="../Auto_parts_store/html/news.html">
