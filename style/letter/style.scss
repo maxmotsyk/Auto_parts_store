@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
 body{
     margin: 0;
     background-color:#FFFFFF;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-
     
+
+    a,p,button,b{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    
+    button,a{
+        cursor:pointer;
+    }
+    
+    h1,h2,h3,h4{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 600;
+    }
     
     ul,li{
         padding: 0;
@@ -32,14 +48,15 @@ body{
 
 
     .body_container{
-        max-width: 675px;
+        position: relative;
+        width: 675px;
         flex-direction: column;
         background-color:#ffff;
 
         .header{
             background-image: url(/Auto_parts_store/img/letter/bacground_main.png);
             background-size: cover;
-            min-width: 675px;
+            width: 100%;
             min-height: 350px;
             display: flex;
             flex-direction: column;
@@ -62,7 +79,7 @@ body{
 
                 h1{
                     text-align: center;
-                    font-size: 20px;
+                    font-size: 25px;
                     max-width: 370px;
                 }
     
@@ -73,6 +90,8 @@ body{
                     border: none;
                     background: rgba(255, 255, 255, 0.42);
                     border-radius: 40px;
+                    font-size: 16px;
+                    color:#333333;
                 }
     
             }
@@ -81,6 +100,7 @@ body{
         }
 
         .section{
+            padding: 0 14px;
             color:#333333;
 
             tr{
@@ -91,9 +111,9 @@ body{
             }
 
             .title{
-                margin-top: 50px;
-
+            
                 h3{
+                    text-align: center;
                     color:#333333;
                     font-size: 20px;
                 }
@@ -106,6 +126,11 @@ body{
                 p{
                     color: #848383;
                     font-size: 20px;
+
+                    b{
+                        color:#333333;
+                    }
+
                 }
 
             }
@@ -114,9 +139,10 @@ body{
                 margin-top: 50px;
 
                 p{
+                    font-weight: 300;
                     text-align: center;
                     color:#333333;
-                    width: 359px;
+                    max-width: 359px;
                     font-size: 14px;
                 }
 
@@ -157,15 +183,46 @@ body{
             tr{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+            
+                justify-content: space-around;
+
+                td{
+                    width: 127px;
+
+                    h3{
+                        margin: 14px 0 14px 0;
+                        color:#333333;
+                    }
+
+                    ul{
+
+                        li{
+                            margin-bottom: 10px;
+                            p,a{
+                                transition: 0.3s;
+                                text-decoration: none;
+                                margin: 0;
+                                color:#848383;
+                            }
+                            
+                            a:hover,a:active{
+                                color:#333333;
+                            }
+                        }
+
+                    }
+                    
+
+                }
+
                 .social_network{
                     width: 105px;
                     display: flex;
                     flex-direction: column;
 
                     .short_logo{
-                        margin-top: 50px;
                         width: 105px;
+                        margin-bottom: 14px;
                     }
 
                     ul{
@@ -176,6 +233,57 @@ body{
                         
                     }
 
+                }
+
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 675px){
+
+        .body_container{
+            width: 100% !important;
+
+            .section{
+
+                .card_row{
+                    flex-direction: column !important;
+
+                    td:not(:last-child){
+                        margin-bottom: 40px;
+                    }
+
+                }
+                
+            }
+
+
+            .footer{
+                padding: 0 14px;
+                
+                tr{
+                    justify-content: center !important;
+                    flex-direction: column !important;
+
+                    .social_network{
+                        margin: 0 auto;
+                        margin-bottom: 30px;
+                        display: flex;
+                        align-items: center;
+                        width: 200px !important;
+
+                        ul{
+                            width: 100% !important;
+
+                            img{
+                                height: 30px;
+                            }
+
+                        }
+
+                    }
                 }
 
             }
