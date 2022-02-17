@@ -96,8 +96,7 @@ body .body_container .header .welcome_text {
 body .body_container .header .welcome_text .main_logo {
   top: 20px;
   position: absolute;
-  width: 84px;
-  height: 35px;
+  width: 110px;
 }
 
 body .body_container .header .welcome_text h1 {
@@ -118,7 +117,6 @@ body .body_container .header .welcome_text button {
 }
 
 body .body_container .section {
-  padding: 0 14px;
   color: #333333;
 }
 
@@ -201,8 +199,8 @@ body .body_container .section .card_row td {
 }
 
 body .body_container .section .card_row td img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
 
 body .body_container .section .card_row td p {
@@ -223,6 +221,7 @@ body .body_container .footer tr {
 }
 
 body .body_container .footer tr td {
+  padding: 0 14px;
   width: 127px;
 }
 

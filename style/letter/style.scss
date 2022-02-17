@@ -73,8 +73,7 @@ body{
                 .main_logo{
                     top:20px;
                     position: absolute;
-                    width: 84px;
-                    height: 35px;
+                    width: 110px;
                 }
 
                 h1{
@@ -100,7 +99,6 @@ body{
         }
 
         .section{
-            padding: 0 14px;
             color:#333333;
 
             tr{
@@ -163,8 +161,8 @@ body{
                     justify-content: center;
 
                     img{
-                        width: 60px;
-                        height: 60px;
+                        width: 80px;
+                        height: 80px;
                     }
 
                     p{
@@ -187,6 +185,7 @@ body{
                 justify-content: space-around;
 
                 td{
+                    padding: 0 14px;
                     width: 127px;
 
                     h3{
@@ -262,7 +261,7 @@ body{
 
             .footer{
                 padding: 0 14px;
-                
+
                 tr{
                     justify-content: center !important;
                     flex-direction: column !important;
