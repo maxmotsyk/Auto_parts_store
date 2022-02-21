@@ -77,6 +77,22 @@ body .body_container .header {
   color: #ffff;
 }
 
+body .body_container .header tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .body_container .header .welcome_text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,13 +121,25 @@ body .body_container .header .welcome_text h1 {
   max-width: 370px;
 }
 
-body .body_container .header .welcome_text button {
+body .body_container .header .button_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 115px;
   height: 40px;
   margin: 30px 0 0 0;
   border: none;
   background: rgba(255, 255, 255, 0.42);
   border-radius: 40px;
+}
+
+body .body_container .header .button_email a {
   font-size: 16px;
   color: #333333;
 }
@@ -156,7 +184,7 @@ body .body_container .section .account_details p b {
 }
 
 body .body_container .section .warnings {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 body .body_container .section .warnings p {
@@ -206,6 +234,16 @@ body .body_container .section .card_row td img {
 body .body_container .section .card_row td p {
   color: #333333;
   font-size: 16px;
+}
+
+body .body_container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .body_container .footer tr {
@@ -271,6 +309,12 @@ body .body_container .footer tr .social_network ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body .body_container .unsubscribe_tr {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 675px) {

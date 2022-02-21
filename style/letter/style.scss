@@ -63,6 +63,13 @@ body{
             justify-content: center;
             flex-direction: column;
             color: #ffff;
+            
+            tr{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+            }
 
             .welcome_text{
                 display: flex;
@@ -82,18 +89,26 @@ body{
                     max-width: 370px;
                 }
     
-                button{
-                    width: 115px;
-                    height: 40px;
-                    margin: 30px 0 0 0;
-                    border: none;
-                    background: rgba(255, 255, 255, 0.42);
-                    border-radius: 40px;
+            }
+
+            .button_email{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                width: 115px;
+                height: 40px;
+                margin: 30px 0 0 0;
+                border: none;
+                background: rgba(255, 255, 255, 0.42);
+                border-radius: 40px;
+                
+                a{
                     font-size: 16px;
                     color:#333333;
                 }
-    
+               
             }
+
 
 
         }
@@ -134,7 +149,7 @@ body{
             }
 
             .warnings{
-                margin-top: 50px;
+                margin-top: 20px;
 
                 p{
                     font-weight: 300;
@@ -177,11 +192,12 @@ body{
         }
 
         .footer{
-
+            display: flex;
+            flex-direction: column;
+            
             tr{
                 display: flex;
                 flex-direction: row;
-            
                 justify-content: space-around;
 
                 td{
@@ -236,6 +252,10 @@ body{
 
             }
 
+        }
+
+        .unsubscribe_tr{
+            justify-content: center;
         }
 
     }

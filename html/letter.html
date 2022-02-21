@@ -9,7 +9,358 @@
     <!-- названия сайта в адресной строке браузера -->
     <title>AutoOil</title>
 
-    <link rel="stylesheet" href="../style/letter/style.css">
+    <!-- <link rel="stylesheet" href="../style/letter/style.css"> -->
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap");
+        body {
+        margin: 0;
+        background-color: #FFFFFF;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        }
+
+        body a, body p, body button, body b {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        }
+
+        body button, body a {
+        cursor: pointer;
+        }
+
+        body h1, body h2, body h3, body h4 {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 600;
+        }
+
+        body ul, body li {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        }
+
+        body input, body textarea {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 500;
+        outline: none;
+        }
+
+        body button {
+        white-space: nowrap;
+        }
+
+        body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: #E5E5E5;
+        }
+
+        body .body_container {
+        position: relative;
+        width: 675px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background-color: #ffff;
+        }
+
+        body .body_container .header {
+        background-image: url(/Auto_parts_store/img/letter/bacground_main.png);
+        background-size: cover;
+        width: 100%;
+        min-height: 350px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        flex-direction: column;
+        color: #ffff;
+        }
+
+        body .body_container .header tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        }
+
+        body .body_container .header .welcome_text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        }
+
+        body .body_container .header .welcome_text .main_logo {
+        top: 20px;
+        position: absolute;
+        width: 110px;
+        }
+
+        body .body_container .header .welcome_text h1 {
+        text-align: center;
+        font-size: 25px;
+        max-width: 370px;
+        }
+
+        body .body_container .header .button_email {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 115px;
+        height: 40px;
+        margin: 30px 0 0 0;
+        border: none;
+        background: rgba(255, 255, 255, 0.42);
+        border-radius: 40px;
+        }
+
+        body .body_container .header .button_email a {
+        font-size: 16px;
+        color: #333333;
+        }
+
+        body .body_container .section {
+        color: #333333;
+        }
+
+        body .body_container .section tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        }
+
+        body .body_container .section .title h3 {
+        text-align: center;
+        color: #333333;
+        font-size: 20px;
+        }
+
+        body .body_container .section .account_details {
+        width: 80%;
+        }
+
+        body .body_container .section .account_details p {
+        color: #848383;
+        font-size: 20px;
+        }
+
+        body .body_container .section .account_details p b {
+        color: #333333;
+        }
+
+        body .body_container .section .warnings {
+        margin-top: 20px;
+        }
+
+        body .body_container .section .warnings p {
+        font-weight: 300;
+        text-align: center;
+        color: #333333;
+        max-width: 359px;
+        font-size: 14px;
+        }
+
+        body .body_container .section .card_row {
+        margin-top: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        }
+
+        body .body_container .section .card_row td {
+        width: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        }
+
+        body .body_container .section .card_row td img {
+        width: 80px;
+        height: 80px;
+        }
+
+        body .body_container .section .card_row td p {
+        color: #333333;
+        font-size: 16px;
+        }
+
+        body .body_container .footer tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        }
+
+        body .body_container .footer tr td {
+        padding: 0 14px;
+        width: 127px;
+        }
+
+        body .body_container .footer tr td h3 {
+        margin: 14px 0 14px 0;
+        color: #333333;
+        }
+
+        body .body_container .footer tr td ul li {
+        margin-bottom: 10px;
+        }
+
+        body .body_container .footer tr td ul li p, body .body_container .footer tr td ul li a {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        text-decoration: none;
+        margin: 0;
+        color: #848383;
+        }
+
+        body .body_container .footer tr td ul li a:hover, body .body_container .footer tr td ul li a:active {
+        color: #333333;
+        }
+
+        body .body_container .footer tr .social_network {
+        width: 105px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        }
+
+        body .body_container .footer tr .social_network .short_logo {
+        width: 105px;
+        margin-bottom: 14px;
+        }
+
+        body .body_container .footer tr .social_network ul {
+        width: 105px;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        }
+
+        @media screen and (max-width: 675px) {
+        body .body_container {
+            width: 100% !important;
+        }
+        body .body_container .section .card_row {
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+                -ms-flex-direction: column !important;
+                    flex-direction: column !important;
+        }
+        body .body_container .section .card_row td:not(:last-child) {
+            margin-bottom: 40px;
+        }
+        body .body_container .footer {
+            padding: 0 14px;
+        }
+        body .body_container .footer tr {
+            -webkit-box-pack: center !important;
+                -ms-flex-pack: center !important;
+                    justify-content: center !important;
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+                -ms-flex-direction: column !important;
+                    flex-direction: column !important;
+        }
+        body .body_container .footer tr .social_network {
+            margin: 0 auto;
+            margin-bottom: 30px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 200px !important;
+        }
+        body .body_container .footer tr .social_network ul {
+            width: 100% !important;
+        }
+        body .body_container .footer tr .social_network ul img {
+            height: 30px;
+        }
+        }
+        /*# sourceMappingURL=style.css.map */
+    </style>
+
 </head>
 
 <body>
@@ -29,13 +380,17 @@
                         <!-- Имя -->
                         Максим !
                     </h1>
+        
+                </td>
+
+                <td class="button_email" background-color="red">
 
                     <a href="https://autooil.com.ua/?gclid=CjwKCAiAgbiQBhAHEiwAuQ6BkuqP7zNzky4wOS_F6qcfCjJ4ZJn8XTzVsv2Ngn2yatBeDrW9htCLtxoClU8QAvD_BwE#/catalogs">
-                        <button>
-                            На сайт
-                        </button>
+                       
+                        На сайт
+                        
                     </a>
-        
+
                 </td>
 
             </tr>
@@ -44,7 +399,7 @@
 
         <tbody class="section">
 
-            <tr width="100%" height="100px"></tr>
+            <tr width="100%" height="60px"></tr>
 
             <tr>
 
@@ -81,7 +436,7 @@
 
             </tr>
 
-            <tr width="100%" height="100px"></tr>
+            <tr width="100%" height="60px"></tr>
 
             <tr>
 
@@ -138,7 +493,7 @@
 
         <tbody class="footer">
 
-            <tr width="100%" height="100px"></tr>
+            <tr width="100%" height="60px"></tr>
 
             <tr>
 
@@ -150,7 +505,7 @@
 
                         <li>
 
-                            <a href="">
+                            <a href="https://www.facebook.com/autooil.com.ua/">
 
                                 <img src="../img/letter/facebook.svg" alt="">
                                 
@@ -160,7 +515,7 @@
 
                         <li>
                             
-                            <a href="">
+                            <a href="https://viber.click/380964764550">
 
                                 <img src="../img/letter/viber.svg" alt="">
                                 
@@ -289,6 +644,18 @@
                     </ul>
 
                 </td>
+
+            </tr>
+
+            <tr class="unsubscribe_tr" width="100%" height="40px">
+
+                <a href="">
+
+                    <p>
+                        Отписаться
+                    </p>
+
+                </a>
 
             </tr>
             
