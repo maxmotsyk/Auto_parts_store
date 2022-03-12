@@ -46,7 +46,6 @@ body{
     justify-content: center;
     background-color: #E5E5E5;
 
-
     .body_container{
         position: relative;
         width: 675px;
@@ -54,7 +53,7 @@ body{
         background-color:#ffff;
 
         .header{
-            background-image: url(/Auto_parts_store/img/letter/bacground_main.png);
+            background-image: url(https://autooil.com.ua/img/mails/bacground_main.png);
             background-size: cover;
             width: 100%;
             min-height: 350px;
@@ -108,8 +107,6 @@ body{
                 }
                
             }
-
-
 
         }
 
@@ -194,7 +191,7 @@ body{
         .footer{
             display: flex;
             flex-direction: column;
-            
+
             tr{
                 display: flex;
                 flex-direction: row;
