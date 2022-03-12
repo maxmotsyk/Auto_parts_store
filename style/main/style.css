@@ -1218,24 +1218,24 @@ body.lock {
   transition: 0.3s;
 }
 
-.wraper section #main_row .col:nth-child(1) .text_content .button_area button:nth-child(1) {
+.wraper section #main_row .col:nth-child(1) .text_content .button_area a:nth-child(1) button {
   margin-right: 35px;
   background: #F5C331;
   border: none;
   border-radius: 30px;
 }
 
-.wraper section #main_row .col:nth-child(1) .text_content .button_area button:nth-child(2) {
+.wraper section #main_row .col:nth-child(1) .text_content .button_area a:nth-child(2) button {
   background: #FFFFFF;
   border: 3px solid #F5C331;
   border-radius: 30px;
 }
 
-.wraper section #main_row .col:nth-child(1) .text_content .button_area button:nth-child(1):hover, .wraper section #main_row .col:nth-child(1) .text_content .button_area button:nth-child(1):active {
+.wraper section #main_row .col:nth-child(1) .text_content .button_area a:nth-child(1):hover button, .wraper section #main_row .col:nth-child(1) .text_content .button_area a:nth-child(1):active button {
   background: #f5c431e7;
 }
 
-.wraper section #main_row .col:nth-child(1) .text_content .button_area button:nth-child(2):hover, .wraper section #main_row .col:nth-child(1) .text_content .button_area button:nth-child(2):active {
+.wraper section #main_row .col:nth-child(1) .text_content .button_area a:nth-child(2):hover button, .wraper section #main_row .col:nth-child(1) .text_content .button_area a:nth-child(2):active button {
   border: 3px solid #f5c431e7;
 }
 
