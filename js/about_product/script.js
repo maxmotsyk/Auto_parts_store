@@ -257,6 +257,7 @@ $(document).ready(function () {
             $(this.childNodes[1]).toggleClass('active')
           }
         }
+        
       });
 
       // фото слайдер главное фото 
