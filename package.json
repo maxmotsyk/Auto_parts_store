@@ -1,0 +1,29 @@
+{
+  "name": "auto_parts_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxmotsyk/Auto_parts_store.git"
+  },
+  "author": "Maks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxmotsyk/Auto_parts_store/issues"
+  },
+  "homepage": "https://github.com/maxmotsyk/Auto_parts_store#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.53.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1"
+  }
+}
